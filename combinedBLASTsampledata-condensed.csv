@@ -1,0 +1,217 @@
+"SampleName","SummarizedBLASTResults","country","cooX","cooY","Subfamily","tribe","genus","species","sex","Date","qPCR.Cq","AHE.BLAST.hit","iPhycl"
+"P001_WE12","Dipsacales;None;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Sapindales;Simaroubaceae;Ailanthus
+Myrtales;Melastomataceae;Miconia",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"P001_WG02","Caryophyllales;Caryophyllaceae;Silene
+Ginkgoales;Ginkgoaceae;Ginkgo
+Poales;Poaceae;None","France","1°49'26.9""E","43°51'08.3""N","Deltocephalinae","Fieberiellini","Synophropsis","lauri","M","8-Aug-18","28.289","KY778013.1","16SrIII-U variant"
+"P001_WA07","Poales;Poaceae;Cenchrus","Zambia","24°21'57.2""E","11°48'48.5""S","Deltocephalinae","Stenometopiini","Stirellus","sp.","F","7-Nov","32.36","",""
+"P001_WA08/P001_WF01","Fabales;Fabaceae;Brachystegia
+Asterales;Asteraceae;None
+Fabales;Fabaceae;None
+Gentianales;Apocynaceae;None
+Laurales;Lauraceae;Cassytha
+Sapindales;Rutaceae;None
+Solanales;Solanaceae;Solanum
+Fabales;Fabaceae;Indigofera
+Liliales;Smilacaceae;Smilax
+Zingiberales;None;None
+Lamiales;Verbenaceae;None","Zambia","24°21'57.2""E","11°48'48.5""S","Deltocephalinae","Scaphoideini","Scaphoidophyes","n.sp.","M","7.XI.2007","33.03","",""
+"P001_WA02","Asterales;Asteraceae;None","Mexico","101°04'41.8""W","25°15'05.6""N","Deltocephalinae","Phlepsiini","Texananus","ovatus","M","29-X-2005","32.09","",""
+"P001_WA03","Asterales;Asteraceae;None
+Asterales;Asteraceae;Ambrosia","Mexico","100°43'53.2""W","25°19'23.9""N","Deltocephalinae","Phlepsiini","Texananus","","","30-X-2005","34.11","",""
+"P001_WE11","Fabales;Fabaceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum","Usa","109°55'57.0""W","31°24'23.0""N","Deltocephalinae","Opsiini","Dixianus","utahnus","M","17-23.vi.2013","33.582","",""
+"P001_WB02","Asterales;Asteraceae;None
+Asterales;Asteraceae;Xanthium
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Drymaria
+Piperales;Piperaceae;Peperomia
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Rosales;Moraceae;None","Usa","110°44'19.2""W","33°01'15.6""N","Deltocephalinae","Deltocephalini","Graminella","sonora","M","11-21.ix.2014","20.01","",""
+"P001_WA04","Solanales;Solanaceae;Solanum
+Apiales;Apiaceae;None","Kyrgyzstan","74°39'20.0""E","41°17'47.0""N","Deltocephalinae","Paralimnini","Phlebiastes","tianshanica","M","16-Jul-00","32.64","",""
+"P001_WA05","Poales;Poaceae;None
+Fagales;Fagaceae;None","China","106°07'13.4""E","30°46'15.8""N","Deltocephalinae","Stenometopiini","Stirellus","productus","M","8-Sep-15","20.41","",""
+"P001_WE10","Sapindales;Rutaceae;None
+Sapindales;Rutaceae;Citrus
+Zingiberales;Musaceae;Musa
+Polypodiales;Nephrolepidaceae;Nephrolepis","Brazil","71°50'46.0""W","7°19'46.0""S","Deltocephalinae","Macrostelini","Dalbulus","maidis","M","10-May-11","23.748","CP035949.1","I-K related strain new subgroup"
+"P001_WC05","Pottiales;Pottiaceae;None","Brazil","43°28'38.5""W","20°06'24.4""S","Deltocephalinae","Deltocephalini","Cortona","n.sp.","M","16-Mar-15","34.7","",""
+"P001_WC02","Commelinales;Commelinaceae;None
+Commelinales;Commelinaceae;Commelina
+Fabales;Fabaceae;None
+Poales;Poaceae;Aristida
+Poales;Poaceae;Oropetium
+Fabales;Fabaceae;Vigna
+Lamiales;Lamiaceae;None","Eswatini","31°59'30.2""E","26°18'35.4""S","Ulopinae","Ulopini","Conlopa","bredoni","F","9-Dec","32.78","",""
+"P001_WC07","Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Cupressales;Cupressaceae;None","French Guiana","52°12'04.9""W","4°33'49.9""N","Eurymelinae","Chiasmodolini","Rotundicerus","n.sp.","M","1 Feb. 2008","27.3","",""
+"P001_WE06","Rosales;Moraceae;None
+Rosales;Moraceae;Morus
+Rosales;Rosaceae;Prunus
+Fabales;Fabaceae;Trifolium","Philippines","126°14'30.3""E","6°45'40.4""N","Eurymelinae","Megipocerini","Chunra","n.sp.PH1","M","4/23/12","34.65","",""
+"P001_WC04","Caryophyllales;Caryophyllaceae;Silene
+Myrtales;None;None
+Myrtales;Myrtaceae;None
+Myrtales;Myrtaceae;Syzygium
+Pottiales;Pottiaceae;None","Malaysia","114°51'22.8""E","4°04'15.0""N","Deltocephalinae","Stegelytrini","Kunasia","carina","F","5-26 Jan 2009","34.32","",""
+"P001_WG09","Malvales;Dipterocarpaceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Sapindales;Rutaceae;None
+Sapindales;Rutaceae;Citrus","Malaysia","114°48'49.7""E","4°02'33.0""N","Deltocephalinae","Opsiini","New Genus ML1","n. sp. 1","M","5-26 Jan 2009","","",""
+"P001_WF03","Hypnales;None;None
+Hypnales;Neckeraceae;None
+Hypnales;Neckeraceae;Thamnobryum
+Poales;Poaceae;None","Fiji","FBA084382","missing","Deltocephalinae","Macrostelini","Balclutha","n.sp.FI1","M","missing","30.984","",""
+"P001_WB08","Poales;Poaceae;None","Fiji","","missing","Deltocephalinae","Opsiini","Navaia","filicola","M","missing","33.49","",""
+"P001_WB09/P001_WC09","Oxalidales;Cunoniaceae;Opocunonia
+Poales;Poaceae;None","Philippines","124°55'54.0""E","8°09'37.8""N","Deltocephalinae","Scaphoideini","n.gen.PH2","n.sp.1","M","1-Apr-12","33.08","",""
+"P001_WB10","Dipsacales;Adoxaceae;Sambucus
+Oxalidales;Cunoniaceae;None
+Oxalidales;Cunoniaceae;Opocunonia
+Myrtales;Myrtaceae;Syzygium","Philippines","124°55'54.0""E","8°09'37.8""N","Deltocephalinae","Scaphoideini","n.gen.PH1","n.sp.","M","1-Apr-12","29.881","",""
+"P001_WC08","Caryophyllales;Caryophyllaceae;Silene","Philippines","125°38'05.9""E","7°14'14.3""N","Deltocephalinae","Drabescini","n.gen.PH3","n.sp.1","M","22-Apr-12","","",""
+"P001_WC10","Rosales;Moraceae;None
+Rosales;Moraceae;Morus","South Africa","19°19'31.4""E","33°14'16.5""S","Deltocephalinae","Bonaspeiini","Curvostylus","chloridulus","M","13-XII-2004","33.69","",""
+"P001_WC11/P001_WD01","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Zingiberales;None;None
+Apiales;Apiaceae;None","South Africa","18°24'46.0""E","34°13'51.3""S","Deltocephalinae","Bonaspeiini","Coganus","breviatus","M","10-XII-2004","25.68","",""
+"P001_WC12","Poales;Poaceae;None","South Africa","29°26'05.0""E","28°53'59.1""S","Deltocephalinae","Paralimnini","Vilargus","pumilicans","M","27-XII-2004","25.51","",""
+"P001_WD11/P001_WE01","Asterales;Asteraceae;None
+Poales;Poaceae;None
+Malvales;Malvaceae;Gossypium","South Africa","29°46'26.6""E","29°26'47.8""S","Deltocephalinae","Paralimnini","Vilargus","pumilicans","M","26-XII-2004","28.19","",""
+"P001_WE03","Hypnales;None;None
+Hypnales;Neckeraceae;None","Madagascar","48°25'50.0""E","18°55'03.0""S","Deltocephalinae","Scaphoideini","n.gen.MG5","n.sp.1","M","Dec 22-27 , 2015","31.54","",""
+"P001_WE04","Hypnales;None;None
+Hypnales;Neckeraceae;None
+Poales;Poaceae;None
+Hypnales;Neckeraceae;Thamnobryum
+Asterales;Asteraceae;Bidens","Thailand","98°39'01.5""E","8°53'43.5""N","Deltocephalinae","Stegelytrini","n.gen.T1","n.sp.1","M","10-17.ii.2009","34.41","",""
+"P001_WE05","Hypnales;None;None
+Hypnales;Neckeraceae;None","Thailand","98°55'18.7""E","19°24'16.7""N","Deltocephalinae","Scaphoideini","Scaphomonus","n.sp.T1","M","3-10.iii.2008","28.45","",""
+"P001_WG07","Caryophyllales;Caryophyllaceae;None","Thailand","98º55.311'E","19º24.278'N","Deltocephalinae","Opsiini","New Genus T3","n. sp. 1","M","17-24.iii.2008","","",""
+"P001_WG06","Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;None
+Pottiales;Pottiaceae;None","Thailand","99º38.702'E ","8º16.283'N","Deltocephalinae","Opsiini","Paralampridius","sinuatus","M","19-26.i.2009","","",""
+"P001_WB01","Poales;Poaceae;Avena
+Polypodiales;Pteridaceae;None
+Solanales;Solanaceae;Solanum
+Polypodiales;Pteridaceae;Hemionitis","Taiwan","120°41'44.0""E","24°01'37.0""N","Deltocephalinae","Stenometopiini","Stirellus","indrus","M","20-Jun-04","34.16","",""
+"P001_WB06","Ericales;Actinidiaceae;None
+Ericales;Actinidiaceae;Actinidia
+Rosales;Cannabaceae;Cannabis
+Caryophyllales;Caryophyllaceae;Silene","Taiwan","120°41'14.0""E","22°58'02.0""N","Deltocephalinae","Drabescini","Dryadomorpha","pallida","M","24-Jun-04","34.03","",""
+"P001_WB07","Malvales;Malvaceae;None
+Poales;Poaceae;None","China","108°09'49.8""E","33°58'52.8""N","Deltocephalinae","Hecalini","Fangamanus","tripunctatus","M","12-Jul-12","34.39","",""
+"P001_WC01","Caryophyllales;Caryophyllaceae;Silene","Brazil","43°29'56.6""W","20°05'33.9""S","Deltocephalinae","Pendarini","Chlorotettix","sp.","F","13-Mar-15","32.18","",""
+"P001_WB12","Lamiales;Lamiaceae;Salvia","Brazil","43°29'12.4""W","20°05'55.6""S","Deltocephalinae","Athysanini","Atanus","n.sp.BR1","M","16-Mar-15","33.85","",""
+"P001_WG01","Solanales;Solanaceae;None
+Caryophyllales;Caryophyllaceae;Silene","Mexico","97°11'00.0""W","19°59'00.0""N","Deltocephalinae","Scaphytopiini","Scaphytopius","aequus","M","25-Oct-01","20.279","EU215425.2","16SrI-B variant"
+"P001_WC03","Caryophyllales;Caryophyllaceae;Silene","Usa","99°08'30.9""W","39°40'22.0""N","Deltocephalinae","Chiasmini","Athysanella","texana","M","18-VII-2020","34.28","",""
+"P001_WG08","Solanales;Solanaceae;None",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"P001_WB03","Apiales;Apiaceae;None
+Asterales;Asteraceae;None
+Poales;Poaceae;None","Argentina","58°35'18.9""W","32°58'00.3""S","Deltocephalinae","Deltocephalini","Bolarga","nigriloba","M","16-Feb-14","28.29","",""
+"P001_WB04/P001_WB05","Asterales;Asteraceae;Youngia
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Polygonaceae;None
+Hypnales;None;None
+Poales;Poaceae;None
+Pottiales;Pottiaceae;None
+Rosales;Rosaceae;Rubus
+Caryophyllales;Caryophyllaceae;Stellaria
+Ophioglossales;Ophioglossaceae;Botrychium","China","108°26'48.6""E","33°26'37.3""N","Deltocephalinae","Chiasmini","Gurawa","minorcephala","M","5-Jul-12","18.57","",""
+"P001_WF05","Hypnales;None;None
+Ginkgoales;Ginkgoaceae;Ginkgo","Switzerland","8°51'44.9""E","46°10'07.4""N","Deltocephalinae","Cicadulini","Rhopalopyx","elongata","M","12-Jun-17","22.082","AB279597","proposed 16Sr VI-L"
+"P001_WG03","Caryophyllales;Caryophyllaceae;Silene","Peru","75°59'49""W","9°23'27""S","Deltocephalinae","Chiasmini","Exitianus","obscurinervis","M","23-Oct-02","31.827(1:5)","KY778013.1","-"
+"P001_WF11/P001_WG10","Cupressales;Taxaceae;Taxus
+Rosales;Ulmaceae;None
+Rosales;Ulmaceae;Ulmus
+Solanales;Solanaceae;None
+Solanales;Solanaceae;Capsicum
+Fabales;Fabaceae;Glycine
+Fagales;None;None
+Fagales;Fagaceae;None","Taiwan","121°14'22.0""E","24°07'12.0""N","Deltocephalinae","Opsiini","Alishania","formosana","M","15-Jun-04","25.851","X80117.1","XXIV A related new group"
+"P001_WF09","Asterales;None;None
+Caryophyllales;Caryophyllaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Caryophyllales;Caryophyllaceae;Silene
+Sapindales;Rutaceae;None","Mongolia","101°55'43.3""E","50°18'07.0""N","Deltocephalinae","Paralimnini","Adarrus","n.sp.","M","7/14-15/2005","32.74","FN562932.1","??"
+"P001_WF10","Vitales;Vitaceae;None","Republic of Congo","15°28'16.0""E","3°16'11.8""S","Deltocephalinae","Scaphoideini","n.gen.ZA5","n.sp.1","M","Agu,5 2008","30.63","FN562932.1","??"
+"P001_WD10","Poales;Poaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","China","108°09'49.8""E","33°58'52.8""N","Deltocephalinae","Paralimnini","Acharis","n.sp.","M","12-Jul-12","30.09","",""
+"P001_WD08","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","Thailand","101°20'29.0""E","17°29'54.4""N","Deltocephalinae","Paralimnini","Multiproductus","","M","6.ii-2.iii.2007","28.3","",""
+"P001_WD09","Poales;Poaceae;None
+Rosales;Ulmaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;Tripogonella
+Poales;Poaceae;Cenchrus","Australia","143°10'24.0""E","24°05'42.0""S","Deltocephalinae","Macrostelini","Nesoclutha","phryne","M","13-Feb-08","31.02","",""
+"P001_WD07","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Vitales;Vitaceae;Vitis","Australia","152°10'40.8""E","27°22'22.1""S","Deltocephalinae","Deltocephalini","Maiestas","webbi","M","22-Feb-15","32.14","",""
+"P001_WD06","Vitales;None;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","Australia","152°10'40.8""E","27°22'22.1""S","Deltocephalinae","Macrostelini","Nesoclutha","phryne","M","22-Feb-15","32.05","",""
+"P001_WF04","Asterales;Asteraceae;None
+Asterales;Asteraceae;Crepis
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Silene
+Cornales;Cornaceae;Cornus
+Fabales;Fabaceae;None
+Fabales;Fabaceae;Medicago
+Fabales;Fabaceae;Trifolium
+Fagales;Betulaceae;None
+Fagales;Betulaceae;Corylus
+Rosales;Rhamnaceae;None
+Sapindales;Rutaceae;None
+Solanales;None;None
+Solanales;Solanaceae;Solanum
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Commelinales;Commelinaceae;None
+Ericales;None;None","Switzerland","8°55'37.8""E","45°51'17.8""N","Deltocephalinae","Scaphoideini","Osbornellus","auronitens","M","13/07/2017","31.271","AY197645.1",""
+"P001_WF07","Caryophyllales;Caryophyllaceae;None
+Fabales;Fabaceae;None
+Fabales;Fabaceae;Medicago
+Caryophyllales;Caryophyllaceae;Silene","Switzerland","6°33'21.4""E","46°46'10.6""N ","Deltocephalinae","Athysanini","Euscelidius","variegatus","M","25.06.2015","26.411","AY265212.1","16SrI-F"
+"P001_WF06","Klebsormidiales;Klebsormidiaceae;Klebsormidium
+Hypnales;None;None
+Fabales;Fabaceae;Brachystegia","Zambia","24°23'40.1""E","11°34'28.2""S","Deltocephalinae","Selenocephalini","Abimwa","sp.","M","5-Nov-07","27.652","KY778013.1","16SrIII-U variant"
+"P001_WG11","Poales;Cyperaceae;None
+Poales;Cyperaceae;Eleocharis
+Poales;Poaceae;Poa","Canada","81°56'16.8""W","45°59'10.7""N","Deltocephalinae","Limotettigini","Limotettix","urnura","M","29-Jul-89","29.257","KR869146","proposed 16SrXI-G"
+"P001_WF12","Asterales;Asteraceae;Carthamus
+Caryophyllales;Polygonaceae;None
+Lamiales;Verbenaceae;Phyla","Israel","34°48'45.6""E","31°59'33.1""N","Deltocephalinae","Opsiini","Neoaliturus","argillaceus","M","20-Jun-20","21.385","MK454714.1","IX-J related"
+"P001_WE07/P001_WE08/P001_WE09","Rosales;Cannabaceae;Celtis
+Asparagales;Amaryllidaceae;Allium
+Asparagales;Amaryllidaceae;None
+Pinales;Pinaceae;Pinus
+Sapindales;Rutaceae;Citrus
+Apiales;Apiaceae;None
+Fagales;Fagaceae;None
+Asparagales;None;None
+Asterales;Asteraceae;None
+Asterales;Asteraceae;Bidens
+Laurales;Lauraceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Brachypodium
+Sapindales;Rutaceae;None
+Fabales;Fabaceae;Phaseolus","China","108°09'49.8""E","33°58'52.8""N","Deltocephalinae","Paralimnini","Acharis","ussuriensis","M","12-Jul-12","17.36","",""

@@ -1,0 +1,177 @@
+---
+title: "10_sequencesvsdegreepolyphaghous"
+author: "Ava Gabrys"
+date: "2024-10-02"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.Rdata")
+# Need joinedsummarytable, sequencesummarytable
+
+# Table below contains phytoplasma information/classification at different loci (as well as insect classifications, but we already have those). Samples have ILL_137402 IDs that can be used to bind to samples
+phytoplasmaidentification <- read.csv("raw_data/OverviewSamplesPlate1.csv", header = TRUE)
+# Note uses 05_sampleBLASTvisualization resulting images for plotting
+```
+
+```{r count how many sequences there were for each sample, and add to the summary table}
+sequencespersample <- sequencesummarytable_formatted %>% group_by(SampleName) %>% count(name = "TotalSequences")
+longsequencespersample <- sequencesummarytable_formatted %>% filter(Length > 220) %>% group_by(SampleName) %>% count(name = "LongSequences")
+
+sequencessamplesummary <- left_join(sequencespersample, longsequencespersample, by = "SampleName")
+
+sequencessamplesummary$FilteredResults <- NA
+
+# Now count how many final filtered results there were for each sample
+for (samplename in joinedsummarytable$SampleName){
+  sequencessamplesummary$FilteredResults[sequencessamplesummary$SampleName == samplename] <- str_count(joinedsummarytable[joinedsummarytable$SampleName == samplename, "SummarizedBLASTResults"], "\n") + 1 }
+
+sequencessamplesummary <- sequencessamplesummary %>% mutate_all(~replace_na(., 0))
+```
+
+```{r plot}
+#orderednames <- sequencessamplesummary[order(-sequencessamplesummary$TotalSequences), ]$SampleName
+orderednames <- sequencessamplesummary[order(-sequencessamplesummary$FilteredResults), ]$SampleName
+summary_long <- sequencessamplesummary %>% pivot_longer(cols = -SampleName, names_to = "Type", values_to = "Count")
+#png(file = "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/figures/barplot.png", res = 600, width = 10, height = 5, units="in")
+pdf(file = "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/figures/barplot.pdf")
+ggplot(summary_long, aes(x = factor(SampleName, orderednames), y = Count, fill = Type)) +
+  geom_bar(position = "dodge", stat = "identity", width = 1) +
+  labs(title = "Role of Sequence Count in Determining Diet Diversity", x = "Molecular Sample", y = "Count") +
+  theme(axis.text.x=element_text(angle=90, hjust=1, vjust=0.5, color = "black", size = 4), 
+        axis.text.y = element_text(color = "black", size = 10)) +
+  scale_fill_manual(values = c("#e41a1c", "#377eb8", "#4daf4a")) +
+ theme(panel.grid.major.x =  element_blank(),  # Remove major grid lines
+       panel.grid.minor.x = element_blank())
+dev.off()
+
+png(file = "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/figures/scatterplot.png", res = 600, width = 5, height = 5, units="in")
+ggplot(sequencessamplesummary, aes(x = TotalSequences, y = FilteredResults)) +
+  geom_point(size = 3)
+dev.off()
+
+# Calculate statistics
+# Linear fit
+linearfit <- lm(FilteredResults ~ TotalSequences, data = sequencessamplesummary)
+summary(linearfit)$r.squared
+
+png(file = "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/figures/scatterplot-longsequences.png", res = 600, width = 5, height = 5, units="in")
+ggplot(sequencessamplesummary, aes(x = LongSequences, y = FilteredResults)) +
+  geom_point(size = 3)
+dev.off()
+
+pdf(file = "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/figures/scatterplot-longsequences.pdf")
+
+ggplot(sequencessamplesummary, aes(x = LongSequences, y = FilteredResults)) +
+  geom_point(size = 3)
+dev.off()
+
+linearfit <- lm(FilteredResults ~ LongSequences, data = sequencessamplesummary)
+summary(linearfit)$r.squared
+summary(linearfit)$slope
+
+median(sequencessamplesummary$TotalSequences)
+median(sequencessamplesummary$LongSequences)
+median(sequencessamplesummary$FilteredResults)
+```
+
+```{r add in sequence values to larger summary table}
+# First combine molecular samples for the same insect
+# Replace individual names with combined names
+for (individualname in sequencessamplesummary$SampleName) {
+  fullname <- joinedsummmarytable_combineduplicates$SampleName[grep(individualname, joinedsummmarytable_combineduplicates$SampleName)]
+  if (length(fullname) > 0){
+  sequencessamplesummary$SampleName[sequencessamplesummary$SampleName == individualname] <- fullname }}
+# Merge rows with the same combined name together, separating with comma
+duplicatednames <- sequencessamplesummary[duplicated(sequencessamplesummary$SampleName) | duplicated(sequencessamplesummary$SampleName, fromLast = TRUE), 'SampleName']
+
+sequencessamplesummary$TotalSequences <- as.character(sequencessamplesummary$TotalSequences)
+sequencessamplesummary$LongSequences <- as.character(sequencessamplesummary$LongSequences)
+sequencessamplesummary$FilteredResults <- as.character(sequencessamplesummary$FilteredResults)
+str(unique(duplicatednames$SampleName))
+test <- as.list(unique(duplicatednames$SampleName))
+for (name in as.list(unique(duplicatednames$SampleName))){
+  #name <- "P001_WE07/P001_WE08/P001_WE09"
+  tempdf <- sequencessamplesummary[sequencessamplesummary$SampleName == name, ]
+  sequencessamplesummary[sequencessamplesummary$SampleName == name, "TotalSequences"] <- paste(tempdf$TotalSequences, collapse = ",")
+  sequencessamplesummary[sequencessamplesummary$SampleName == name, "LongSequences"] <- paste(tempdf$LongSequences, collapse = ",")
+  sequencessamplesummary[sequencessamplesummary$SampleName == name, "FilteredResults"] <- paste(tempdf$FilteredResults, collapse = ",")
+}
+# Now, remove duplicate rows
+sequencessamplesummary <- unique(sequencessamplesummary)
+
+# Join to the main table
+joinedsummmarytable_combineduplicates_sequencecounts <- left_join(sequencessamplesummary, joinedsummmarytable_combineduplicates)
+
+
+# Save
+write.csv(file = "~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/summarytablewsequencecounts.csv", joinedsummmarytable_combineduplicates_sequencecounts)
+```
+
+```{add in phytoplasma classification to large summary table}
+# Add in phytoplasma and other sample information
+# Convert ILL_137402 IDs into SampleNames by dropping the "ILL_137402_" at the start
+phytoplasmaidentification$SampleName2 <- gsub("ILL_137402_", "", phytoplasmaidentification$RAPiD.Genomics.Sample.Code)
+# Add in strain classification based on 16Sr, Tuf, SecA, SecY, rplVrpsC, groEl by binding their columns in that order for a single string. First replace any empty cells (no characterization for that gene) with a "-" placeholder to keep when joining
+phytoplasmaidentification$X16Sr.assignment[phytoplasmaidentification$X16Sr.assignment == ""] <- gsub("", "-", phytoplasmaidentification$X16Sr.assignment[phytoplasmaidentification$X16Sr.assignment == ""])
+phytoplasmaidentification$Tuf[phytoplasmaidentification$Tuf == ""] <- gsub("", "-", phytoplasmaidentification$Tuf[phytoplasmaidentification$Tuf == ""])
+phytoplasmaidentification$SecA[phytoplasmaidentification$SecA == ""] <- gsub("", "-", phytoplasmaidentification$SecA[phytoplasmaidentification$SecA == ""])
+phytoplasmaidentification$SecY[phytoplasmaidentification$SecY == ""] <- gsub("", "-", phytoplasmaidentification$SecY[phytoplasmaidentification$SecY == ""])
+phytoplasmaidentification$rpIV.rpsC[phytoplasmaidentification$rpIV.rpsC == ""] <- gsub("", "-", phytoplasmaidentification$rpIV.rpsC[phytoplasmaidentification$rpIV.rpsC == ""])
+phytoplasmaidentification$groEl[phytoplasmaidentification$groEl == ""] <- gsub("", "-", phytoplasmaidentification$groEl[phytoplasmaidentification$groEl == ""])
+
+phytoplasmaidentification$PhytoplasmaSummary <- paste0(phytoplasmaidentification$X16Sr.assignment, sep = "|", phytoplasmaidentification$Tuf, sep = "|", phytoplasmaidentification$SecA, sep = "|", phytoplasmaidentification$SecY, sep = "|", phytoplasmaidentification$rpIV.rpsC, sep = "|", phytoplasmaidentification$groEl) #Join
+phytoplasmaidentification$PhytoplasmaSummary[phytoplasmaidentification$PhytoplasmaSummary == "-|-|-|-|-|-"] <- "NA" # Replace any where no genes are classified
+
+# Join the tables
+# Need to temporarily split the sample names in the condensed table that are joined (because of duplicates) to be able to merge, as the names are individual in the second table. Take the first name. Merge with just one of the names
+joinedsummmarytable_combineduplicates_sequencecounts$SampleName2 <- sub("/.*", "", joinedsummmarytable_combineduplicates_sequencecounts$SampleName)
+joinedsummmarytable_combineduplicates_sequencecounts <- left_join(joinedsummmarytable_combineduplicates_sequencecounts, phytoplasmaidentification[c("PhytoplasmaSummary", "SampleName2")], by = "SampleName2")
+# MANUAL CHECK FOR COMBINED SAMPLES
+# I've manually changed the classifications where appropriate for samples sent to AHE twice (elutions etc.) to reflect the classifications of both/all AHE sequences obtained independently
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WB09/P001_WC09"] <- "16SrXI|-|-|-|-"
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WC11/P001_WD01"] <- "16SrXI|XI|XI|V/XI|XIV/XI"
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WD11/P001_WE01"] <- "16SrX|oBa|VIII|-|V|XI"
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WB04/P001_WB05"] <- "16SrXI|XI|XI|XI|XI|XI"
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WF11/P001_WG10"] <- "newgroup|XXI/oBa|IV|IV|IV/na|IV/algae"
+joinedsummmarytable_combineduplicates_sequencecounts$PhytoplasmaSummary[joinedsummmarytable_combineduplicates_sequencecounts$SampleName == "P001_WE07/P001_WE08/P001_WE09"] <- "16SrXIV|oBa|XI/I|V/XI|V|XIV/I"
+
+# Save
+write.csv(file = "~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/summarytablewsequencecountsandphyt.csv", joinedsummmarytable_combineduplicates_sequencecounts)
+```
+
+```{r calculate number of unique orders, fanmily, and genera for each sequence}
+# Need joinedvisualizationsummarytable_combinedduplicates, which has each well-supported result for each sample broken down into genus, family, and order columns
+
+# Begin new summary table
+classificationlevelcountsbysample <- data.frame(
+  SampleName = unique(joinedvisualizationsummarytable_combinedduplicates$SampleName),
+  NumberofOrders = NA,
+  NumberofFamilies = NA,
+  NumberofGenera = NA
+)
+
+for (samplename in unique(joinedvisualizationsummarytable_combinedduplicates$SampleName)){
+  classificationlevelcountsbysample$NumberofOrders[classificationlevelcountsbysample$SampleName == samplename] <- length(unique(joinedvisualizationsummarytable_combinedduplicates$Order[joinedvisualizationsummarytable_combinedduplicates$SampleName == samplename & joinedvisualizationsummarytable_combinedduplicates$Order != "None"]))
+  classificationlevelcountsbysample$NumberofFamilies[classificationlevelcountsbysample$SampleName == samplename] <- length(unique(joinedvisualizationsummarytable_combinedduplicates$Family[joinedvisualizationsummarytable_combinedduplicates$SampleName == samplename & joinedvisualizationsummarytable_combinedduplicates$Family != "None"]))
+ classificationlevelcountsbysample$NumberofGenera[classificationlevelcountsbysample$SampleName == samplename] <- length(unique(joinedvisualizationsummarytable_combinedduplicates$Genus[joinedvisualizationsummarytable_combinedduplicates$SampleName == samplename & joinedvisualizationsummarytable_combinedduplicates$Genus != "None"]))
+}
+
+# Calculate counts
+sum(classificationlevelcountsbysample$NumberofOrders > 2)
+sum(classificationlevelcountsbysample$NumberofFamilies > 2)
+sum(classificationlevelcountsbysample$NumberofGenera > 0)
+
+```
+
+

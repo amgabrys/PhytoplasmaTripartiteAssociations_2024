@@ -1,0 +1,231 @@
+---
+title: "03_taxadesignationbysequence"
+author: "Ava Gabrys"
+date: "2024-05-28"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyverse)
+library(reutils)
+library(XML)
+library(xml2)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/workingdata.Rdata")
+```
+
+```{r find taxa designation for each sequence and make a combined summary file}
+# Overview: Now that the BLAST results have already been filtered overall by percent identity ≥98% and query coverage ≥97, filter them for each sequence. Filter within 1% identity of the top hit (eg. if the highest percent identity was 99.5%, results for that sequence would be to filtered to ≥98.5%.) Then, find the taxonomic information of each BLAST hit using its taxid. Finally, find the overall taxonomic identification of each BLAST query, with the classification level (genus, family, or order) depending on where the majority of the results match.
+
+#######################################################################
+# Obtain a list of gene/sequence names from BLAST results. Each sequence has multiple BLAST hits, so take unique
+listofsequences <- unique(BLAST_filtered$qseqid)
+
+# Prepare a summary table that will be filled in with gene sequences as they loop
+sequencesummarytable_columns <-  c("GeneName", "SampleName", "Length", "Locus", "Complete", "TotalHits>98%Ident", "TopHit%Ident", "Filteredto%Identity", "TotalFilteredHits", "Designation", "DesignationLevel", "%FilteredHitswDesignation", "TopSpecies", "%SpeciesDesignation", "TopGenus", "%GenusDesignation", "TopFamily", "%FamilyDesignation", "TopOrder", "%OrderDesignation")
+sequencesummarytable <-  data.frame(matrix(nrow = 0, ncol = length(sequencesummarytable_columns)))
+colnames(sequencesummarytable) <- sequencesummarytable_columns
+
+#######################################################################
+# Begin looping through these sequences to find their taxa designation one by one
+for (sequencename in listofsequences){
+
+# Get sample name (of the gene sequence) to add to summary table later
+samplename <- strsplit(sequencename, "_")[[1]]
+samplename <- paste(samplename[1:2], collapse = "_")
+
+# Identify hits from the same sequence and work with a temporary data frame of these results
+samesequence <- BLAST_filtered %>% filter(`qseqid` == `sequencename`)
+
+# Filter for identity within 1% of the top hit for the sequence
+percentidentity_tophit <- samesequence[1, "pident"]
+percentidentity_newmin <- percentidentity_tophit - 1
+samesequence_filtered <- samesequence %>% filter(`pident` >= percentidentity_newmin)
+
+#############################
+# Get taxonomic information using reutils
+
+# Run a non-redundant list of taxids through efetch utils, outputting an XML file containing classification at all taxonomic levels
+listoftaxids <- unique(samesequence_filtered$formattedtaxids)
+efetch(listoftaxids, "taxonomy", outfile = "data/TaxonomyTEMP.xml") 
+xml_content <- readLines("data/TaxonomyTEMP.xml")
+
+# Clean any errors called by invalid characters in the XML file (such as what occurs with special characters in names). Otherwise the xml file will unable to be parsed
+# These errors will occur in the space between starting and ending tags
+pattern <- ".*>.*<.*>.*<.*"
+modified_string <- character(length(xml_content))
+# For each line with a start and end tag, clean any invalid characters between the tags
+for (i in seq_along(xml_content)) {
+  line <- xml_content[i]
+  if (grepl(pattern, line)){
+    print(line)
+    content <- sub(".*?>(.*)<.*", "\\1", line)
+    tag <- sub("<(.*?)>.*", "\\1", line)
+    cleanedofinvalid <- gsub("[<>!]", "", content)
+    fullstring_cleanedofinvalid <- paste0("<", tag, ">", cleanedofinvalid, "</", tag, ">")
+    # Count number of spaces
+    spacespattern <- "<(\\s+)[^\\s]"
+    match_pos <- regexpr(spacespattern, fullstring_cleanedofinvalid)
+    num_spacesbeforetag <- attr(match_pos, "match.length")
+    # Remove those spaces between < and tag, then add in before <. Having the same spacing as initially is necessary for the XML file to be able to be parsed as intended.
+    fullstring_cleanedofinvalid <- gsub(" ", "", fullstring_cleanedofinvalid)
+    fullstring_cleanedofinvalid_correctspaces <- paste0(strrep(" ", num_spacesbeforetag), fullstring_cleanedofinvalid)
+    
+    modified_string[i] <- fullstring_cleanedofinvalid_correctspaces
+  }
+  else {
+    modified_string[i] <- line
+  }
+}
+writeLines(modified_string, "data/TaxonomyTEMP-CLEANED.xml")
+
+# Get taxa information from the "cleaned" and now-readable XML results file
+taxonomyxml <- read_xml("data/TaxonomyTEMP-CLEANED.xml")
+# For each taxid get the genus, family, and order
+# Create a blank data frame to fill in
+taxonomydf <-  data.frame(matrix(nrow = 0, ncol = length(4))) 
+
+# Parse the XML file
+for (taxid in listoftaxids){
+  # Grab genus classification
+  xpath_expr <- paste0("//Taxon[TaxId='", taxid, "']//LineageEx/Taxon[Rank='genus']/ScientificName")
+  genus <- xml_text(xml_find_first(taxonomyxml, xpath_expr))
+  # Grab family classification
+  xpath_expr <- paste0("//Taxon[TaxId='", taxid, "']//LineageEx/Taxon[Rank='family']/ScientificName")
+  family <- xml_text(xml_find_first(taxonomyxml, xpath_expr))
+  # Grab order classification
+  xpath_expr <- paste0("//Taxon[TaxId='", taxid, "']//LineageEx/Taxon[Rank='order']/ScientificName")
+  order <- xml_text(xml_find_first(taxonomyxml, xpath_expr))
+  
+  # Bind classifications to the taxonomy data frame
+  newtaxonomyrow <- c(taxid, genus, family, order)
+  taxonomydf <- rbind(taxonomydf, newtaxonomyrow)
+}
+
+# Add taxonomic information to BLAST results
+colnames(taxonomydf) <- c("formattedtaxids", "Genus", "Family", "Order")
+samesequence_filtered_taxonomy <- samesequence_filtered %>%
+  left_join(taxonomydf, by = "formattedtaxids")
+
+#############################
+# Make taxa designation the lowest classification where >95% of results lie
+# This high cut-off should also help limit effect of bias in the database due to over-represented taxa, though that is a factor.
+
+# Identify the most common species and percent of results with that classification.
+species <- samesequence_filtered_taxonomy %>% group_by(`Species`) %>% tally()
+colnames(species) <- c("Species", "Count")
+sortedspecies <- species[order(species$Count, decreasing = TRUE),]
+topspecies <- sortedspecies[1, 1]
+count_topspecies <- sortedspecies[1, 2]
+count_allspecies <- sum(sortedspecies$Count)
+percent_topspecies <- count_topspecies / count_allspecies
+
+# Identity the most common genus and percent of results with that classification. 
+genus <- samesequence_filtered_taxonomy %>% group_by(`Genus`) %>% tally()
+colnames(genus) <- c("Genus", "Count")
+sortedgenus <- genus[order(genus$Count, decreasing = TRUE),]
+topgenus <- sortedgenus[1, 1]
+count_topgenus <- sortedgenus[1, 2]
+count_allgenus <- sum(sortedgenus$Count)
+percent_topgenus <- count_topgenus / count_allgenus
+
+# Identify the most common family and percent of results with that classification.
+family <- samesequence_filtered_taxonomy %>% group_by(`Family`) %>% tally()
+colnames(family) <- c("Family", "Count")
+sortedfamily <- family[order(family$Count, decreasing = TRUE),]
+topfamily <- sortedfamily[1, 1]
+count_topfamily <- sortedfamily[1, 2]
+count_allfamily <- sum(sortedfamily$Count)
+percent_topfamily <- count_topfamily/ count_allfamily
+
+# Identify the most common order and percent of results with that classification.
+order <- samesequence_filtered_taxonomy %>% group_by(`Order`) %>% tally()
+colnames(order) <- c("Order", "Count")
+sortedorder <- order[order(order$Count, decreasing = TRUE),]
+toporder <- sortedorder[1, 1]
+count_toporder <- sortedorder[1, 2]
+count_allorder <- sum(sortedorder$Count)
+percent_toporder <- count_toporder/ count_allorder
+
+# Identify taxa designation based on percent of results with that classification. Record the most specific well-supported classification.
+if (percent_topspecies > 0.95){
+  classification_level <- "Species"
+  classification <- topspecies
+  percentwithclassification <- percent_topspecies * 100 
+  } else {
+    if (percent_topgenus > 0.95){
+    classification_level <- "Genus"
+    classification <- topgenus
+    percentwithclassification <- percent_topgenus * 100 }
+    else {
+      if (percent_topfamily > 0.95){
+        classification_level <- "Family"
+        classification <- topfamily
+        percentwithclassification <- percent_topfamily * 100 }
+        else {
+          if (percent_toporder > 0.95){
+            classification_level <- "Order"
+            classification <- toporder
+            percentwithclassification <- percent_toporder * 100 }
+            else {
+              classification_level <- "No designation"
+              classification <- "NA"
+              percentwithclassification <- "NA" }
+            }
+      }
+  }
+
+#############################
+# Add results to the summary file
+
+# Obtain length and locus information from genemetadata file
+length <- genemetadata$seq_length..bp.[genemetadata$sequence_ID == sequencename]
+locus <- genemetadata$Locus[genemetadata$sequence_ID == sequencename]
+total98hits <- nrow(samesequence)
+totalfilteredhits <- nrow(samesequence_filtered)
+percent_topspecies <- percent_topspecies * 100
+percent_topgenus <- percent_topgenus * 100
+percent_topfamily <- percent_topfamily * 100
+percent_toporder <- percent_toporder * 100
+if (grepl("complete", sequencename)) {
+  complete <- "Yes"
+} else {
+  complete <- "No"
+}
+
+addtosequencesummarytable <- c(sequencename, samplename, length, locus, complete, total98hits, percentidentity_tophit, percentidentity_newmin, totalfilteredhits, classification, classification_level, percentwithclassification, topspecies, percent_topspecies, topgenus, percent_topgenus, topfamily, percent_topfamily, toporder, percent_toporder)
+
+sequencesummarytable[nrow(sequencesummarytable) + 1,] <- addtosequencesummarytable
+Sys.sleep(2)
+}
+```
+
+```{r update summary table with Filteredto%Identity}
+# If the highest % ident for the top hit was <99%, the Filteredto%Identity was <98% (top hit % identity - 1). However, the results were already first filtered to be above 98%, and so the value in the table is inaccurate.
+# Change values <98% to 98% for Filteredto%Identity to reflect this true filtering.
+sequencesummarytable_formatted <- sequencesummarytable
+sequencesummarytable_formatted$`Filteredto%Identity`[sequencesummarytable$`Filteredto%Identity` < 98] <- 98.000
+
+# Also remove results for sequences where there were less than 5 hits with >98%, meaning less than 5 hits were used for classification
+#sequencesummarytable_formatted %>% filter(`TotalFilteredHits` >=5)
+```
+
+```{r save summary table for external viewing}
+write.csv(sequencesummarytable_formatted,"sequencesummarytable-allsequencesallsamples.csv", row.names = FALSE)
+```
+
+```{r save}
+save(
+  BLAST_filtered,genemetadata,samplemetadata,sequencesummarytable,sequencesummarytable_formatted, sampleidentifiers,
+  file="data/taxadesignationbysequence.RData"
+)
+```
+
+

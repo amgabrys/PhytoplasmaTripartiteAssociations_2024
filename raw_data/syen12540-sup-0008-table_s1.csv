@@ -1,0 +1,733 @@
+﻿Table S1. Information of taxon sampling in this study.,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Sequencing_ID,SRA_accession,Subfamily,Tribe,Genus,Subgenus,Species,Identified_by,Gap% in the concatenated nt alignment,Gap% in the concatenated aa alignment,Host,Collection_date,Collection_locality,Altitude
+P015_WA09,SRR17213264,Aphrodinae,Portanini,Portanus,-,sp.,Christopher H. Dietrich,4.60%,4.60%,-,10-Oct-2002/13-Oct-2002,"Peru: PASCO Department, Parque Nacional Yanachaga Chemillen",1050m
+P013_WB10,SRR17213263,Neocoelidiinae,Krocodonini,Krocolidia,-,rufilinea,Christopher H. Dietrich,5.40%,5.30%,-,30-Mar-2016,"Brazil: Roraima, Serra do Tepequem",604m
+P013_WH12,SRR17212912,Neocoelidiinae,Neocoelidiini,Coelella,-,distincta,Christopher H. Dietrich,6.20%,6.20%,-,10-Sep-2014/20-Sep-2014,"USA: Arizona, Florida Canyon",-
+P015_WA07,SRR17213089,Neocoelidiinae,Neocoelidiini,Neocoelidia,-,compta,Christopher H. Dietrich,4.70%,4.70%,-,26-Apr-2015/02-May-2015,"USA: Arizona, Gila County, 21 km S Globe",1480m
+P004_WG01,SRR17212858,Deltocephalinae,Arrugadini,Arrugada,-,affinis,James N. Zahniser,11.40%,11.40%,-,24-Oct-2002,"Peru: Huanuco, 8 km S Tingo Maria, Pte. Cuevas",620m
+P004_WF12,SRR17213357,Deltocephalinae,Dorycephalini,Dorycephalus,-,baeri,James N. Zahniser,1.60%,1.60%,-,01-July-1999,"Kyrgyzstan: Naryn, Moldo-Too Ridge, E. Kara-Go Pass",2260m
+P004_WE02,SRR17212828,Deltocephalinae,Drakensbergenini,Drakensbergena,-,retrospina,James N. Zahniser,9.30%,9.30%,-,25-Dec-2004,"SoSouth Africa: KwaZulu-Natal Prov., Bulwer mountain",1802m
+P004_WD02,SRR17212789,Deltocephalinae,Hypacostemmini,Hypacostemma,-,uniforme,James N. Zahniser,7.70%,7.70%,-,05-Feb-1996/08-Feb-1996,"South Africa: KwaZulu-Natal Prov., Ngome Forest Station",1100m
+P001_WG07,SRR17212964,Deltocephalinae,Luheriini,Luheria,-,constricta,Christopher H. Dietrich,3.60%,3.60%,-,20-Jan-2008,"Argentina: Salta, rt 9 km 1535",900m
+P001_WG03,SRR17212953,Deltocephalinae,Magnentiini,Magnentius,-,clavatus,Christopher H. Dietrich,6.50%,6.40%,-,05-Jan-2011,"India: Karnataka Mudigere, Revanna",940m
+P004_WB11,SRR17213262,Deltocephalinae,Occinirvanini,Occinirvana,-,eborea,James N. Zahniser,5.30%,5.40%,-,06-Dec-2008,"Australia: Western Australia, 35 km N Wubin",-
+P011_WF07,SRR17213251,Deltocephalinae,Stenometopiini,gen.,-,sp.,James N. Zahniser,2.90%,2.90%,-,04-Feb-2002/12-Feb-2002,"Madagascar: Fianarantsoa Prov., Parc National Ranomafana, Vohiparara, at broken bridge",1110m
+P004_WE04,SRR17213240,Deltocephalinae,Tetartostylini,Tetartostylus,-,parabolatus,James N. Zahniser,6.90%,6.80%,-,09-Dec-2004,"South Africa: Western Cape Prov., Vishoek",85.4m
+P003_WH12,SRR17213157,Deltocephalinae,Fieberiellini,Synophropsis,-,lauri,Christopher H. Dietrich,3.00%,3.00%,-,08-Aug-2018,"France: Corsica, Montans",-
+P004_WA02,SRR17213146,Deltocephalinae,Fieberiellini,Fieberiella,-,florii,James N. Zahniser,6.40%,6.40%,-,10-Aug-1996,"USA: Illinois, Champaign County, Champaign",-
+P004_WB06,SRR17213135,Deltocephalinae,Fieberiellini,Cechenotettix,-,ibericola,James N. Zahniser,2.60%,2.60%,-,30-May-2008,"Spain: Catalunya, Sant Pau de La Figuera, 2 km W La Figuera",-
+P001_WB06,SRR17213124,Deltocephalinae,Koebeliini,Koebelia,-,grossa,Christopher H. Dietrich,1.60%,1.60%,-,27-May-2002,"USA: California, San Rafael",-
+P001_WD03,SRR17212945,Deltocephalinae,Koebeliini,Grypotes,-,puncticollis,Christopher H. Dietrich,10.20%,10.20%,-,29-Jun-2010,"France: Provence-Alpes-Cote d'Azur, Vaucluse, Vaison-la-Romaine",-
+P001_WF04,SRR17212934,Deltocephalinae,Koebeliini,Pinopona,-,sinae,Christopher H. Dietrich,20.80%,20.70%,-,12-Jan-2007/19-Jan-2007,"Thailand: Chiang Mai, Doi Inthanon National Park, Campground Pond",1200m
+P001_WB10,SRR17212923,Deltocephalinae,Acinopterini,Acinopterus,-,angulatus,Christopher H. Dietrich,7.60%,7.60%,-,29-Oct-2005,"Mexico: Coahuila, rt.54 S Saltillo",1750m
+P015_WE10,SRR17212911,Deltocephalinae,Acinopterini,Acinopterus,-,inornatus,James N. Zahniser,7.90%,7.90%,-,25-May-2002,"USA: California, Devore near KOA campground",-
+P015_WG10,SRR17212780,Deltocephalinae,Acinopterini,Acinopterus,-,acuminatus,James N. Zahniser,8.40%,8.40%,-,13-Jun-1996,"USA: Illinois, Saline County, Garden of the Gods Rec. Area",-
+P001_WD07,SRR17212769,Deltocephalinae,Goniagnathini,Goniagnathus,-,agenor,Christopher H. Dietrich,68.20%,68.20%,-,14-Dec-2004,"South Africa: Western Cape Prov., Haaskraal Farm, N of Paarl",87.1m
+P003_WH10,SRR17212758,Deltocephalinae,Goniagnathini,Goniagnathus,Goniagnathus,brevis,Christopher H. Dietrich,9.00%,9.00%,-,08-Aug-2018,"France: Corsica, Montans",-
+P004_WF06,SRR17213227,Deltocephalinae,Goniagnathini,Goniagnathus,Epistagma,guttulinervis,James N. Zahniser,14.80%,14.80%,-,19-Aug-1998,"Kyrgyzstan: Dzalal-Abad, At-Ojnoksky Mt. Ridge, Kurpsaj Ravine",924m
+P014_WB07,SRR17213216,Deltocephalinae,Goniagnathini,Goniagnathus,-,emeljanovi,Christopher H. Dietrich,21.90%,21.90%,-,13-May-2012/18-May-2012,"Madagascar: Tulear, Ambohimahavelona village",45m
+P001_WD09,SRR17213109,Deltocephalinae,Limotettigini,Limotettix,Limotettix,ferganensis,Christopher H. Dietrich,13.30%,13.20%,-,10-Jul-2005,Mongolia: Bulgan Teshig Wetland near confluence of Tariakhtain Gol and Egiin Gol,936m
+P002_WC08,SRR17213098,Deltocephalinae,Limotettigini,Limotettix,-,awae,Christopher H. Dietrich,7.20%,7.20%,-,14-Feb-2008,"Australia: Queensland, Barkly Hwy rest area 60 km E Mt. Isa",326m
+P006_WF10,SRR17213481,Deltocephalinae,Limotettigini,Scleroracus,-,frigidus,Christopher H. Dietrich,3.80%,3.80%,-,27-Oct-2005,"Mexico: Durango, Rt. 34 km 39, 8 km E Nazas",1130m
+P011_WF06,SRR17213470,Deltocephalinae,Limotettigini,Limotettix,Neodrylix,urnura,James N. Zahniser,5.60%,5.60%,-,Aug-1993,"USA: Wisconsin, Sauk County",-
+P014_WG03,SRR17213088,Deltocephalinae,Limotettigini,Ophiolix,-,cuneatus,Christopher H. Dietrich,2.30%,2.20%,-,02-Jul-2020,"USA: Illinois, Mason County, Sand Ridge State Forest",-
+P015_WB04,SRR17213077,Deltocephalinae,Limotettigini,Limotettix,Neodrylix,truncatus,Christopher H. Dietrich,3.50%,3.50%,-,13-Mar-2015,"Brazil: Minas Gerais, Santuariodo Caraca",1300m
+P015_WF10,SRR17212898,Deltocephalinae,Limotettigini,Limotettix,Limotettix,striola,Christopher H. Dietrich,2.80%,2.80%,-,08-Jun-2018,"Mexico: Chihuahua, Jimenez, Aguas Termales Las Pampas",1345m
+P002_WC03,SRR17212887,Deltocephalinae,Eupelicini,Paradorydium,-,menalus,Christopher H. Dietrich,4.60%,4.60%,-,26-Feb-2015,"Australia: Queensland, Gillies Hwy. Robson's Track overlook",283m
+P002_WE03,SRR17213212,Deltocephalinae,Eupelicini,Eupelix,-,cuspidata,Christopher H. Dietrich,4.90%,4.90%,-,25-May-2008/05-Jun-2008,"Spain: Catalunya, Prorat, Mother's Gargen",350m
+P004_WD08,SRR17213201,Deltocephalinae,Eupelicini,Chloropelix,-,sp.,James N. Zahniser,8.90%,8.90%,Poaceae,21-Aug-2005,"Portugal: Vila da Calheta, Madeira Island",-
+P005_WG07,SRR17213190,Deltocephalinae,Eupelicini,Mapochiella,-,woodwardi,Christopher H. Dietrich,4.30%,4.30%,Spinifex,19-Nov-2011,"Australia: Western Australia, 49 km SW Great Northern Hwy on Gibb River Road",-
+P011_WA05,SRR17213059,Deltocephalinae,Eupelicini,Paradorydium,Paradorydium,angolense,Christopher H. Dietrich,4.60%,4.60%,grass,05-Nov-2007,"Zambia: Northwestern Prov., ~28.5 km N Mwinilunga",1384m
+P011_WB04,SRR17213048,Deltocephalinae,Eupelicini,Paradorydium,-,reflexanum,Christopher H. Dietrich,3.80%,3.80%,-,26-Mar-2007/02-Apr-2007,"Thailand: Loei, Phu Ruea National Park Nature trail",1353m
+P014_WB10,SRR17212869,Deltocephalinae,Eupelicini,Paradorydium,-,pseudolyricen,Christopher H. Dietrich,1.30%,1.30%,-,2010,"Australia: Western Australia, ~4km S of Bolgart. Syred Rd Jct",-
+P004_WB07,SRR17212857,Deltocephalinae,Vartini,Xenovarta,-,cylindrica,James N. Zahniser,3.50%,3.50%,-,14-Jan-2007/21-Jan-2007,"Thailand: Ubon Ratchathani, Pha Taem NP Rong Hi Noy",240m
+P004_WB08,SRR17213182,Deltocephalinae,Athysanini,Afrovarta,-,angelae,James N. Zahniser,3.20%,3.20%,-,15-Mar-2009/30-Mar-2009,"Cameroon : Southwest, Korup National Park, nature trail along river to near camp",-
+P004_WD11,SRR17213171,Deltocephalinae,Vartini,Stymphalus,-,rubrolineatus,James N. Zahniser,3.90%,3.90%,-,15-Dec-2004,"South Africa: Western Cape Prov., Paarl-Franschhoek, route R44",141m
+P006_WB10,SRR17213458,Deltocephalinae,Vartini,n.gen.,-,n.sp.,Christopher H. Dietrich,7.80%,7.80%,-,18-Apr-2007/25-Apr-2007,"Thailand: Ubon Ratchathani Pha Taem National Park, west of HuayPok substation",438m
+P008_WH07,SRR17213447,Deltocephalinae,Vartini,Xenovarta,-,n.sp.T1,Christopher H. Dietrich,12.10%,12.10%,-,11-Feb-2009/18-Feb-2009,"Thailand: Petchaburi, Kaeng Krachan National Park",735m
+P009_WC05,SRR17213042,Deltocephalinae,Vartini,Xenovarta,-,n.sp.T2,Christopher H. Dietrich,13.80%,13.80%,-,11-Feb-2009/18-Feb-2009,"Thailand: Petchaburi, Kaeng Krachan National Park",735m
+P009_WF04,SRR17213031,Deltocephalinae,Vartini,Xenovarta,-,n.sp.,Christopher H. Dietrich,8.30%,8.20%,-,01-Sep-2008/07-Sep-2008,"Thailand: Suphanburi, Pu Toei National Park, Pinus merkusii forest",763m
+P002_WB09,SRR17213020,Deltocephalinae,Punctulini,Punctulus,-,tumidifrons,Christopher H. Dietrich,3.90%,4.00%,-,20-Sep-2017,"China: Guangxi, ca. Qinbei, Bazhaigou Scenic Spot",90m
+P006_WB12,SRR17213009,Deltocephalinae,Punctulini,n.gen.CN1,-,n.sp.1,Christopher H. Dietrich,3.50%,3.50%,-,20-Sep-2017,"China: Guangxi, ca. Qinbei, Bazhaigou Scenic Spot",-
+P007_WB10,SRR17212998,Deltocephalinae,Punctulini,n.gen.T2,-,n.sp.1,Christopher H. Dietrich,86.10%,86.00%,-,26-Dec-2006/02-Jan-2007,"Thailand: Loei, Phu Ruea National Park, Behind checkpoint",691m
+P008_WB10,SRR17213356,Deltocephalinae,Punctulini,Hochiminhus,-,tamdaoensis,Christopher H. Dietrich,1.80%,1.80%,-,10-Jul-2019/13-Jul-2019,"Vietnam: Vinh Phuc, Tam Dao",983m
+P008_WD11,SRR17213345,Deltocephalinae,Punctulini,n.gen.CB1,-,sp.,Christopher H. Dietrich,11.50%,11.50%,-,17-Dec-2016/21-Dec-2016,"Cambodia: Stung Treng, Sembok Dist., Sembok Village, 2.5 km E Mekong R.",70m
+P012_WD09,SRR17213430,Deltocephalinae,Punctulini,n.gen.T2,-,n.sp.2,Christopher H. Dietrich,9.00%,8.90%,-,18-Sep-2006/25-Sep-2006,"Thailand: Loei, Phu Kradueng National Park",274m
+P014_WF02,SRR17213419,Deltocephalinae,Punctulini,n.gen.,-,n.sp.T1,Christopher H. Dietrich,2.90%,2.90%,-,31-Aug-2007/07-Sep-2007,"Thailand: Chiang Mai, Huai Nam Dang National Park, behind visitor house",1670m
+P004_WB01,SRR17212846,Deltocephalinae,Cochlorhinini,Huleria,-,quadripunctata,James N. Zahniser,3.20%,3.20%,-,25-May-2002,"USA: California, Devore, near KOA campground",-
+P004_WB05,SRR17212835,Deltocephalinae,Cochlorhinini,Limbanus,-,limbatus,James N. Zahniser,4.30%,4.30%,-,25-May-2002,"USA: California, Lake Hemet",-
+P004_WD03,SRR17213410,Deltocephalinae,Cochlorhinini,Cochlorhinus,-,pluto,James N. Zahniser,6.90%,6.90%,-,10-Jun-2002,"USA: California, Placerville",-
+P005_WF01,SRR17213399,Deltocephalinae,Cochlorhinini,Gloridonus,Ballana,bifidus,Christopher H. Dietrich,4.30%,4.30%,-,20-Apr-2011,"USA: California, San Bernardino County, Little Morongo Cr.",920m
+P007_WA11,SRR17213340,Deltocephalinae,Cochlorhinini,Calonia,-,signata,Christopher H. Dietrich,1.60%,1.60%,-,27-May-2004,"USA: California, San Bernardino County, Needles, Mojave Desert",-
+P007_WD03,SRR17213329,Deltocephalinae,Cochlorhinini,Gloridonus,Ballana,velosa,Christopher H. Dietrich,10.90%,10.90%,-,25-Aug-2005,"USA: California, Los Angeles County, I-5 2-3 mi. S jct. Hwy 138",-
+P009_WD06,SRR17212827,Deltocephalinae,Cochlorhinini,Eulonus,-,almus,Christopher H. Dietrich,5.90%,5.90%,-,20-May-2013/25-May-2013,"USA: Arizona, Gila Co., 21 km S Globe",1375m
+P011_WG11,SRR17212816,Deltocephalinae,Cochlorhinini,Gloridonus,Ballana,ortha,James N. Zahniser,5.80%,5.80%,-,15-Aug-1996,"USA: Wyoming, Albany County, Jct. Rts. 130 & 230",-
+P015_WG01,SRR17213319,Deltocephalinae,Cochlorhinini,Gloridonus,Ballana,callidus,Christopher H. Dietrich,5.10%,5.10%,-,24-Aug-2005,"USA: California, San Diego County, Laguna Mountains, Cibbets Flat Campground",1267m
+P015_WG11,SRR17213308,Deltocephalinae,Cochlorhinini,Gloridonus,Ballana,angula,James N. Zahniser,4.80%,4.80%,-,24-Apr-1998,"USA: California, Riverside County, Rt. 371 1 mi. E jct. 79",-
+P003_WE12,SRR17213297,Deltocephalinae,Scaphytopiini,Scaphytopius,Scaphytopius,n.sp.,Christopher H. Dietrich,1.70%,1.70%,-,25-Oct-2002,"Peru: Huanuco, 5km S Tingo Maria",600m
+P004_WA12,SRR17213382,Deltocephalinae,Scaphytopiini,Scaphytopius,Cloanthanus,frontalis,James N. Zahniser,4.60%,4.60%,-,04-Jun-2006,"USA: Maryland, Little Orleans",-
+P005_WF10,SRR17213371,Deltocephalinae,Scaphytopiini,Scaphytopius,Fundarus,n.sp.,Christopher H. Dietrich,7.80%,7.80%,-,20-Oct-2002,"Peru: Junin, Alto Yurinaqui",850m
+P007_WA07,SRR17212990,Deltocephalinae,Scaphytopiini,Scaphytopius,Cloanthanus,sulphureus,Christopher H. Dietrich,3.80%,3.80%,-,17-Oct-2002,"Peru: Junin, San Ramon",800m
+P007_WG10,SRR17212979,Deltocephalinae,Scaphytopiini,Scaphytopius,Cloanthanus,acutus,Christopher H. Dietrich,4.20%,4.20%,-,21-Jun-2017,"USA: Illinois, Sand Ridge State Forest, Turkey Pass Picnic Area",165m
+P012_WE12,SRR17212800,Deltocephalinae,Scaphytopiini,Scaphytopius,Scaphytopius,n.sp.BR1,Christopher H. Dietrich,4.50%,4.50%,-,24-Mar-2016,"Brazil: Roraima, Reserva Maraca",118m
+P012_WF01,SRR17212788,Deltocephalinae,Scaphytopiini,Scaphytopius,Cloanthanus,dilatus,Christopher H. Dietrich,3.60%,3.60%,-,23-Mar-2016,"Brazil: Roraima, Reserva Maraca",118m
+P012_WF03,SRR17213291,Deltocephalinae,Scaphytopiini,Scaphytopius,Cloanthanus,n.sp.,Christopher H. Dietrich,3.20%,3.20%,-,30-Mar-2016,"Brazil: Roraima, Serra do Tepequem",616m
+P012_WF09,SRR17213280,Deltocephalinae,Scaphytopiini,Scaphytopius,-,sp.2,Christopher H. Dietrich,5.50%,5.50%,-,12-Apr-2019,"Mexico: Chiapas, Palenque, Profesor Roberto Barrios",157m
+P012_WH11,SRR17212971,Deltocephalinae,Scaphytopiini,Scaphytopius,-,sp.1,Christopher H. Dietrich,3.80%,3.80%,-,13-Apr-2019,"Mexico: Chiapas, Palenque",180m
+P002_WA08,SRR17212970,Deltocephalinae,Faltalini,Clorindaia,-,cyphora,Christopher H. Dietrich,4.90%,4.90%,-,10-Jan-2008,"Argentina: Chaco, Parque Nacional Chaco",70m
+P002_WD04,SRR17212969,Deltocephalinae,Faltalini,Hecullus,-,bracteatus,Christopher H. Dietrich,2.50%,2.50%,-,26-Apr-2015/02-May-2015,"USA: Arizona, Gila County",1480m
+P003_WE10,SRR17212968,Deltocephalinae,Faltalini,Virganana,-,n.sp.,Christopher H. Dietrich,4.50%,4.50%,grasses,17-Jan-2014,"Chile: Araucania, Chanelo jct. nr. Parque Nacional Nahuelbuta",-
+P003_WG10,SRR17212967,Deltocephalinae,Faltalini,Tenucephalus,-,sp.,Christopher H. Dietrich,4.40%,4.30%,-,03-Nov-2017,"Mexico: Jalisco, Autlan de Navarro, Reserva de la Biosfera Sierra de Manantlan",1651m
+P004_WB02,SRR17212966,Deltocephalinae,Faltalini,Faltala,-,n.sp.1,James N. Zahniser,17.20%,17.20%,-,24-Jan-2008,"Argentina: Entre Rios, rt 14 km 43",20m
+P004_WG02,SRR17212965,Deltocephalinae,Faltalini,Kramerana,-,junina,James N. Zahniser,2.30%,2.30%,-,17-Oct-2002,"Peru: Junin,3 km W Curipata",3800m
+P006_WB08,SRR17212963,Deltocephalinae,Faltalini,n.gen.,-,sp.,Christopher H. Dietrich,3.40%,3.40%,-,13-Mar-2015,"Brazil: Minas Gerais, Santuario do Caraca, Lobo Guara Trail",1280m
+P009_WD12,SRR17212962,Deltocephalinae,Faltalini,Tenucephalus,-,n.sp.,Christopher H. Dietrich,5.80%,5.80%,-,03-May-2004,"Peru: Madre de Dios, Tambopata Research Center",190m
+P011_WB08,SRR17212961,Deltocephalinae,Faltalini,Kramerana,-,n.sp.,Christopher H. Dietrich,2.70%,2.70%,-,13-Feb-2014,"Argentina: Entre Rios, Parque Nacional El Palmar, Mirador Los Loros",-
+P014_WD08,SRR17212960,Deltocephalinae,Faltalini,Tenucephalus,-,n.sp.3,James N. Zahniser,6.60%,6.60%,-,05-Oct-1995,"Brasil: Goias, Serra da Mesa ",-
+P015_WB03,SRR17212959,Deltocephalinae,Faltalini,Tenucephalus,-,n.sp.BR1,Christopher H. Dietrich,4.50%,4.50%,-,13-Mar-2015,"Brazil: Minas Gerais, Santuariodo Caraca",1300m
+P001_WA11,SRR17212958,Deltocephalinae,Acostemmini,Acostemma,-,marginale,Christopher H. Dietrich,8.00%,8.00%,-,09-Nov-2008/24-Nov-2008,"Madagascar: Fianarantsoa Prov., Ranomafana National Park",-
+P004_WA01,SRR17212957,Deltocephalinae,Acostemmini,Ikelibeloha,-,cristata,James N. Zahniser,17.40%,17.40%,-,19-Mar-2001,"Madagascar, Diego Suarez Parque Nacional, Montagne d'Ambre",960m
+P004_WC03,SRR17212956,Deltocephalinae,Acostemmini,Iturnoria,-,insulana,James N. Zahniser,12.10%,12.10%,-,08-Dec-2004,Madagascar: Antsiranana,150m
+P004_WD04,SRR17212955,Deltocephalinae,Acostemmini,Eryapus,-,sp.,James N. Zahniser,5.60%,5.60%,-,12-Jan-2002/16-Jan-2002,"Madagascar: Toliaran Prov., Parc National d'Andohahela",150m
+P009_WA08,SRR17212954,Deltocephalinae,Acostemmini,Eryapus,-,n.sp.1,Christopher H. Dietrich,45.60%,45.50%,-,08-Feb-2002/15-Feb-2002,"Madagascar: Tulear Prov., Beza Mahafaly Reserve, Parcelle I near research station",165m
+P009_WF02,SRR17212952,Deltocephalinae,Acostemmini,Malicia,-,n.sp.,Christopher H. Dietrich,21.90%,21.90%,-,18-Jan-2014,Madagascar,-
+P009_WF09,SRR17212951,Deltocephalinae,Acostemmini,n.gen.,-,sp.,Christopher H. Dietrich,10.40%,10.40%,-,17-May-2007/26-May-2007,"Madagascar: Majunga, Ambovomamy Belambo 20km NW Port Berger",33m
+P011_WA06,SRR17212950,Deltocephalinae,Acostemmini,Acostemma,-,n.sp.,Christopher H. Dietrich,7.90%,7.90%,-,07-Nov-2008/24-Nov-2008,"Madagascar: Fianarantsoa Prov., Rt. 12, between Infanadiana Village and Kianjavato Village",-
+P014_WF05,SRR17213271,Deltocephalinae,Acostemmini,n.gen.,-,n.sp.,Christopher H. Dietrich,3.80%,3.90%,-,23-Jul-2009/02-Aug-2009,"Madagascar: Tulear, Vitambany Forest 5 mk N Ampotaka",86m
+P001_WA12,SRR17213270,Deltocephalinae,Phlepsiini,Korana,-,rorulenta,Christopher H. Dietrich,8.10%,8.10%,-,10-Nov-2007,"Zambia: Copperbelt Prov., Kitwe District, Greystone Farm (Fishers Farm)",1247m
+P001_WC01,SRR17213269,Deltocephalinae,Phlepsiini,Texananus,Texananus,ovatus,Christopher H. Dietrich,3.50%,3.50%,-,29-Oct-2005,"Mexico: Coahuila, Huachichil rd. 2km E rt.54",1970m
+P001_WC04,SRR17213268,Deltocephalinae,Phlepsiini,Excultanus,-,dorothyae,Christopher H. Dietrich,7.10%,7.10%,-,22-Oct-2005,"Mexico: Zacatecas, rt.270 14.9km, NW Tabasco",2000m
+P004_WA08,SRR17213267,Deltocephalinae,Phlepsiini,Excultanus,-,conus,James N. Zahniser,6.20%,6.20%,-,05-Nov-2001,Mexico: Chiapas,1000m
+P004_WF01,SRR17213266,Deltocephalinae,Phlepsiini,Phlepsius,-,intricatus,James N. Zahniser,7.60%,7.60%,-,19-Aug-1998,"Kyrgyzstan: Dzalal-Abad, At-Ojnoksky Mt. Ridge, Kurpsaj Ravine",924m
+P009_WA01,SRR17213265,Deltocephalinae,Phlepsiini,Texananus,-,sp.,Christopher H. Dietrich,13.40%,13.40%,-,27-Jan-2019,"Mexico: Michoacan, Coeneo, Cerrito",2275m
+P009_WF06,SRR17213261,Deltocephalinae,Phlepsiini,Excultanus,-,excultus,Christopher H. Dietrich,7.50%,7.50%,-,12-Jun-2017,"USA: North Carolina, Burke County, Linville Gorge",-
+P001_WE12,SRR17213260,Deltocephalinae,Stegelytrini,Pseudododa,-,orientalis,Christopher H. Dietrich,11.00%,11.10%,-,30-Sep-2007/07-Oct-2007,"Thailand: Chiang Mai, Doi Chiang Dao WS Nature trail","491m,"
+P001_WF05,SRR17213259,Deltocephalinae,Stegelytrini,Placidellus,-,ishiharei,Christopher H. Dietrich,8.80%,8.80%,-,21-Jun-2006/28-Jun-2006,"Thailand: Chaiyaphum, Tat Tone National Park",250m
+P003_WE09,SRR17213258,Deltocephalinae,Stegelytrini,Paradoxivena,-,sp.,Christopher H. Dietrich,3.70%,3.70%,-,05-Nov-2006/08-Nov-2006,"Thailand: Loei, Phu Ruea National Park Ma Kraow ditch",1167m
+P005_WH03,SRR17213257,Deltocephalinae,Stegelytrini,Sychentia,-,n.sp.,Christopher H. Dietrich,5.70%,5.60%,-,08-Jul-2019,"Vietnam: Ninh Binh, Cuc Phuong National Park",350m
+P005_WH04,SRR17213256,Deltocephalinae,Stegelytrini,Pachymetopius,-,decoratus,Christopher H. Dietrich,6.00%,6.00%,-,30-Jun-2019,"China: Taiwan, Miaoli County, Rt. 124, Nanchuang",480m
+P005_WH05,SRR17213255,Deltocephalinae,Stegelytrini,Daochia,-,reticulata,Christopher H. Dietrich,7.00%,7.00%,-,10-Jul-2019,"Vietnam: Vinh Phuc, Tam Dao",970m
+P006_WH09,SRR17213254,Deltocephalinae,Stegelytrini,Kunasia,-,carina,Christopher H. Dietrich,6.70%,6.70%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P007_WC02,SRR17213253,Deltocephalinae,Stegelytrini,Doda,-,laudata,Christopher H. Dietrich,6.40%,6.40%,-,15-Jul-2008/22-Jul-2008,"Thailand: Nakhon Si Thammarat, Namtok Yong National Park",499m
+P008_WF09,SRR17213252,Deltocephalinae,Stegelytrini,n.gen.T1,-,n.sp.1,Christopher H. Dietrich,6.70%,6.70%,-,10-Feb-2009/17-Feb-2009,"Thailand: Surat Thani, Khao Sok National Park, Klong Morg Unit",87m
+P008_WF11,SRR17213250,Deltocephalinae,Stegelytrini,Wyuchiva,-,n.sp.,Christopher H. Dietrich,6.80%,6.80%,-,21-Jul-2006/27-Jul-2006,"Thailand: Sakon Nakhon, Phu Phan National Park, Behind office",318m
+P008_WF12,SRR17213249,Deltocephalinae,Stegelytrini,Trunchinus,-,laosensis,Christopher H. Dietrich,6.60%,6.70%,-,28-Aug-2007/04-Sep-2007,"Thailand: Chiang Mai, Doi Chiang Dao WS Nature Trail",491m
+P001_WA06,SRR17213248,Deltocephalinae,Selenocephalini,Sapoba,-,serricauda,Christopher H. Dietrich,2.60%,2.60%,-,15-Mar-2009/30-Mar-2009,"Cameroon: Southwest, nr. Korup National Park at bridge over river",-
+P001_WA08,SRR17213247,Deltocephalinae,Selenocephalini,Bumka,-,armatissima,Christopher H. Dietrich,6.10%,6.10%,-,15-Mar-2009/30-Mar-2009,"Cameroon: Southwest, nr. Korup National Park at bridge over river",-
+P001_WA09,SRR17213246,Deltocephalinae,Selenocephalini,Adama,Krisnella,australis,Christopher H. Dietrich,8.60%,8.60%,-,Jan-2009,Swaziland: Mlawula Nature Reserve,545m
+P001_WA10,SRR17213245,Deltocephalinae,Selenocephalini,Bumka,-,pylaon,Christopher H. Dietrich,3.20%,3.20%,-,15-Mar-2009/30-Mar-2009,"Cameroon: Southwest, nr. Korup National Park at bridge over river",-
+P001_WB01,SRR17213244,Deltocephalinae,Selenocephalini,Adama,Paracostemma,muelianum,Christopher H. Dietrich,6.40%,6.40%,-,17-Mar-2009/30-Mar-2009,"Cameroon: Adamaoua, Mbam et Djerem National Park, Camp Ganga",-
+P001_WC06,SRR17213243,Deltocephalinae,Selenocephalini,Selenocephalus,-,obsoletus,Christopher H. Dietrich,2.60%,2.60%,-,28-Jun-2010/03-Jul-2010,"France: Provence-Alpes-Cote d'Azur, Vaucluse, Vaison-la-Romaine",-
+P004_WB10,SRR17213242,Deltocephalinae,Selenocephalini,Citorus,-,stipes,James N. Zahniser,2.00%,2.00%,-,11-Nov-2007,"Zambia: Copperbelt Prov., ~12 km SSE of Kitwe, Greystone Farm",1247m
+P004_WC08,SRR17213241,Deltocephalinae,Selenocephalini,Dwightla,-,acutipennis,James N. Zahniser,4.00%,4.00%,-,15-Mar-2009/30-Mar-2009,"Cameroon: Southwest, nr. Korup National Park at bridge over river",-
+P004_WC12,SRR17213239,Deltocephalinae,Selenocephalini,Abimwa,-,sp.,James N. Zahniser,5.30%,5.30%,-,05-Nov-2007,"Zambia: Northwestern Prov., ~15 km N Mwinilunga, Lwakera National Forest",1445m
+P004_WE07,SRR17213238,Deltocephalinae,Selenocephalini,Selenocephalus,-,deserticola,James N. Zahniser,3.60%,3.50%,-,01-Jun-2004/8-Jun-2004,"Israel: Negvev, 4 km NE Sde Boqer",-
+P007_WA10,SRR17213165,Deltocephalinae,Selenocephalini,Distantia,-,n.sp.,Christopher H. Dietrich,3.70%,3.60%,-,07-Jun-2005,"Ghana: Western Region, Ankasa Resource Reserve, Nkwanta Camp",-
+P007_WD02,SRR17213164,Deltocephalinae,Selenocephalini,Sapoba,-,sudana,Christopher H. Dietrich,7.90%,7.80%,-,17-Mar-2009/30-Mar-2009,"Cameroon: Adamaoua, Mbam et Djerem National Park, Camp Ganga",-
+P009_WD03,SRR17213163,Deltocephalinae,Selenocephalini,Adama,Krisnella,elongata,Christopher H. Dietrich,7.00%,6.90%,-,19-Apr-2006/01-May-2006,"Zambia: Copperbelt Province, Kitwe District, Kumasamba Lodge nr. Kafue River",-
+P011_WA02,SRR17213162,Deltocephalinae,Selenocephalini,Adama,Paracostemma,n.sp.,Christopher H. Dietrich,8.70%,8.70%,-,05-Nov-2007/09-Nov-2007,"Zambia: Northwestern Prov., nr. Mwinilunga",1448m
+P012_WD07,SRR17213161,Deltocephalinae,Selenocephalini,Citorus,-,n.sp.,Christopher H. Dietrich,4.50%,4.50%,-,19-Apr-2006/01-May-2006,"Zambia: Copperbelt Province, Kitwe District, Kumasamba Lodge nr. Kafue River",-
+P001_WA04,SRR17213160,Deltocephalinae,Stenometopiini,Stirellus,-,sagittarius,Christopher H. Dietrich,4.10%,4.10%,-,Jan-2009,Swaziland: Mlawula Nature Reserve,-
+P002_WC04,SRR17213159,Deltocephalinae,Stenometopiini,Hodoedocus,-,bunyensis,Christopher H. Dietrich,4.70%,4.70%,-,26-Feb-2015,"Australia: Queensland, Gillies Hwy. W Cairns",662m
+P002_WC05,SRR17213158,Deltocephalinae,Stenometopiini,Stirellus,-,mitis,Christopher H. Dietrich,4.60%,4.60%,-,23-Feb-2015,"Australia: Queensland, Strandbroke Isl. Brown Lake",66m
+P002_WE07,SRR17213156,Deltocephalinae,Stenometopiini,Stirellus,-,productus,Christopher H. Dietrich,2.90%,2.80%,grass,08-Sept-2015,"China: Sichuan, Nanchong",303m
+P004_WC01,SRR17213155,Deltocephalinae,Stenometopiini,Doratulina,Doratulina,dmitrievi,James N. Zahniser,3.70%,3.70%,-,Nov-2007,"Zambia: Northwestern Prov., ~28.5 km N Mwinilunga, Chitunta plain grassland",-
+P004_WF03,SRR17213154,Deltocephalinae,Stenometopiini,Stirellus,-,labiatus,James N. Zahniser,7.30%,7.30%,-,19-Oct-2001,"Mexico: Jalisco, 7km  W Ojuelos de Jalisco",2260m
+P004_WF04,SRR17213153,Deltocephalinae,Stenometopiini,Stirellus,-,bicolor,James N. Zahniser,9.50%,9.40%,-,13-Oct-2001,"Mexico: Jalisco, 13km ESE Tuxcacuesco",900m
+P011_WA01,SRR17213152,Deltocephalinae,Stenometopiini,Hodoedocus,-,n.sp.,Christopher H. Dietrich,7.80%,7.70%,-,06-Nov-2007,"Zambia: Northwestern Prov., Mwinilunga",-
+P011_WA04,SRR17213151,Deltocephalinae,Stenometopiini,Stirellus,-,flavovirescens,Christopher H. Dietrich,9.50%,9.50%,-,15-Mar-2009/30-Mar-2009,"Cameroon: Adamaoua, Mbam et Djerem National Park",-
+P011_WB01,SRR17213150,Deltocephalinae,Stenometopiini,Stirellus,-,dixianus,Christopher H. Dietrich,8.60%,8.60%,-,25-Oct-2005,"Mexico: Zacatecas, 10.4km NW Vasco de Quiroga",2500m
+P011_WB03,SRR17213149,Deltocephalinae,Stenometopiini,Stirellus,-,grandis,Christopher H. Dietrich,2.50%,2.50%,-,12-Jul-2012,"China: Shaanxi, 8km ENE Chenhexiang",660m
+P011_WD06,SRR17213148,Deltocephalinae,Stenometopiini,Stirellus,-,rubrolineatus,Christopher H. Dietrich,2.10%,2.10%,-,08-Jul-2019,"Vietnam: Ninh Binh, Cuc Phuong National Park center",-
+P011_WD08,SRR17213147,Deltocephalinae,Stenometopiini,Stirellus,-,neospeciosus,Christopher H. Dietrich,2.70%,2.70%,-,08-Jul-2019,"Vietnam: Ninh Binh, Cuc Phuong National Park center",370m
+P006_WD12,SRR17213145,Deltocephalinae,Stenometopiini,Stirellus,-,kitwensis,Christopher H. Dietrich,7.10%,7.10%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Arthurs Seat hill",-
+P011_WG06,SRR17213144,Deltocephalinae,Stenometopiini,Stirellus,-,picinus,James N. Zahniser,8.10%,8.10%,-,31-May-1996,"Brazil: Goias, Uruacu",-
+P014_WG08,SRR17213143,Deltocephalinae,Stenometopiini,Stirellus,-,yeongnamensis,Christopher H. Dietrich,6.30%,6.20%,-,20-Jun-2004,"China: Taiwan, Taichung, Wufeng, Taiwan Agricultural Research Institute",200m
+P014_WG09,SRR17213142,Deltocephalinae,Stenometopiini,Stirellus,-,indra,Christopher H. Dietrich,9.60%,9.50%,-,20-Jun-2004,"China: Taiwan, Taichung, Wufeng, Taiwan Agricultural Research Institute",-
+P001_WC02,SRR17213141,Deltocephalinae,Cicadulini,Knullana,-,huachuca,Christopher H. Dietrich,4.90%,4.90%,-,27-Oct-2005,"Mexico: Durango, rt.45 km 121 ca. Francisco Primo Verdad",1590m
+P001_WD02,SRR17213140,Deltocephalinae,Cicadulini,Rhopalopyx,-,vitripennis,Christopher H. Dietrich,14.40%,14.40%,-,30-Jun-2010 ,France: Mt. Ventoux,-
+P001_WE05,SRR17213139,Deltocephalinae,Cicadulini,Cicadula,Cicadula,saliens,Christopher H. Dietrich,3.50%,3.50%,-,29-Jun-2016,"USA: Wisconsin, Burnett County, 7.1 km E Rush City, Minnesota",-
+P001_WG05,SRR17213138,Deltocephalinae,Cicadulini,Elymana,-,emeljanovi,Christopher H. Dietrich,3.00%,3.00%,-,18-Jul-2012,"China: Shaanxi, Jialing River Source Park",2300m
+P004_WC09,SRR17213137,Deltocephalinae,Cicadulini,Proceps,-,acicularis,James N. Zahniser,4.60%,4.70%,-,30-Jun-2010,"France: Provence-Alpes-Cote d'Azur, Vaucluse, Foret Dominiale de Beaumont-du-Ventoux",-
+P005_WD11,SRR17213136,Deltocephalinae,Cicadulini,Stenometopiellus,-,stepposus,Christopher H. Dietrich,6.70%,6.60%,-,08-Jul-2000,Kyrgyzstan: Osh Taldyk Pass,3615m
+P007_WF01,SRR17213134,Deltocephalinae,Cicadulini,Cicadula,Cicadula,ornata,Christopher H. Dietrich,2.80%,2.80%,-,18-Jul-2005/19-Jul-2005,"Mongolia: Hovsgol Aimag, Chandmani-Ondor Soum, West branch (unnamed) of Khalkhan Gol",1676m
+P007_WF06,SRR17213133,Deltocephalinae,Cicadulini,Elymana,-,kozhevnikovi,Christopher H. Dietrich,4.90%,4.90%,-,17-Jul-2005/18-Jul-2005,"Mongolia: Hovsgol Aimag,  Chandmani-Ondor Soum, Khalkhan Gol, 19.8 km E of Chandmani-Ondor",1220m
+P007_WH09,SRR17213132,Deltocephalinae,Cicadulini,Taurotettix,-,beckeri,Christopher H. Dietrich,3.80%,3.80%,-,Jun-2019,Kazakhstan,-
+P009_WB09,SRR17213131,Deltocephalinae,Cicadulini,Taurotettix,-,elegans,Christopher H. Dietrich,9.70%,9.70%,-,06-Sep-1998,"Kyrgyzstan: Chuy, Boom Ravine 25 km E Balykchy",1550
+P011_WG01,SRR17213130,Deltocephalinae,Cicadulini,Elymana,-,acuma,James N. Zahniser,3.30%,3.30%,-,"15-Jul-2006,","USA: Illinois, S of Muncie",-
+P012_WF08,SRR17213129,Deltocephalinae,Cicadulini,Knullana,-,sp.,Christopher H. Dietrich,3.70%,3.60%,-,01-Sep-2018,"Mexico: Jalisco, Tala, Tala",1341m
+P014_WA03,SRR17213128,Deltocephalinae,Cicadulini,Rhopalopyx,-,elongata,Christopher H. Dietrich,5.60%,5.60%,-,12-Jun-2017,"Switzerland: Gordola, Reviscai, Riserva Bolle di Magadino",196m
+P015_WE06,SRR17213127,Deltocephalinae,Cicadulini,Cicadula,-,sp.,Christopher H. Dietrich,8.90%,8.80%,-,12-Jun-2017,"Switzerland: Gordola, Reviscai, Riserva Bolle di Magadino",196m
+P001_WG06,SRR17213126,Deltocephalinae,Bahitini,Brincadorus,-,laticeps,Christopher H. Dietrich,4.10%,4.20%,-,13-Nov-2009,"Bolivia: Santa Cruz Department, nr. Buena Vista",334m
+P001_WG08,SRR17213125,Deltocephalinae,Bahitini,Bahita,-,infuscata,Christopher H. Dietrich,4.10%,4.10%,-,13-Nov-2009,"Bolivia: Santa Cruz Department, nr. Buena Vista",334m
+P001_WH01,SRR17213123,Deltocephalinae,Bahitini,Taperinha,-,excavata,Christopher H. Dietrich,5.00%,5.00%,-,Feb-2005,"French Guiana: Kaw Mountain Reserve, unpaved logging road, nr. Amazone Lodge",-
+P001_WH02,SRR17213122,Deltocephalinae,Bahitini,Kinrentius,-,constrictus,Christopher H. Dietrich,4.00%,4.00%,-,19-Oct-2002,"Peru: Junin, 6 km NW San Ramon",850m
+P001_WH11,SRR17213121,Deltocephalinae,Bahitini,Frequenamia,-,clypeata,Christopher H. Dietrich,3.90%,3.90%,-,14-Nov-2009,"Bolivia: Canta Cruz, ca. Buena Vista",390m
+P002_WA04,SRR17213120,Deltocephalinae,Bahitini,Bahita,-,lobata,Christopher H. Dietrich,3.70%,3.60%,-,13-Mar-2015,"Brazil: Minas Gerais, Santuario do Caraca, Lobo Guara Trail",1280m
+P002_WA07,SRR17213119,Deltocephalinae,Bahitini,Taperinha,-,adspersa,Christopher H. Dietrich,2.30%,2.30%,-,16-Jan-2008,"Argentina: Jujuy, rt 9 km 1706, Finca Yala",1500m
+P003_WC04,SRR17213118,Deltocephalinae,Bahitini,Menosoma,-,cinctum,Christopher H. Dietrich,5.20%,5.20%,-,11-Sep-2019,"USA: Illinois, Danville, Vermilion County",-
+P004_WE12,SRR17212949,Deltocephalinae,Bahitini,Oxycephalotettix,-,tiputini,James N. Zahniser,3.40%,3.40%,-,07-Feb-1996,"Ecuador: Orellana, Reserva Etnica Waorani",220m
+P006_WB03,SRR17212948,Deltocephalinae,Bahitini,Concepciona,-,asper,Christopher H. Dietrich,3.00%,2.90%,-,14-Jan-2014,"Chile: Los Lagos, Senda Darwin Biological Station",-
+P006_WG06,SRR17212947,Deltocephalinae,Bahitini,Perubahita,-,longifalx,Christopher H. Dietrich,3.40%,3.40%,-,16-Mar-2015,"Brazil: State of Minas Gerais, Santuario do Caraca, Banho do Belchior",1280m
+P006_WG08,SRR17212946,Deltocephalinae,Bahitini,Parabahita,-,compressa,Christopher H. Dietrich,6.20%,6.20%,-,6-Mar-2005/15-Mar-2005,"Peru: San Martin Prov., 23 km S Picota, Concervacion Mun. Zona Barreal",335m
+P007_WD04,SRR17212944,Deltocephalinae,Bahitini,Bahita,-,n.sp.,Christopher H. Dietrich,4.00%,3.90%,-,3-Nov-2009,Bolivia: Dpto. Santa Cruz; Reserva Natural Potrerillo del Guenda,-
+P007_WE05,SRR17212943,Deltocephalinae,Bahitini,Frequenamia,-,venosula,Christopher H. Dietrich,4.30%,4.30%,-,13-Mar-2015,"Brazil: State of Minas Gerais, Santuario do Caraca, Lobo Guara Trail",1280m
+P007_WE06,SRR17212942,Deltocephalinae,Bahitini,Taperinha,-,dozieri,Christopher H. Dietrich,4.70%,4.70%,-,09-Feb-2008,"French Guiana: Kaw Mountain Reserve, Gold Mine Road",-
+P007_WG06,SRR17212941,Deltocephalinae,Bahitini,Brincadorus,-,n.sp.,Christopher H. Dietrich,8.00%,8.00%,-,24-Oct-2002,"Peru: Huanuco, 8 km S Tingo Maria, Pte. Cuevas",670m
+P008_WC08,SRR17212940,Deltocephalinae,Bahitini,Huachia,-,n.sp.,Christopher H. Dietrich,3.20%,3.20%,-,14-Sep-2009/17-Sep-2009,"Peru: Ancash Region, 2 km NW Carhuaz, Bruja Amanan",2730m
+P011_WG02,SRR17212939,Deltocephalinae,Bahitini,Menosoma,-,sp.,James N. Zahniser,1.80%,1.80%,-,26-Oct-2002,"Peru: Huanuco, 5km S Tingo Maria, Pte. Monzon",600m
+P012_WG05,SRR17212938,Deltocephalinae,Bahitini,Frequenamia,-,guerrera,Christopher H. Dietrich,3.80%,3.80%,-,01-Oct-2018,"Mexico: Guerrero, Tepecuacuilco de Trujano, Tepecoacuilco",832m
+P001_WF06,SRR17212937,Deltocephalinae,Mukariini,Mukaria,-,maculata,Christopher H. Dietrich,9.00%,9.00%,-,19-Apr-2007/26-Apr-2007,"Thailand: Chaiyaphum, Tat Tone National Park, Watershed station 2",271m
+P001_WG01,SRR17212936,Deltocephalinae,Mukariini,Agrica,-,arisana,Christopher H. Dietrich,2.40%,2.40%,-,15-Jun-2004,"China: Taiwan, Nantou, Yuanfeng",-
+P002_WB06,SRR17212935,Deltocephalinae,Mukariini,Scaphotettix,-,striatus,Christopher H. Dietrich,8.20%,8.10%,-,31-Jul-2006/07-Aug-2006 ,"Thailand: Phetchabun Nam Nao National Park, Tham Pra Laad Forest Unit",711m
+P002_WB12,SRR17212933,Deltocephalinae,Mukariini,Flatfronta,-,pronga,Christopher H. Dietrich,3.00%,3.00%,-,20-Sep-2017,"China: Guangxi, ca. Qinbei, Bazhaigou Scenic Spot",90m
+P003_WF02,SRR17212932,Deltocephalinae,Mukariini,Mohunia,-,sp.,Christopher H. Dietrich,5.10%,5.10%,-,19-Mar-2007/26-Mar-2007,"Thailand: Chaiyaphum, Tat Tone National Park, Oficer house at Tat Fah waterfall",242m
+P004_WB04,SRR17212931,Deltocephalinae,Mukariini,Pseudobalbillus,-,protrudens,James N. Zahniser,8.60%,8.60%,-,13-May-2001,"Central African Republic: Sangha-Mbaere Prefecture, Dzanga-Sangha Dense Forest Special Reserve",-
+P006_WA10,SRR17212930,Deltocephalinae,Mukariini,n.gen.CN1,-,n.sp.1,Christopher H. Dietrich,4.00%,4.00%,-,21-Oct-2011,"China: Shaanxi, Yangling, Northwest A&F University Campus",-
+P006_WC01,SRR17212929,Deltocephalinae,Mukariini,n.gen.T1,-,n.sp.1,Christopher H. Dietrich,7.00%,7.00%,-,7-Aug-2006/14-Aug-2006,"Thailand: Phetchabun, Nam Nao NP Tham Pra Laad Forest Unit",711m
+P007_WA12,SRR17212928,Deltocephalinae,Mukariini,n.gen.T2,-,n.sp.1,Christopher H. Dietrich,5.00%,5.00%,-,10-Feb-2007/17-Feb-2007,"Thailand: Ubon Ratchathani, Pha Taem National Park, Don Rong pond",250m
+P008_WE12,SRR17212927,Deltocephalinae,Mukariini,Neomohunia,-,n.sp.,Christopher H. Dietrich,5.50%,5.50%,-,18-Sep-2006/25-Sep-2006,"Thailand: Loei, Phu Kradueng National Park",274m
+P009_WA09,SRR17212926,Deltocephalinae,Mukariini,Mohunia,-,n.sp.,Christopher H. Dietrich,6.40%,6.40%,-,25-Feb-2007/01-Mar-2007,"Thailand: Loei, Phu Kradueng National Park, Forest protection unit Loei .5 (Phakbung)",412m
+P012_WD10,SRR17212925,Deltocephalinae,Mukariini,Mukaria,-,n.sp.T1,Christopher H. Dietrich,4.20%,4.20%,-,31-Aug-2007/07-Sep-2007,"Thailand: Chiang Mai, Huai Nam Dang National Park, behind visitor house",1670m
+P012_WE02,SRR17212924,Deltocephalinae,Mukariini,Mukaria,-,n.sp.T3,Christopher H. Dietrich,2.60%,2.60%,-,31-Aug-2008/08-Sep-2008,"Thailand: Surat Thani, Khao Sok National Park, Klong Morg Unit",87m
+P014_WC03,SRR17212922,Deltocephalinae,Mukariini,Scaphotettix,-,viridis,Christopher H. Dietrich,1.90%,1.90%,Rhapis excelsa,20-Jun-2019,"China: Taiwan, Taichung, Qingshui, Freeway #3 rest area",100m
+P014_WF04,SRR17212921,Deltocephalinae,Mukariini,Mohunia,-,splendens,Christopher H. Dietrich,9.40%,9.40%,-,25-Dec-2006/01-Jan-2007,"Thailand: Ubon Ratchathani, Pha Taem National Park foot of Phu Kra jeaw",238m
+P015_WG03,SRR17212920,Deltocephalinae,Mukariini,n.gen.CN2,-,n.sp.1,Christopher H. Dietrich,1.70%,1.70%,-,19-Sep-2017 ,"China: Guangxi, ca. Qinbei Bazhaigou Scenic Spot",60m
+P015_WG09,SRR17212919,Deltocephalinae,Mukariini,Flatfronta,-,n.sp.,James N. Zahniser,9.00%,9.00%,-,17-Feb-2007/25-Feb-2007,"Thailand: Sakon Nakhon, Phu Phan NP, Behind forest protection unit at Huay Wien Prai",-
+P015_WH09,SRR17212918,Deltocephalinae,Mukariini,Mukaria,-,n.sp.T2,Christopher H. Dietrich,10.70%,10.70%,-,09-Mar-2007/15-Mar-2007,"Thailand: Chaiyaphum, Pa Hin Ngam National Park",673
+P001_WA02,SRR17212917,Deltocephalinae,Bonaspeiini,Bonaspeia,-,eriocephalus,Christopher H. Dietrich,10.30%,10.30%,-,07-Dec-2004,"South Africa: Western Cape Prov., Blaauwberg Hill",231.2m
+P001_WB03,SRR17212916,Deltocephalinae,Bonaspeiini,Tzitzikamaia,-,irrorata,Christopher H. Dietrich,4.60%,4.60%,-,11-Dec-2004 ,"South Africa: Western Cape Prov., De Hoop National Reserve",19.6m
+P001_WB04,SRR17212915,Deltocephalinae,Bonaspeiini,Renosteria,-,waverena,Christopher H. Dietrich,8.10%,8.10%,-,07-Dec-2004,"South Africa: Western Cape, Blaauwberg Hill",231m
+P001_WD05,SRR17212914,Deltocephalinae,Bonaspeiini,Curvostylus,-,chloridulus,Christopher H. Dietrich,13.50%,13.40%,-,16-Dec-2004,"South Africa: Western Cape, Wemmershoek Dam, N Fraschhoek",257m
+P001_WD06,SRR17212913,Deltocephalinae,Bonaspeiini,Gcaleka,-,acuta,Christopher H. Dietrich,9.50%,9.50%,-,15-Dec-2004,"South Africa: Western Cape, Du Toitskloof Pass",836m
+P003_WE02,SRR17212910,Deltocephalinae,Bonaspeiini,Bloemia,-,n.sp.A,Christopher H. Dietrich,8.80%,8.80%,-,20-Nov-1999,"South Africa: Western Cape, 3 km S Uniondale",610m
+P004_WE03,SRR17212909,Deltocephalinae,Bonaspeiini,Cerus,-,goudanus,James N. Zahniser,5.70%,5.70%,-,07-Dec-2004,"South Africa: Western Cape, Blaauwberg Hill",231.2m
+P005_WH07,SRR17212908,Deltocephalinae,Bonaspeiini,Kimbella,-,apicurva,Christopher H. Dietrich,1.00%,1.00%,-,12-Dec-2004,"South Africa: Western Cape, De Hoop Nature Reserve",177m
+P005_WH08,SRR17212907,Deltocephalinae,Bonaspeiini,Caffrolix,-,cyclopia,Christopher H. Dietrich,6.70%,6.70%,-,07-Dec-2004,"South Africa: Western Cape, Somerset West",88m
+P006_WA08,SRR17212906,Deltocephalinae,Bonaspeiini,n.gen.SA5,-,sp.,Christopher H. Dietrich,3.80%,3.80%,-,20-Nov-1999/24-Nov-1999,"South Africa: Western Cape, 11 km SW Willowmore on hwy R90",920m
+P006_WD10,SRR17212905,Deltocephalinae,Bonaspeiini,n.gen.SA2,-,n.sp.,Christopher H. Dietrich,3.20%,3.20%,-,12-Dec-2004,"South Africa: Western Cape, De Hoop Nature Reserve",177m
+P006_WD11,SRR17212904,Deltocephalinae,Bonaspeiini,n.gen.SA3,-,n.sp.,Christopher H. Dietrich,4.90%,4.90%,-,10-Dec-2004,"South Africa: Western Cape, Cape of Good Hope Nature Reserve",54m
+P007_WB01,SRR17212903,Deltocephalinae,Bonaspeiini,n.gen.SA6,-,n.sp.1,Christopher H. Dietrich,5.80%,5.80%,-,16-Dec-2004,"South Africa: Western Cape Prov., Theewaterskloof Dam, Franschhoek-Villiersdorp Road",328m
+P007_WB05,SRR17212902,Deltocephalinae,Bonaspeiini,Johanus,-,sp.,Christopher H. Dietrich,2.80%,2.80%,-,09-Dec-2004  ,"South Africa: Western Cape Prov., Vishoek",85.4m
+P007_WH05,SRR17212781,Deltocephalinae,Bonaspeiini,Tzitzikamaia,-,n.sp.,Christopher H. Dietrich,5.20%,5.20%,-,26-Dec-2004,"South Africa: KwaZulu-Natal Prov., SE of Kamberg",1783m
+P008_WA01,SRR17212779,Deltocephalinae,Bonaspeiini,Geelus,-,n.sp.,Christopher H. Dietrich,8.80%,8.80%,-,12-Dec-2004,"South Africa: Western Cape, Leipzig Farm",314m
+P008_WC09,SRR17212778,Deltocephalinae,Bonaspeiini,Kaapia,-,n.sp.1,Christopher H. Dietrich,9.00%,9.00%,-,03-Oct-2004/24-Oct-2004,"South Africa: Western Cape, 43 km N Matjiesfontein",970m
+P008_WE10,SRR17212777,Deltocephalinae,Bonaspeiini,Hadroca,-,ramosa,Christopher H. Dietrich,3.70%,3.70%,-,08-Dec-2004,"South Africa: Western Cape Prov., Driftsands Nature Reserve",-
+P009_WE01,SRR17212776,Deltocephalinae,Bonaspeiini,Capeolix,-,n.sp.,Christopher H. Dietrich,33.30%,33.20%,-,01-Oct-2004/23-Oct-2004,"South Africa: Western Cape, 7 km E Ladismith",520m
+P009_WF01,SRR17212775,Deltocephalinae,Bonaspeiini,Bloemia,-,n.sp.,Christopher H. Dietrich,10.70%,10.70%,-,03-Oct-2004/24-Oct-2004,"South Africa: Western Cape, 43 km N Matjiesfontein",970m
+P011_WA07,SRR17212774,Deltocephalinae,Bonaspeiini,n.gen.SA1,-,sp.,Christopher H. Dietrich,7.20%,7.20%,-,02-Oct-2004/23-Oct-2004,"South Africa: Western Cape, top of Swartberg Pass",-
+P001_WD04,SRR17212773,Deltocephalinae,Penthimiini,Neodartus,-,vinulus,Christopher H. Dietrich,7.60%,7.60%,-,20-Nov-1999,"South Africa: Western Cape, 3 km S Uniondale",610m
+P001_WE07,SRR17212772,Deltocephalinae,Penthimiini,Penthimia,-,americana,Christopher H. Dietrich,2.70%,2.70%,-,28-Jun-2016,"USA: Wisconsin Burnett County, 7.8km N Grantsburg",-
+P001_WF12,SRR17212771,Deltocephalinae,Penthimiini,Thaumatoscopus,-,galeatus,Christopher H. Dietrich,3.00%,3.00%,-,11-Mar-2011/12-Mar-2011,"Australia: Queensland, Daintree National Park",-
+P001_WH05,SRR17212770,Deltocephalinae,Penthimiini,Eovulturnops,-,selenocephaloides,Christopher H. Dietrich,4.00%,4.00%,-,Feb-2005,"French Guiana: Kaw Mountain Reserve, unpaved logging road, nr. Amazone Lodge",-
+P002_WC11,SRR17212768,Deltocephalinae,Penthimiini,Platyscopus,-,badius,Christopher H. Dietrich,3.50%,3.40%,-,30-Dec-2008,"Australia: Queensland, ~26km E of Bollon, ~92km W of St George",197m
+P003_WF05,SRR17212767,Deltocephalinae,Penthimiini,Vulturnus,-,vulturnus,Christopher H. Dietrich,2.80%,2.80%,-,28-Feb-2015,"Australia: Queensland, Mt. Bartle Frere trailhead ",-
+P003_WF06,SRR17212766,Deltocephalinae,Penthimiini,Tolasella,-,n.sp.,Christopher H. Dietrich,3.80%,3.80%,-,18-Feb-2009,"Australia: Western Australia, 11.5 km N Cue",431m
+P004_WB09,SRR17212765,Deltocephalinae,Penthimiini,Penthimidia,-,eximia,James N. Zahniser,4.70%,4.70%,-,13-Oct-2008,"Republic of Congo: Iboubikro, Lesio-Loun Park",340m
+P004_WC07,SRR17212764,Deltocephalinae,Penthimiini,Jafar,-,javeti,James N. Zahniser,3.40%,3.30%,-,14-Jun-2005,"Togo: Sotouboua Region, border of Kyabobo National Park, Koue village road",250m
+P005_WG06,SRR17212763,Deltocephalinae,Penthimiini,Chinaella,-,cudmorei,Christopher H. Dietrich,2.10%,2.00%,-,2010,"Australia: Western Australia, ~4km S of Bolgart. Syred Rd Jct",-
+P005_WG11,SRR17212762,Deltocephalinae,Penthimiini,Reticuluma,-,dactyla,Christopher H. Dietrich,2.90%,2.90%,bamboo,17-Jul-2018,"China: Shaanxi, Yangling, Northwest A&F University Campus",478m
+P007_WA05,SRR17212761,Deltocephalinae,Penthimiini,Ledroides,-,n.sp.,Christopher H. Dietrich,5.30%,5.30%,-,09-May-2012,Philippines: Iligan City,29m
+P007_WC07,SRR17212760,Deltocephalinae,Penthimiini,n.gen.T1,-,n.sp.1,Christopher H. Dietrich,3.80%,3.80%,-,07-Oct-2007/14-Oct-2007,"Thailand: Chiang Mai, Doi Chiang Dao WS Nature trail",491m
+P007_WC08,SRR17212759,Deltocephalinae,Penthimiini,n.gen.T2,-,n.sp.1,Christopher H. Dietrich,5.70%,5.60%,-,05-Mar-2007/12-Mar-2007,"Thailand: Loei, Phu Ruea National Park, Sa Sawan",1352m
+P007_WC09,SRR17213237,Deltocephalinae,Penthimiini,Haranga,-,sp.,Christopher H. Dietrich,6.40%,6.40%,-,01-Dec-2008/07-Dec-2008,"Thailand: Suphanburi, Pu Toei National Park, car park/Huai Tapern",-
+P007_WD01,SRR17213236,Deltocephalinae,Penthimiini,Ectopiocephalus,-,australis,Christopher H. Dietrich,4.50%,4.40%,-,28-Feb-2008 ,"Australia: Queensland, 121km W of Winton, 48.1km E of Middleton on Kennedy Developmental Road",187m
+P008_WH02,SRR17213235,Deltocephalinae,Penthimiini,n.gen.MG1,-,n.sp.1,Christopher H. Dietrich,6.90%,6.90%,-,04-May-2009/14-May-2009,"Madagascar: Tulear, Vitambany Forest, 5 km N of  Ampotaka",86m
+P009_WA06,SRR17213234,Deltocephalinae,Penthimiini,n.gen.ML1,-,n.sp.1,Christopher H. Dietrich,13.60%,13.60%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P009_WA07,SRR17213233,Deltocephalinae,Penthimiini,Vulturnus,-,dido,Christopher H. Dietrich,7.10%,7.10%,-,15-Jun-2004,"Fiji: Vanua Levu, Bua, 6 km NW Kilaka",-
+P009_WB07,SRR17213232,Deltocephalinae,Penthimiini,Penthimia,-,sp.,Christopher H. Dietrich,11.30%,11.20%,-,05-Dec-2006/06-Dec-2006,"Thailand: Chaiyaphum, Tat Tone National Park, Chaiyapoom forest fire station",195m
+P009_WC04,SRR17213231,Deltocephalinae,Penthimiini,Musosa,-,aeaea,Christopher H. Dietrich,20.10%,20.00%,-,19-Apr-2006/01-May-2006,"Zambia: Copperbelt Province, Kitwe District, Kumasamba Lodge nr. Kafue River",-
+P009_WG02,SRR17213230,Deltocephalinae,Penthimiini,Ledroides,-,n.sp.2,Christopher H. Dietrich,6.00%,6.00%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P014_WF10,SRR17213229,Deltocephalinae,Penthimiini,Neodartus,-,acocephaloides,Christopher H. Dietrich,5.30%,5.30%,-,30-Apr-2012,"Philippines: Mindanao, Malasag Eco-Village, SW side of Cagayan de Oro",-
+P014_WG11,SRR17213228,Deltocephalinae,Penthimiini,Penthimiola,-,n.sp.,Christopher H. Dietrich,11.20%,11.20%,-,08-Sep-2012/17-Sep-2012,"Madagascar: Tulear, Ambohimahavelona village",45m
+P002_WA02,SRR17213226,Deltocephalinae,Deltocephalini,Cortona,-,minuta,Christopher H. Dietrich,10.10%,10.10%,-,13-Feb-2014,"Argentina: Entre Rios, Parque Nacional El Palmar, Mirador Los Loros",-
+P002_WE10,SRR17213225,Deltocephalinae,Paralimnini,Teyasteles,-,divisifrons,Christopher H. Dietrich,2.70%,2.70%,-,01-Nov-2007,"Zambia: Copperbelt Prov., ~12 km SSE of Kitwe Kumasamba Lodge",-
+P002_WF02,SRR17213224,Deltocephalinae,Macrostelini,Balclutha,-,frontalis,Christopher H. Dietrich,7.50%,7.50%,-,27-Oct-2005,"Mexico: Durango, rt.45 km 121 ca. Francisco Primo Verdad",-
+P002_WF09,SRR17213223,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,sordidipennis,Christopher H. Dietrich,4.30%,4.30%,-,10-Jul-2005,"Mongolia: Bulgan, Teshig, Wetland near confluence of Tariakhtain Gol and Egiin Gol",-
+P002_WG01,SRR17213222,Deltocephalinae,Macrostelini,Sonronius,-,dahlbomi,Christopher H. Dietrich,1.30%,1.30%,-,26-Jul-2000,Kyrgyzstan: Chuy W. Ak-Tyuz,-
+P003_WA03,SRR17213221,Deltocephalinae,Macrostelini,Cicadulina,Cicadulina,bimaculata,Christopher H. Dietrich,4.30%,4.30%,-,22-Feb-2015,"Australia: Queensland, Ravensbourne National Park",-
+P004_WF11,SRR17213220,Deltocephalinae,Macrostelini,Evinus,-,peri,James N. Zahniser,1.80%,1.80%,-,23-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, 10 km W Dzhalal-Abad",924m
+P005_WE08,SRR17213219,Deltocephalinae,Macrostelini,Baldulus,-,bilineatus,Christopher H. Dietrich,6.10%,6.10%,-,13-Nov-2005,"Mexico: Mexico, ca. 5km W Sta. Martha",2900m
+P005_WF08,SRR17213218,Deltocephalinae,Macrostelini,Balclutha,-,kuroiwae,Christopher H. Dietrich,6.90%,6.90%,-,20-Sep-2017,"China: Guangxi, ca. QinbeiBazhaigou Scenic Spot",90m
+P005_WF09,SRR17213217,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,alpinus,Christopher H. Dietrich,4.90%,4.90%,-,23-Jul-2005,"Mongolia: Hovsgol Aimag, Tumurbulag Soum, Bugcei (Bugceiin) Gol",1618m
+P005_WG05,SRR17213215,Deltocephalinae,Macrostelini,Nesoclutha,-,phryne,Christopher H. Dietrich,3.90%,3.90%,-,13-Nov-2011,"Australia: Northern Territory, ~65 km W Borrolooly",-
+P006_WF07,SRR17213214,Deltocephalinae,Macrostelini,Dalbulus,-,maidis,Christopher H. Dietrich,3.60%,3.60%,-,10-May-2011,"Brazil: State of Amazonas, Ipixuna, Rio Liberdade, Com. Santa Catarina",169m
+P006_WF09,SRR17213117,Deltocephalinae,Macrostelini,Dalbulus,-,elimatus,Christopher H. Dietrich,7.10%,7.10%,-,10-Nov-2005,"Mexico: Veracruz, 18km S Orizaba",2200m
+P008_WB12,SRR17213116,Deltocephalinae,Macrostelini,Balclutha,-,rubrostriata,Christopher H. Dietrich,6.80%,6.80%,-,27-Oct-2005,"Mexico: Durango, rt.45 km 121 ca. Francisco Primo Verdad",-
+P008_WH08,SRR17213115,Deltocephalinae,Macrostelini,Yamatotettix,-,sexnotatus,Christopher H. Dietrich,4.50%,4.50%,-,12-Sep-2006/19-Sep-2006,"Thailand: Nakhon Nayok, Khao Yai National Park, Nhong Ping Khao Keow",733m
+P009_WE03,SRR17213114,Deltocephalinae,Macrostelini,Sonronius,-,arcuatus,Christopher H. Dietrich,9.40%,9.40%,-,06-Aug-2010,"USA: Montana, Flathead County, Moose Lake",-
+P011_WB06,SRR17213113,Deltocephalinae,Deltocephalini,Cortona,-,silvai,Christopher H. Dietrich,4.00%,4.00%,-,08-Jan-2008,"Argentina: Corrientes, Parque Nacional Mburucuya",80m
+P011_WD02,SRR17213112,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,gracilis,Christopher H. Dietrich,9.60%,9.60%,-,23-Jul-2005,"Mongolia: Hovsgol Aimag, Tumurbulag Soum, Bugcei (Bugceiin) Gol",1618m
+P011_WD03,SRR17213111,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,quadrimaculatus,Christopher H. Dietrich,2.20%,2.20%,-,25-Jul-2018,"China: Zheijiang, Tianmushan",714m
+P012_WE11,SRR17213110,Deltocephalinae,Macrostelini,Evinus,-,angulatus,Christopher H. Dietrich,3.00%,3.00%,-,22-Jul-2006/02-Aug-2006,"Thailand: Chiang Mai, Doi Inthanon National Park, Kew MaePan",2200m
+P014_WA11,SRR17213108,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,quadrilineatus,Christopher H. Dietrich,8.70%,8.70%,-,26-Oct-2005,"Mexico: Durango, rt.40 km 117 14 km W El Salto",-
+P014_WE08,SRR17213107,Deltocephalinae,Macrostelini,Macrosteles,Macrosteles,guttatus,Christopher H. Dietrich,6.90%,6.90%,-,23-Jul-2005,"Mongolia: Hovsgol Aimag, Tumurbulag Soum, Bugcei (Bugceiin) Gol",1618m
+P015_WA10,SRR17213106,Deltocephalinae,Macrostelini,Davisonia,-,major,Christopher H. Dietrich,3.40%,3.40%,-,Jul-2020,"USA: Colorado, Larimer County, Cameron Pass",-
+P015_WE05,SRR17213105,Deltocephalinae,Macrostelini,Balclutha,-,punctata,Christopher H. Dietrich,5.60%,5.50%,-,12-Jun-2017,"Switzerland: Gordola, Reviscai, Riserva Bolle di Magadino",196m
+P001_WH06,SRR17213104,Deltocephalinae,Pendarini,Chlorotettix,Chlorotettix,luteosus,Christopher H. Dietrich,3.90%,3.90%,-,09-Jan-2008,"Argentina: Corrientes, Parque Nacional Mburucuya campground",100m
+P002_WA06,SRR17213103,Deltocephalinae,Pendarini,Copididonus,-,ramonensis,Christopher H. Dietrich,6.30%,6.30%,-,13-Nov-2009,"Bolivia: Canta Cruz, ca. Buena Vista",-
+P002_WD10,SRR17213102,Deltocephalinae,Pendarini,Paraphlepsius,Sabix,irroratus,Christopher H. Dietrich,4.90%,4.90%,-,09-Aug-2016 ,"USA: Illinois, Livingston County, US rt. 66, 3.6 mi SW Dwight",200m
+P002_WD12,SRR17213101,Deltocephalinae,Pendarini,Chlorotettix,-,lusorius,Christopher H. Dietrich,3.10%,3.10%,-,09-Aug-2016 ,"USA: Illinois, Livingston County, US rt. 66, 3.6 mi SW Dwight",200m
+P002_WG03,SRR17213100,Deltocephalinae,Pendarini,Dorydiella,-,kansana,Christopher H. Dietrich,1.70%,1.70%,-,10-Aug-2016,"USA: Illinois, Livingston County, RR prairie, 1 mi NE Cayuga",-
+P002_WG07,SRR17213099,Deltocephalinae,Pendarini,Paraphlepsius,Paraphysius,lobatus,Christopher H. Dietrich,3.90%,3.90%,-,10-Aug-2016,"USA: Illinois, Livingston County, RR prairie, 1 mi NE Cayuga",-
+P003_WC02,SRR17213097,Deltocephalinae,Pendarini,Chlorotettix,-,inscriptus,Christopher H. Dietrich,3.90%,3.90%,-,15-Aug-2017,"Mexico: Hidalgo, Zacualtipan, La Mojonera",2067m
+P003_WC03,SRR17213096,Deltocephalinae,Pendarini,Tropicanus,-,sp.,Christopher H. Dietrich,2.90%,2.90%,-,08-Sep-2018,"Mexico: Jalisco, Tuxcacuesco",864m
+P004_WD06,SRR17213095,Deltocephalinae,Pendarini,Bandaromimus,-,parvicauda,James N. Zahniser,8.20%,8.20%,-,24-Oct-2002,"Peru: Huanuco, 5 km N Tingo Maria",600m
+P004_WE05,SRR17213094,Deltocephalinae,Pendarini,Paraphlepsius,Paraphlepsius,nebulosus,James N. Zahniser,5.30%,5.30%,-,08-Jul-2004,"USA: Illinois, Iriquois County, Medewin Dolomite Prairie, S Kankakee",-
+P004_WF05,SRR17212757,Deltocephalinae,Pendarini,Copididonus,-,hyalinipennis,James N. Zahniser,9.90%,9.90%,-,24-May-1996/31-May-1996,"Brasil: Goias, Uruacu",-
+P007_WF10,SRR17212756,Deltocephalinae,Pendarini,Chlorotettix,Chlorotettix,neotropicus,Christopher H. Dietrich,4.60%,4.50%,-,25-Sep-2009/01-Oct-2009,"Argentina: Salta, 3 km W Cafayate",1760m
+P007_WH07,SRR17212755,Deltocephalinae,Pendarini,Chlorotettix,Chlorotettix,lobatus,Christopher H. Dietrich,6.70%,6.70%,-,16-Oct-2001,"Mexico: Jalisco, ca. La Huerta",480m
+P008_WE08,SRR17213484,Deltocephalinae,Pendarini,Paraphlepsius,Strephonius,floridanus,Christopher H. Dietrich,3.50%,3.40%,-,12-Jun-2017,"USA: North Carolina, Burke County, Linville Gorge",-
+P009_WA05,SRR17213483,Deltocephalinae,Pendarini,Tropicanus,Cabimanus,n.sp.,Christopher H. Dietrich,65.20%,65.20%,-,11-May-2013,"Brazil: Amazonas, Ipixuna, Rio Liberdade",175m
+P009_WB03,SRR17213482,Deltocephalinae,Pendarini,Tropicanus,Tropicanus,amazonicus,Christopher H. Dietrich,86.80%,86.80%,-,11-May-2014,"Brazil: Amazonas, Ipixuna, Rio Liberdade",175m
+P009_WB12,SRR17213480,Deltocephalinae,Pendarini,Bandaromimus,-,fulvopictus,Christopher H. Dietrich,41.90%,41.80%,-,11-May-2011,"Brazil: Amazonas, Ipixuna, Rio Liberdade",175m
+P009_WE08,SRR17213479,Deltocephalinae,Pendarini,Paraphlepsius,Gamarex,mimus,Christopher H. Dietrich,5.90%,5.90%,-,12-Jun-2017,"USA: North Carolina, Burke County, Linville Gorge",-
+P011_WC04,SRR17213478,Deltocephalinae,Pendarini,Chlorotettix,-,galbanatus,Christopher H. Dietrich,4.40%,4.40%,-,09-Aug-2016 ,"USA: Illinois, Livingston County, US rt. 66, 3.6 mi SW Dwight",200m
+P011_WF09,SRR17213477,Deltocephalinae,Pendarini,Chlorotettix,-,rugicollis,James N. Zahniser,4.70%,4.70%,-,29-Jun-2004,"USA: Illinois, Lee County, Foley Sand Prairie",-
+P012_WC06,SRR17213476,Deltocephalinae,Pendarini,Tropicanus,Tropicanus,flectus,Christopher H. Dietrich,10.60%,10.50%,-,14-Sep-2009/17-Sep-2009,"Peru: Ancash Region, 7 km E Carhuaz, Pampamarca",-
+P012_WC12,SRR17213475,Deltocephalinae,Pendarini,Chlorotettix,Chlorotettix,fraterculus,Christopher H. Dietrich,5.90%,5.90%,-,18-Aug-2000/02-Sep-2000,"Bolivia: Santa Cruz Prov., Quebrada Isiri, 20 km S Camiri",865m
+P012_WF05,SRR17213474,Deltocephalinae,Pendarini,Tropicanus,-,n.sp.BR1,Christopher H. Dietrich,5.20%,5.20%,-,23-Mar-2016,"Brazil: Roraima, Reserva Maraca",118m
+P012_WG01,SRR17213473,Deltocephalinae,Pendarini,Paraphlepsius,Strephonius,hemicolor,Christopher H. Dietrich,9.10%,9.10%,-,11-Sep-2019,"USA: Illinois, Danville, Vermilion County",-
+P012_WG09,SRR17213472,Deltocephalinae,Pendarini,Copididonus,-,n.sp.,Christopher H. Dietrich,6.10%,6.00%,-,18-Jan-2008,Argentina: Salta,1250m
+P012_WH10,SRR17213471,Deltocephalinae,Pendarini,Paraphlepsius,Paraphysius,micronotatus,Christopher H. Dietrich,7.10%,7.20%,-,29-Oct-2005,"Mexico: Coahuila, Huachichil rd. 2km E rt.54",-
+P014_WB04,SRR17213469,Deltocephalinae,Pendarini,Chlorotettix,-,sp.,Christopher H. Dietrich,3.30%,3.30%,-,25-Oct-2002,"Peru: Huanuco, 5km S Tingo Maria",600m
+P001_WA07,SRR17213468,Deltocephalinae,Hecalini,Hecalus,-,macilentus,Christopher H. Dietrich,4.40%,4.30%,-,18-Jun-2007,"Zambia: Northwestern Prov., Zambezi Source National Monument",1474m
+P001_WB09,SRR17213467,Deltocephalinae,Hecalini,Memnonia,-,ornata,Christopher H. Dietrich,2.40%,2.40%,-,18-Oct-2005,"Mexico: Distrito Federal, rt. 95 km 41 S Mexico City",2970m
+P001_WC05,SRR17213466,Deltocephalinae,Hecalini,Spangbergiella,-,quadripunctata,Christopher H. Dietrich,5.90%,5.90%,-,20-Oct-2005,"Mexico: Mexico, rt.134 3.5km S Temescaltepec",1950m
+P001_WE03,SRR17213465,Deltocephalinae,Hecalini,Neohecalus,-,magnificus,Christopher H. Dietrich,1.60%,1.60%,-,09-Aug-2016,"USA: Illinois, Livingston County",200m
+P001_WF09,SRR17213464,Deltocephalinae,Hecalini,Fangamanus,-,tripunctatus,Christopher H. Dietrich,5.40%,5.40%,-,12-Jul-2012,"China: Shaanxi, 8km ENE Chenhexiang",660m
+P001_WH09,SRR17213093,Deltocephalinae,Hecalini,Hecalus,-,chilensis,Christopher H. Dietrich,2.40%,2.30%,grasses,18-Jan-2014,"Chile: Araucania, Parque Nacional Nahuelbuta, Cerro Anay road",-
+P002_WA03,SRR17213092,Deltocephalinae,Hecalini,Otamendiella,-,linnavuorii,Christopher H. Dietrich,4.40%,4.40%,-,17-Feb-2014,"Argentina: Buenos Aires, Reserva Natural Otamendi",-
+P002_WB03,SRR17213091,Deltocephalinae,Hecalini,Hecalusina,-,unispinosa,Christopher H. Dietrich,4.70%,4.70%,-,31-Jul-2006/07-Aug-2006 ,"Thailand: Phetchabun Nam Nao National Park, Tham Pra Laad Forest Unit",715m
+P002_WB04,SRR17213090,Deltocephalinae,Hecalini,Hecalus,-,fuscovittatus,Christopher H. Dietrich,3.70%,3.70%,-,26-Mar-2007/02-Apr-2007,"Thailand: Loei Phu Ruea National Park, Nature tail",1353m
+P002_WC06,SRR17213087,Deltocephalinae,Hecalini,Linnavuoriella,-,arcuata,Christopher H. Dietrich,5.50%,5.50%,-,28-Feb-2015,"Australia: Queensland, Mt. Bartle Frere trailhead ",710m
+P003_WE01,SRR17213086,Deltocephalinae,Hecalini,Jiutepeca,-,nigrita,Christopher H. Dietrich,6.80%,6.80%,-,10-Nov-2005,"Mexico: Puebla, 6.3km E Azumbilla",2350m
+P003_WE03,SRR17213085,Deltocephalinae,Hecalini,Lualabanus,-,n.sp.,Christopher H. Dietrich,4.90%,4.90%,-,20-Oct-2008,Republic of Congo: Iboubikro,-
+P004_WF08,SRR17213084,Deltocephalinae,Hecalini,Attenuipyga,Dorycara,minor,James N. Zahniser,5.60%,5.60%,-,22-May-2002,"USA: New Mexico, Santa Rosa",-
+P004_WF09,SRR17213083,Deltocephalinae,Hecalini,Parabolocratalis,-,lusingae,James N. Zahniser,4.40%,4.40%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Oliviershoek Pass summit",1741m
+P004_WF10,SRR17213082,Deltocephalinae,Hecalini,Attenuipyga,Attenuipyga,brevis,James N. Zahniser,4.50%,4.50%,-,19-Apr-1998,"USA: Texas, Culberson Co., 7 mi. NE jct Rt. 54 & 180",1200m
+P004_WG03,SRR17213081,Deltocephalinae,Hecalini,Memnonia,-,fenestrella,James N. Zahniser,3.10%,3.10%,-,16-Apr-1998,"USA: California, Inyo County, Rt 127 0.5 mi. NE Tecopa",400m
+P005_WA09,SRR17213080,Deltocephalinae,Hecalini,Spangbergiella,-,vulnerata,Christopher H. Dietrich,9.00%,9.00%,-,24-Jan-2008,"Argentina: Buenos Aires, ca. Reserva Otamendi",10m
+P005_WA11,SRR17213079,Deltocephalinae,Hecalini,Glossocratus,-,foveolatus,Christopher H. Dietrich,17.80%,17.80%,-,16-Jul-2000,"Kyrgyzstan: Naryn, Alabuga River 25 km W Baetovo",1700m
+P005_WA12,SRR17213078,Deltocephalinae,Hecalini,Glossocratus,-,afzelii,Christopher H. Dietrich,5.90%,5.80%,-,13-Oct-2008,"Republic of Congo: Iboubikro, Lesio-Loun Park",330m
+P005_WB01,SRR17213076,Deltocephalinae,Hecalini,Dicyphonia,-,sp.,Christopher H. Dietrich,8.00%,7.90%,-,30-Oct-2005,"Mexico: Coahuila, Cuahtemoc Road km 15.9",2400m
+P006_WH07,SRR17213075,Deltocephalinae,Hecalini,Thomsonia,-,porrecta,Christopher H. Dietrich,4.70%,4.70%,-,01-Jul-2006/08-Jul-2006,"Thailand: Chiang Mai, Doi Inthanon National Park, campground pond",1200m
+P007_WF04,SRR17213074,Deltocephalinae,Hecalini,Hecalus,-,atascaderus,Christopher H. Dietrich,3.70%,3.70%,-,22-Oct-2005,"Mexico: Zacatecas, 2.6 km E Rt. 54",1600m
+P011_WA10,SRR17213073,Deltocephalinae,Hecalini,Hecalus,-,finnamorei,Christopher H. Dietrich,3.80%,3.80%,-,17-Oct-2005,"Mexico: Distrito Federal, Mexico City, Instituto de Biologia UNAM",2250m
+P011_WB02,SRR17213072,Deltocephalinae,Hecalini,Hecalus,-,pallescens,Christopher H. Dietrich,6.20%,6.10%,-,25-Jan-2009,"Australia: Queensland, Stannary Hills area",813m
+P011_WB05,SRR17213071,Deltocephalinae,Hecalini,Hecalus,-,muzaffarabadensis,Christopher H. Dietrich,4.00%,4.00%,-,26-Mar-2007/02-Apr-2007,"Thailand: Loei, Phu Ruea National Park Sa Sawan",1352m
+P011_WC09,SRR17213070,Deltocephalinae,Hecalini,Hecalus,-,nitobei,Christopher H. Dietrich,1.40%,1.40%,-,10-Sep-2016,"China: Chongqing, Jinyan Shan",785m
+P011_WG07,SRR17212901,Deltocephalinae,Hecalini,Jiutepeca,-,n.sp.,James N. Zahniser,7.50%,7.40%,-,13-Oct-2001,"Mexico: Jalisco, Aguacate-Zenzontla Road",840m
+P011_WG08,SRR17212900,Deltocephalinae,Hecalini,Hecalus,-,curtus,James N. Zahniser,3.30%,3.30%,-,21-May-2002,"USA: Oklahoma, ~5mi. E. Sweetwater",-
+P011_WG09,SRR17212899,Deltocephalinae,Hecalini,Hecalus,-,virescens,James N. Zahniser,7.80%,7.80%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Arthurs Seat hill",1583m
+P011_WG10,SRR17212897,Deltocephalinae,Hecalini,Linnavuoriella,-,masombwensis,James N. Zahniser,5.10%,5.10%,-,Nov-2007,"Zambia: Northwestern Prov., ~11km SW Mwinilunga, Nkunyi Local Forest",-
+P011_WH04,SRR17212896,Deltocephalinae,Hecalini,Spangbergiella,-,felix,Christopher H. Dietrich,2.60%,2.60%,-,05-Jan-2008,"Argentina: Corrientes, 1 km S. Pte. Internacional, Santo Tome",-
+P011_WH05,SRR17212895,Deltocephalinae,Hecalini,Spangbergiella,-,mexicana,Christopher H. Dietrich,4.00%,4.00%,-,10-Nov-2005,"Mexico: Puebla, Rt. 150 24.1 km S Orizaba",2300m
+P011_WH06,SRR17212894,Deltocephalinae,Hecalini,Linnavuoriella,-,berenice,Christopher H. Dietrich,6.60%,6.50%,-,12-Nov-2007,"Zambia: Copperbelt Prov., ~45 km S of Ndola, Nsobe Game Camp",1255m
+P011_WH07,SRR17212893,Deltocephalinae,Hecalini,Hecalus,-,viridis,Christopher H. Dietrich,4.90%,4.90%,-,20-Aug-2017,"USA: Illinois, Mason County",-
+P011_WH08,SRR17212892,Deltocephalinae,Hecalini,Hecalus,-,major,Christopher H. Dietrich,2.90%,2.90%,-,05-Jun-2012,"USA: Illinois, Will County, 0.5 mi SW Peotone",-
+P011_WH09,SRR17212891,Deltocephalinae,Hecalini,Hecalus,-,aurora,Christopher H. Dietrich,4.40%,4.40%,-,10-Jun-2005,"Ghana: Greater Accra Region, Shai Hills Resource Reserve",-
+P011_WH10,SRR17212890,Deltocephalinae,Hecalini,Hecalus,-,arcuatus,Christopher H. Dietrich,7.30%,7.20%,-,21-Aug-2006/28-Aug-2006,"Thailand: Phetchabun, Nam Nao National Park, Tham Pra Laad Forest Unit",711m
+P011_WH11,SRR17212889,Deltocephalinae,Hecalini,Hecalus,-,wallengrenii,Christopher H. Dietrich,3.10%,3.10%,-,23-Jun-2006/26-Jun-2006,"Thailand: Chaiyaphum, TatTone National Park, Dry Dipterocarp Forest",250m
+P012_WH07,SRR17212888,Deltocephalinae,Hecalini,Hecalus,-,australis,Christopher H. Dietrich,8.10%,8.10%,-,23-Apr-2003/04-May-2003,"Australia: Western Australia Karjini National Park, Dale Gorge Road",668m
+P012_WH09,SRR17212886,Deltocephalinae,Hecalini,Memnonia,-,fossitia,Christopher H. Dietrich,4.20%,4.20%,-,23-Oct-2005,"Mexico: Zacatecas, Rt. 23 31km S Fresnillo",2300m
+P014_WG07,SRR17212885,Deltocephalinae,Hecalini,Hecalus,-,prominens,Christopher H. Dietrich,7.20%,7.20%,-,12-Aug-2008/18-Aug-2008,Republic of Congo: Iboubikro,-
+P015_WF11,SRR17212884,Deltocephalinae,Hecalini,Attenuipyga,Dorycara,platyrhyncha,Christopher H. Dietrich,7.20%,7.20%,-,10-Aug-2016,"USA: Ilinois, Livingston County, RR prairie 1 mi. NE Cayuga",-
+P001_WA01,SRR17212883,Deltocephalinae,Drabescini,Odzalana,-,alcumena,Christopher H. Dietrich,4.30%,4.30%,-,06-Nov-2007,"Zambia: Northwestern Prov., Mwinilunga",-
+P001_WF01,SRR17212882,Deltocephalinae,Drabescini,Kutara,-,lui,Christopher H. Dietrich,5.60%,5.50%,-,12-Oct-2006/19-Oct-2006,"Thailand: Loei, Phu Ruea National Park, Suan hin Palee",1178m
+P001_WF02,SRR17212881,Deltocephalinae,Drabescini,Drabescus,-,samoanus,Christopher H. Dietrich,8.00%,8.00%,-,Dec-2008/Mar-2009,"Australia: Queensland, 6 Victor Place, Kuranda",395m
+P001_WF08,SRR17212880,Deltocephalinae,Drabescini,Dryadomorpha,-,pallida,Christopher H. Dietrich,7.60%,7.60%,-,24-Jun-2004,"China: Taiwan, Kaohsiung, Shanping Forest Reserve Station",700m
+P001_WF11,SRR17212879,Deltocephalinae,Drabescini,Carvaka,-,formosana,Christopher H. Dietrich,3.70%,3.60%,-,07-Aug-2013,"China: Taiwan, Aowanda Forest Reserve",-
+P001_WG04,SRR17212878,Deltocephalinae,Drabescini,Drabescus,-,nitobei,Christopher H. Dietrich,3.60%,3.60%,-,26-Jun-2004,"China: Taiwan, Taichung, Gu Kuang",-
+P003_WA07,SRR17213213,Deltocephalinae,Drabescini,Carvaka,-,contempta,Christopher H. Dietrich,2.80%,2.80%,-,06-Jan-2011,"Australia: Victoria, Bemm River Scenic Reserve, Rainforest Walk",-
+P003_WD11,SRR17213211,Deltocephalinae,Drabescini,Odmiella,-,sp.,Christopher H. Dietrich,3.40%,3.40%,-,05-Nov-2007/09-Nov-2007,"Zambia: Northwestern Prov., nr. Mwinilunga",1448m
+P003_WE07,SRR17213210,Deltocephalinae,Drabescini,Nirvanguina,-,n.sp.,Christopher H. Dietrich,3.30%,3.30%,-,2-Dec-2006/08-Dec-2006,"Thailand: Loei, Phu Kradueng National Park",275m
+P003_WE08,SRR17213209,Deltocephalinae,Drabescini,Waigara,-,n.sp.,Christopher H. Dietrich,2.50%,2.50%,-,24-Jun-2004,"China: Taiwan, Kaohsiung, Shanping Forest Reserve Station",700m
+P003_WF03,SRR17213208,Deltocephalinae,Drabescini,Roxasella,-,n.sp.3,Christopher H. Dietrich,3.70%,3.70%,-,03-May-2012,"Philippines: Mindanao, Bukidnon, Mt. Kitanglad summit trail",1773m
+P003_WF04,SRR17213207,Deltocephalinae,Drabescini,Hybrasil,-,n.sp.,Christopher H. Dietrich,4.30%,4.30%,-,03-Apr-2012,"Philippines: Mindanao, Bukidnon, Mt. Kitanglad summit trail",1773m
+P004_WE09,SRR17213206,Deltocephalinae,Drabescini,Bhatia,-,satsumensis,James N. Zahniser,4.70%,4.70%,-,10-Jun-2004,"China: Taiwan, Taipei, Fushan Forest Res. Sta.",500m
+P004_WE10,SRR17213205,Deltocephalinae,Drabescini,Parabolopona,-,guttata,James N. Zahniser,5.50%,5.60%,-,13-Jun-2004,"China: Taiwan, Nantou, Pei Tung Yan Mountain",1550m
+P005_WH06,SRR17213204,Deltocephalinae,Drabescini,Favintiga,-,gracilipenis,Christopher H. Dietrich,17.60%,17.50%,-,30-Jun-2019,"China: Taiwan, Miaoli County, Rt. 124, Nanchuang",-
+P006_WA09,SRR17213203,Deltocephalinae,Drabescini,n.gen.PNG1,-,n.sp.1,Christopher H. Dietrich,10.30%,10.30%,-,25-Jul-2008/29-Jul-2008,"Papua New Guinea: New Britain Island, East New Britain Prov., Karavat",-
+P006_WA11,SRR17213202,Deltocephalinae,Drabescini,n.gen.PNG2,-,n.sp.1,Christopher H. Dietrich,5.50%,5.50%,-,25-Jul-2008/29-Jul-2008,"Papua New Guinea: New Britain Island, East New Britain Prov., Karavat",-
+P006_WC11,SRR17213200,Deltocephalinae,Drabescini,Nakula,-,multicolor,Christopher H. Dietrich,3.80%,3.80%,-,23-Sep-2017,"China: Guangxi, Longtan National Forest Park, Longtan Villa",390m
+P006_WD02,SRR17213199,Deltocephalinae,Drabescini,n.gen.ML5,-,n.sp.1,Christopher H. Dietrich,3.90%,3.90%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P006_WD04,SRR17213198,Deltocephalinae,Drabescini,n.gen.ML3,-,n.sp.1,Christopher H. Dietrich,4.40%,4.40%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P006_WD05,SRR17213197,Deltocephalinae,Drabescini,Bhatiahamus,-,flabellata,Christopher H. Dietrich,3.40%,3.30%,-,29-May-2012,"Vietnam: Vinh Phuc, Tam Dao National Park",-
+P006_WD06,SRR17213196,Deltocephalinae,Drabescini,Drabescoides,-,nuchalis,Christopher H. Dietrich,4.60%,4.50%,-,10-Sep-2016,"China: Chongqing, Jinyan Shan",872m
+P006_WF05,SRR17213195,Deltocephalinae,Drabescini,Divus,-,sp.,Christopher H. Dietrich,6.30%,6.30%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P006_WH06,SRR17213194,Deltocephalinae,Drabescini,n.gen.PH1,-,n.sp.1,Christopher H. Dietrich,3.90%,3.90%,-,07-Dec-2010,"Philippines: Bukidnon, Brgy Impalutao, CEDAR",780m
+P007_WA08,SRR17213193,Deltocephalinae,Drabescini,n.gen.PH4,-,n.sp.1,Christopher H. Dietrich,4.30%,4.30%,-,03-May-2012,Philippines: about 1 hour up trail to top of Mt Kitanglad,1773m
+P007_WC12,SRR17213192,Deltocephalinae,Drabescini,n.gen.T,-,n.sp.1,Christopher H. Dietrich,6.70%,6.70%,-,04-Apr-2007/11-Apr-2007,"Thailand: Ubon Ratchathani, Pha Taem National Park, west of HuayPok substation",438m
+P007_WF09,SRR17213191,Deltocephalinae,Drabescini,Roxasella,-,philippina,Christopher H. Dietrich,4.80%,4.70%,-,07-Dec-2010,"Philippines: Bukidnon, Brgy Impalutao, CEDAR",780m
+P008_WA02,SRR17213069,Deltocephalinae,Drabescini,Pararoxasella n.gen.,-,n.sp.,Christopher H. Dietrich,9.60%,9.60%,-,09-Aug-2003,"Malaysia: Sabah, Croker Range National Park, HQ Station Road",-
+P008_WA11,SRR17213068,Deltocephalinae,Drabescini,n.gen.ML6,-,n.sp.1,Christopher H. Dietrich,5.40%,5.40%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P008_WA12,SRR17213067,Deltocephalinae,Drabescini,n.gen.ML4,-,n.sp.1,Christopher H. Dietrich,4.90%,4.90%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P008_WB01,SRR17213066,Deltocephalinae,Drabescini,n.gen.ML1,-,n.sp.1,Christopher H. Dietrich,6.60%,6.60%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P009_WD01,SRR17213065,Deltocephalinae,Drabescini,Isaca,-,bipars,Christopher H. Dietrich,6.30%,6.20%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",-
+P009_WG05,SRR17213064,Deltocephalinae,Drabescini,n.gen.,-,sp.,Christopher H. Dietrich,8.70%,8.70%,-,18-May-2009/25-May-2009,"Thailand: Petchaburi, Kaeng Krachan National Park",735m
+P011_WA08,SRR17213063,Deltocephalinae,Drabescini,Dryadomorpha,-,n.sp.A,Christopher H. Dietrich,3.90%,3.90%,-,01-Nov-2007,"Zambia: Copperbelt Prov., ~12 km SSE of KitweKumasamba Lodge",1151m
+P011_WA09,SRR17213062,Deltocephalinae,Drabescini,Dryadomorpha,-,n.sp.B,Christopher H. Dietrich,3.60%,3.60%,-,30-Oct-2007/14-Nov-2007,"Zambia: Copperbelt Prov., Kitwe District, Kumasamba Lodge nr. Kafue River",-
+P011_WB10,SRR17213061,Deltocephalinae,Drabescini,Drabescus,-,n.sp.,Christopher H. Dietrich,4.50%,4.50%,-,08-Jan-2008,"Solomon Islands: Western Province, Kolombangara Island",421m
+P011_WC07,SRR17213060,Deltocephalinae,Drabescini,Kutara,-,tenuipenis,Christopher H. Dietrich,4.40%,4.40%,-,29-May-2012,"Vietnam: Vinh Phuc, Tam Dao National Park",-
+P011_WC08,SRR17213058,Deltocephalinae,Drabescini,Roxasella,-,n.sp.2,Christopher H. Dietrich,3.20%,3.20%,-,29-May-2012,"Vietnam: Vinh Phuc, Tam Dao National Park",-
+P012_WD01,SRR17213057,Deltocephalinae,Drabescini,Roxasella,-,n.sp.,Christopher H. Dietrich,4.60%,4.60%,-,23-Apr-2012,Philippines: E side of Mt Hamiguitan,62m
+P014_WB06,SRR17213056,Deltocephalinae,Drabescini,Kutara,-,sinensis,Christopher H. Dietrich,5.70%,5.70%,-,18-Sep-2017,"China: Guangxi, ca. Chongzao Shizitou Forest Park",400m
+P014_WC01,SRR17213055,Deltocephalinae,Drabescini,Bhatia,-,javana,Christopher H. Dietrich,3.00%,3.00%,-,04-Dec-2011,"Australia: Northern Territory, Gunn Point Area NE Darwin",-
+P014_WE03,SRR17213054,Deltocephalinae,Drabescini,Kutara,-,n.sp.ML1,Christopher H. Dietrich,5.20%,5.20%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P015_WG07,SRR17213053,Deltocephalinae,Drabescini,Kutara,-,trispinosa,Christopher H. Dietrich,4.80%,4.80%,-,12-Jul-2019,"Vietnam: Vinh Phuc, Tam Dao",-
+P015_WH08,SRR17213052,Deltocephalinae,Drabescini,Hybrasil,-,brani,Christopher H. Dietrich,11.60%,11.60%,-,25-Aug-2003,"Fiji: Kadavu Isl., Golodamu",128m
+P002_WA11,SRR17213051,Deltocephalinae,Opsiini,Hishimonus,-,compactus,Christopher H. Dietrich,10.20%,10.20%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park",-
+P002_WC01,SRR17213050,Deltocephalinae,Opsiini,Paralampridius,-,truncatus,Christopher H. Dietrich,5.50%,5.50%,-,19-Mar-2007/26-Mar-2007,"Thailand: Chaiyaphum, Tat Tone National Park, Oficer house at Tat Fah waterfall",242m
+P002_WC09,SRR17213049,Deltocephalinae,Opsiini,Orosius,-,pallidus,Christopher H. Dietrich,6.50%,6.50%,-,14-Feb-2008,"Australia: Queensland, Barkly Hwy rest area 60 km E Mt. Isa",-
+P002_WD03,SRR17213047,Deltocephalinae,Opsiini,Opsius,-,stactogalus,Christopher H. Dietrich,3.50%,3.40%,-,08-May-2014/14-May-2014,"USA, Arizona, Maricopa County",425m
+P002_WF12,SRR17213046,Deltocephalinae,Opsiini,Pseudophlepsius,-,binotatus,Christopher H. Dietrich,3.80%,3.70%,-,2-Jul-1999,"Kyrgyzstan: Naryn, Karajudzhur, R. 5km N Sary-Bulak",-
+P002_WG09,SRR17212877,Deltocephalinae,Opsiini,Dixianus,-,utahnus,Christopher H. Dietrich,5.00%,5.00%,-,10-Mar-2016/30-Mar-2016,"USA: Arizona, La Paz County, Quartzsite, I-10 at Gold Nugget Road",-
+P002_WH02,SRR17212876,Deltocephalinae,Opsiini,Paralampridius,-,rotundatus,Christopher H. Dietrich,7.20%,7.20%,-,02-May-2007/09-May-2007,"Thailand: Ubon Ratchathani, Pha Taem National Park, First level-Huay Sanhom waterfall",-
+P002_WH03,SRR17212875,Deltocephalinae,Opsiini,Alishania,-,formosana,Christopher H. Dietrich,3.80%,3.80%,-,15-Jun-2004,"China: Taiwan, Nantou Yuanfeng, Rt.14 km",-
+P003_WA08,SRR17212874,Deltocephalinae,Opsiini,Neoaliturus,-,carbonarius,Christopher H. Dietrich,6.50%,6.50%,-,13-Jul-2000,"Kyrgyzstan: Dzhalal-Abad, 10 km W Dzhalal-Abad",-
+P003_WA12,SRR17212873,Deltocephalinae,Opsiini,Japananus,-,hyalinus,Christopher H. Dietrich,5.90%,5.90%,-,07-Sep-2015,"Switzerland: Canton Ticino, Arzo",-
+P003_WF11,SRR17212872,Deltocephalinae,Opsiini,Lycioides,-,sp.,Christopher H. Dietrich,2.50%,2.50%,-,10-Mar-2016/30-Mar-2016,"USA: Arizona, Maricopa County, 12 km E Quartzsite, I-10 at Gold Nugget Road",-
+P004_WB03,SRR17212871,Deltocephalinae,Opsiini,Masiripius,-,lugubris,James N. Zahniser,26.90%,26.80%,-,11-Mar-2008/15-Mar-2008,"India: Rajasthan, Jodhpur, 10 km SW Jodhpur, Machia Safari Park",-
+P004_WC10,SRR17212870,Deltocephalinae,Opsiini,Nesophrosyne,-,maritima,James N. Zahniser,5.60%,5.60%,-,26-May-2007,"USA: Hawaii, Oahu, road to Mt. Kaala summit",-
+P005_WF06,SRR17212868,Deltocephalinae,Opsiini,Hishimonus,-,aberrans,Christopher H. Dietrich,3.40%,3.30%,-,18-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park",-
+P005_WG12,SRR17212867,Deltocephalinae,Opsiini,Hishimonoides,-,recurvatis,Christopher H. Dietrich,0.90%,0.90%,bamboo,17-Jul-2018,"China: Shaanxi, Yangling, Northwest A&F University Campus",478m
+P006_WD03,SRR17212866,Deltocephalinae,Opsiini,n.gen.T1,-,n.sp.1,Christopher H. Dietrich,6.20%,6.20%,-,07-Oct-2007/14-Oct-2007,"Thailand: Chiang Mai, Doi Chiang Dao WS Nature trail",491m
+P006_WE04,SRR17212865,Deltocephalinae,Opsiini,n.gen.ZA1,-,n.sp.1,Christopher H. Dietrich,2.50%,2.50%,-,01-Nov-2007,"Zambia: Northwestern Prov., ~11km SW Mwinilunga, Nkunyi Local Forest",-
+P006_WH12,SRR17212864,Deltocephalinae,Opsiini,Libengaia,-,n.sp.,Christopher H. Dietrich,3.60%,3.60%,-,07-Jun-2005,"Ghana: Western Region, Ankasa Resource Reserve, Nkwanta Camp",-
+P007_WA06,SRR17212863,Deltocephalinae,Opsiini,Kirkaldiella,-,n.sp.PH1,Christopher H. Dietrich,3.30%,3.30%,-,09-May-2012,"Philippines: Initao National Park, Misamis Oriental, W of Cagayan do Oro",-
+P007_WC04,SRR17212862,Deltocephalinae,Opsiini,n.gen.T3,-,n.sp.1,Christopher H. Dietrich,5.60%,5.60%,-,17-Mar-2008/24-Mar-2008,"Thailand: Chiang Mai, Doi Chiang Dao WS Nature trail",491m
+P008_WD05,SRR17212861,Deltocephalinae,Opsiini,Navaia,-,filicicola,Christopher H. Dietrich,14.90%,14.90%,-,21-Oct-2003/18-Nov-2003,"Fiji: Viti Levu Island, Vuda Prov., Koroyanitu National Heritage Park, Savuione Trail",450m
+P008_WD10,SRR17212860,Deltocephalinae,Opsiini,n.gen.ML1,-,n.sp.1,Christopher H. Dietrich,12.10%,12.10%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P008_WG03,SRR17212859,Deltocephalinae,Opsiini,n.gen.T2,-,n.sp.1,Christopher H. Dietrich,3.80%,3.80%,-,26-Jul-2006/02-Aug-2006,"Thailand: Khonkaen, Nam Pong National Park office",344m
+P009_WB05,SRR17212856,Deltocephalinae,Opsiini,Satsumanus,-,n.sp.,Christopher H. Dietrich,12.60%,12.60%,-,25-Aug-2003,"Fiji: Kadavu Isl., 0.25km SW Golodamu, Moanakaka Bird Sanctuary",60m
+P009_WC02,SRR17212855,Deltocephalinae,Opsiini,n.gen.CB1,-,n.sp.,Christopher H. Dietrich,6.90%,6.90%,-,09-Dec-2016/15-Dec-2016,"Cambodia: Rtanakiri, Veun Sai Dist, Veun Sai-Siem Pang National Park",97m
+P009_WC03,SRR17212854,Deltocephalinae,Opsiini,Kirkaldiella,-,n.sp.FI1,Christopher H. Dietrich,6.70%,6.70%,-,23-Oct-2003,"Fiji: Kadavu Isl., Golodamu",128m
+P009_WD02,SRR17213189,Deltocephalinae,Opsiini,Kirkaldiella,-,n.sp.FI2,Christopher H. Dietrich,9.10%,9.10%,-,13-Feb-2004,"Fiji: Viti Levu Isl., Naitasiri, Naval Village, Eteni",-
+P009_WD11,SRR17213188,Deltocephalinae,Opsiini,Navaia,-,n.sp.,Christopher H. Dietrich,5.70%,5.70%,-,31-Jul-2004,"Fiji: Taevuni, Cakaudrova, 5.3 km SE Tavuki, Mt. Devo",1064m
+P009_WE09,SRR17213187,Deltocephalinae,Opsiini,Paralampridius,-,sinuatus,Christopher H. Dietrich,8.80%,8.80%,-,19-Jan-2009/26-Jan-2009,"Thailand: Nakhon Si Thammarat, Namtok Yong National Park, Klong Jang waterfall",154m
+P009_WF05,SRR17213186,Deltocephalinae,Opsiini,Hishimonus,-,viraktamathi,Christopher H. Dietrich,19.30%,19.20%,-,02-Oct-2005,"India: Maharashtra, Pune District, 5 km E Mulshi Lake near Tamini Village",-
+P009_WF08,SRR17213185,Deltocephalinae,Opsiini,Neoaliturus,-,angulatus,Christopher H. Dietrich,26.80%,26.80%,-,01-Oct-2004/23-Oct-2004,"South Africa: Western Cape, 7 km E Ladismith",520m
+P009_WF11,SRR17213184,Deltocephalinae,Opsiini,Orosius,-,argentatus,Christopher H. Dietrich,7.60%,7.60%,-,23-Apr-2003/04-May-2003,"Australia: Western Australia, Karjini National Park, Dale Gorge Road",668m
+P011_WC03,SRR17213183,Deltocephalinae,Opsiini,Neoaliturus,Circulifer,tenellus,Christopher H. Dietrich,3.40%,3.40%,-,09-May-2014/14-May-2014,"USA: California, Kern County, Weldon",810m
+P011_WF08,SRR17213181,Deltocephalinae,Opsiini,Hishimonus,-,phycitis,James N. Zahniser,3.10%,3.00%,-,10-Jun-2004,"China: Taiwan, Taipei, Fushan Forest Res. Sta.",500m
+P011_WG05,SRR17213180,Deltocephalinae,Opsiini,Orosius,-,orientalis,James N. Zahniser,3.70%,3.70%,-,10-Jan-2011,"Australia: New South Wales, ~80 km N. Broken Hill",-
+P012_WB06,SRR17213179,Deltocephalinae,Opsiini,n.gen.ZA2,-,n.sp.1,Christopher H. Dietrich,6.90%,6.90%,-,07-Nov-2007,"Zambia: Northwestern Prov., ~11km SW Mwinilunga, Nkunyi Local Forest",-
+P012_WC04,SRR17213178,Deltocephalinae,Opsiini,Hishimonus,-,hamatus,Christopher H. Dietrich,4.60%,4.60%,-,07-Sep-2015,"Switzerland: Canton Ticino, Arzo",-
+P012_WC07,SRR17213177,Deltocephalinae,Opsiini,Orosius,-,albicinctus,Christopher H. Dietrich,3.20%,3.10%,-,10-Apr-2013,"Tanzania: Dodoma Region, N Makulu",844m
+P012_WE07,SRR17213176,Deltocephalinae,Opsiini,Hishimonoides,-,denticulateus,Christopher H. Dietrich,2.90%,2.90%,-,19-Sep-2008/26-Sep-2008,"Thailand: Petchaburi, Kaeng Krachan National Park",970m
+P014_WE04,SRR17213175,Deltocephalinae,Opsiini,Hishimonus,-,n.sp.ML1,Christopher H. Dietrich,9.90%,9.90%,-,17-Jan-2009,"Malaysia: Sarawak, Gunung Mulu National Park, Camp 1",207m
+P014_WF03,SRR17213174,Deltocephalinae,Opsiini,Hishimonus,-,pallidus,Christopher H. Dietrich,5.00%,5.00%,-,14-Jan-2007/21-Jan-2007,"Thailand: Ubon Ratchathani, Pha Taem National Park, Rong Hi",246m
+P015_WB11,SRR17213173,Deltocephalinae,Opsiini,Austrimonus,-,apicalis,Christopher H. Dietrich,7.40%,7.30%,-,27-Feb-2015,"Australia: Queensland, ca. MalandaRose Gum Retreat",750m
+P015_WB12,SRR17213172,Deltocephalinae,Opsiini,Orosius,-,canberrensis,Christopher H. Dietrich,8.70%,8.60%,-,21-Feb-2015,"Australia: Queensland, Brisbane, Mt. Coot-thaReservoir Trail",194m
+P015_WE08,SRR17213170,Deltocephalinae,Opsiini,Hishimonus,-,fuscomaculatus,Christopher H. Dietrich,2.80%,2.80%,bamboo,17-Jul-2018,"China: Shaanxi, Yangling, Northwest A&F University Campus",478m
+P015_WF01,SRR17213169,Deltocephalinae,Opsiini,Neoaliturus,Neoaliturus,fenestratus,Christopher H. Dietrich,7.00%,7.00%,on herbaceous wild understory in vineyards,14-Jul-2017,"Italy: Stadio-Laimburg, Province of Bolzano, South Tyrol",-
+P015_WG06,SRR17213168,Deltocephalinae,Opsiini,Alishania,-,fodingensis,Christopher H. Dietrich,3.40%,3.40%,-,12-Jul-2012,"China: Shaanxi, 8km ENE Chenhexiang",660m
+P015_WH06,SRR17213167,Deltocephalinae,Opsiini,Neoaliturus,Circulifer,opacipennis,Christopher H. Dietrich,7.10%,7.00%,-,15-Jul-2000,Kyrgyzstan: Juncion of Kokerim and Kugart Rivers,-
+P002_WA09,SRR17213166,Deltocephalinae,Chiasmini,Gurawa,-,minorcephala,Christopher H. Dietrich,4.70%,4.70%,-,05-Jul-2012,"China: Shaanxi, Qinling Mountains, nr. Huoditang",-
+P002_WB01,SRR17213463,Deltocephalinae,Chiasmini,Nephotettix,-,nigropictus,Christopher H. Dietrich,9.30%,9.30%,-,21-Apr-2012,Philippines: Banauan Brgy. Bacnuten,-
+P002_WE12,SRR17213462,Deltocephalinae,Chiasmini,Exitianus,-,exitiosus,Christopher H. Dietrich,4.30%,4.30%,-,27-Oct-2005,"Mexico: Durango, rt.45 km 100 ca. San Juan del Rio",-
+P003_WH07,SRR17213461,Deltocephalinae,Chiasmini,Chiasmus,-,translucidus,Christopher H. Dietrich,3.30%,3.30%,-,08-Aug-2018,"France: Corsica, Montans",-
+P004_WA03,SRR17213460,Deltocephalinae,Chiasmini,Athysanella,Gladionura,argenteola,James N. Zahniser,8.10%,8.10%,-,11-Sep-1994,"USA: Arizona, Santa Cruz County",-
+P004_WB12,SRR17213459,Deltocephalinae,Chiasmini,Listrophora,-,styx,James N. Zahniser,5.30%,5.30%,-,8-Apr-2011,"South Africa: Mpumalanga Prov., Skurweberg Pass",-
+P004_WE08,SRR17213457,Deltocephalinae,Chiasmini,Protochiasmus,-,mysticus,James N. Zahniser,7.60%,7.50%,-,30-May-1996,"Brasil: Goias, Uruacu",-
+P004_WG04,SRR17213456,Deltocephalinae,Chiasmini,Icaia,-,antera,James N. Zahniser,9.00%,9.00%,-,08-Oct-2009/15-Oct-2009,"Peru: Ancash Region, 7 km E Carhuaz, Pampamarca",-
+P004_WG05,SRR17213455,Deltocephalinae,Chiasmini,Omaranus,-,typicus,James N. Zahniser,25.40%,25.40%,Tiger grass,08-Jul-1967,India: Pantnagar,-
+P004_WG07,SRR17213454,Deltocephalinae,Chiasmini,Picchusteles,-,inca,James N. Zahniser,5.90%,5.80%,-,23-Oct-2002,"Peru: Pasco, 7km W Paucartambo",3400m
+P004_WG08,SRR17213453,Deltocephalinae,Chiasmini,Zahniserius,-,cylindricus,James N. Zahniser,7.00%,7.00%,-,15-Jul-2001,"China: Yunnan, Zhongdian",3150
+P004_WG09,SRR17213452,Deltocephalinae,Chiasmini,Leofa,Prasutagus,pulchella,James N. Zahniser,8.70%,8.70%,-,16-Oct-.2006,"India: Carnataka, Chintamani",-
+P004_WG10,SRR17213451,Deltocephalinae,Chiasmini,Leofa,Tortotettix,dispar,James N. Zahniser,8.60%,8.50%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Arthurs Seat hill",1583m
+P004_WG11,SRR17213450,Deltocephalinae,Chiasmini,Leofa,Edmundiana,kumasamba,James N. Zahniser,3.10%,3.10%,-,19-Apr-2006/01-May-2006,"Zambia: Copperbelt Prov., Kalulushi District, Chembe Bird Sanctuary",-
+P004_WG12,SRR17213449,Deltocephalinae,Chiasmini,Athysanella,Brachydella,abdominalis,James N. Zahniser,3.80%,3.80%,-,25-Oct-2005,"Mexico: Durango, Rt. 40 km 31 W Durango",2090m
+P004_WH01,SRR17213448,Deltocephalinae,Chiasmini,Doratura,Doratura,stylata,James N. Zahniser,5.90%,5.80%,-,26-Jun-2005,"USA: Michigan, Eaton County, Olivet",-
+P004_WH02,SRR17213446,Deltocephalinae,Chiasmini,Athysanella,Athysanella,deserta,James N. Zahniser,4.80%,4.80%,-,28-Apr-1998,"USA: Nevada, Washoe County, Rt. 385 1 mi SE Bordertown",1533m
+P004_WH03,SRR17213445,Deltocephalinae,Chiasmini,Leofa,Leofa,thompsoni,James N. Zahniser,4.10%,4.10%,-,17-Jan-2004,"Rwanda: Umutara Pr., Gabira Dist., Rwabiharamba",-
+P004_WH04,SRR17213444,Deltocephalinae,Chiasmini,Aconurella,-,prolixa,James N. Zahniser,9.60%,9.60%,-,12-Dec-2004,"South Africa: Western Cape Prov.,¬†Leipzig Farm",314m
+P004_WH05,SRR17213443,Deltocephalinae,Chiasmini,Athysanella,Pedumella,recurvata,James N. Zahniser,6.80%,6.80%,-,26-Apr-1998,"USA: California, San Bernardino County, 2.5 mi NW Cima",1372m
+P004_WH06,SRR17213442,Deltocephalinae,Chiasmini,Athysanella,Pectinapyga,texana,James N. Zahniser,9.00%,8.90%,-,18-Apr-1998,"USA: Texas, Uvalde Co. jct Rt. 83 & 127 592 m",-
+P004_WH07,SRR17213441,Deltocephalinae,Chiasmini,Athysanella,Diphipyga,mexicana,James N. Zahniser,4.50%,4.50%,-,23-Oct-2001,"Mexico: Hidalgo, rt.45 SE Actopan",2300m
+P004_WH08,SRR17213440,Deltocephalinae,Chiasmini,Aconura,Aconura,volgensis,James N. Zahniser,4.50%,4.50%,-,03-Jul-1999,"Kyrgyzstan: Issyk-Kul, 5 km NNW Karasaj",3530m
+P004_WH09,SRR17213045,Deltocephalinae,Chiasmini,Doraturopsis,Doraturopsis,heros,James N. Zahniser,5.30%,5.30%,-,29-Aug-1998,"Kyrgyzstan: Naryn, Alabuga River 25 km W Baetovo",1700m
+P004_WH10,SRR17213044,Deltocephalinae,Chiasmini,Athysanella,Acamella,tamara,James N. Zahniser,9.40%,9.30%,-,13-Oct-2001,"Mexico: Jalisco, 13km ESE Tuxcacuesco",900m
+P004_WH11,SRR17213043,Deltocephalinae,Chiasmini,Exitianus,-,obscurinervis,James N. Zahniser,2.90%,2.90%,-,23-Oct-2002,"Peru: Huanuco, 30 km S Tingo Maria",-
+P004_WH12,SRR17213041,Deltocephalinae,Chiasmini,Driotura,-,gammaroides,James N. Zahniser,2.90%,2.90%,-,20-Apr-2003,"USA: New Mexico, McKinley County, Rt 400 ca. 5mi S Ft Wingate",-
+P005_WE01,SRR17213040,Deltocephalinae,Chiasmini,Nephotettix,-,afer,Christopher H. Dietrich,2.30%,2.30%,-,09-Nov-2008/24-Nov-2008,"Madagascar: Berenty Reserve, W of Fort Dauphin, riverine forest",-
+P005_WE04,SRR17213039,Deltocephalinae,Chiasmini,Athysanella,Amphipyga,acuticauda,Christopher H. Dietrich,6.70%,6.70%,-,19-May-2004,"USA: Montana, Jefferson County, Homestake FR222 1mi N 1-90",1968m
+P005_WE10,SRR17213038,Deltocephalinae,Chiasmini,Aconurella,-,sibirica,Christopher H. Dietrich,3.50%,3.50%,-,20-Jul-2005,"Mongolia: Selenge Aimag Hovgol, Soum Buren [Moron]",1277m
+P005_WH09,SRR17213037,Deltocephalinae,Chiasmini,Stenogiffardia,-,graminea,Christopher H. Dietrich,3.10%,3.10%,-,19-Feb-2006,"South Africa: Gauteng, Pretoria, Riptfontein Dam",-
+P007_WD11,SRR17213036,Deltocephalinae,Chiasmini,Aconurella,-,compta,Christopher H. Dietrich,15.20%,15.10%,grasses,20-Apr-2013,"Tanzania: Morogoro Region, 8 km SE Mbuyuni",536m
+P007_WE12,SRR17213035,Deltocephalinae,Chiasmini,Athysanella,Gladionura,achena,Christopher H. Dietrich,6.20%,6.20%,-,20-Oct-2005,"Mexico: Mexico, 5.4 km SE San Simon de Guerrero",2200m
+P007_WH04,SRR17213034,Deltocephalinae,Chiasmini,Chiasmus,-,varicolor,Christopher H. Dietrich,6.30%,6.20%,-,15-Dec-2004,"South Africa: Western Cape Prov., Du Toitskloof Pass summit",844m
+P011_WE02,SRR17213033,Deltocephalinae,Chiasmini,Athysanella,Gladionura,alsa,James N. Zahniser,9.70%,9.60%,-,06-Sep-1994,"USA: New Mexico, Colfax County, Rt. 64 at Crow Creek",-
+P011_WE03,SRR17213032,Deltocephalinae,Chiasmini,Athysanella,Athysanella,strobila,James N. Zahniser,7.90%,7.90%,-,28-Apr-1998,"USA: California, Lassen County, Doyle",1379m
+P011_WE04,SRR17213030,Deltocephalinae,Chiasmini,Exitianus,-,luctuosus,James N. Zahniser,5.90%,5.90%,-,28-Oct-2002,"Peru: Huanuco, 13 km S Ambo",2350m
+P011_WE05,SRR17213029,Deltocephalinae,Chiasmini,Exitianus,-,mucronatus,James N. Zahniser,6.30%,6.30%,-,21-Feb-2002/25-Feb-2002,"Madagascar: Toliara Prov., Mahafaly Plateau",80m
+P011_WE06,SRR17213028,Deltocephalinae,Chiasmini,Nephotettix,-,modulatus,James N. Zahniser,3.30%,3.30%,-,12-Jan-2002/16-Jan-2002,"Madagascar: Toliara Prov., Parc National d'Andohahela",-
+P011_WE07,SRR17213027,Deltocephalinae,Chiasmini,Doratura,Doraturina,concors,James N. Zahniser,6.70%,6.80%,-,20-Jun-1999,"Kyrgyzstan: Dzhalal-abad, Chandalash, R. 6 km N jct Chatkal R.",1630m
+P011_WE08,SRR17213026,Deltocephalinae,Chiasmini,Exitianus,-,natalensis,James N. Zahniser,4.90%,4.90%,-,25-Dec-2004,South Africa: KwaZulu-Natal Prov. Bulwer mountain,1802m
+P011_WE09,SRR17213025,Deltocephalinae,Chiasmini,Exitianus,-,capicola,James N. Zahniser,9.10%,9.10%,-,08-Dec-2004,South Africa: Western Cape Prov. Sweetwater,4.69m
+P011_WE10,SRR17213024,Deltocephalinae,Chiasmini,Exitianus,-,turneri,James N. Zahniser,5.80%,5.70%,-,17-Jan-2004,"Rwanda: Rukara Dist., Kawangure; Lake Mubazi",-
+P011_WE11,SRR17213023,Deltocephalinae,Chiasmini,Athysanella,Gladionura,carsia,James N. Zahniser,5.80%,5.70%,-,22-Oct-2001,"Mexico: Hidalgo, rt.45 km #54",2180m
+P011_WE12,SRR17213022,Deltocephalinae,Chiasmini,Athysanella,Amphipyga,major,James N. Zahniser,4.40%,4.30%,-,23-Apr-1998,"USA: California, San Diego County, Kitchen Creek Road",1646m
+P011_WF01,SRR17213021,Deltocephalinae,Chiasmini,Exitianus,-,ghaurii,James N. Zahniser,8.20%,8.10%,-,27-Dec-2004,South Africa: KwaZulu-Natal Prov.  Arthurs Seat hill,1583m
+P011_WF02,SRR17213019,Deltocephalinae,Chiasmini,Chiasmus,-,undulatus,James N. Zahniser,5.20%,5.20%,-,27-Dec-2004,South Africa: KwaZulu-Natal Prov.  Arthurs Seat hill,1583m
+P011_WF03,SRR17213018,Deltocephalinae,Chiasmini,Athysanella,Diphipyga,n.sp.,James N. Zahniser,3.70%,3.70%,-,25-Jul-2006,"USA: Colorado, Pueblos County, between Pueblo & Penrose on Stone City Road",-
+P011_WF04,SRR17213017,Deltocephalinae,Chiasmini,Exitianus,-,plebeius,James N. Zahniser,7.40%,7.30%,-,13-Jan-2004,"Australia: Queensland, 12km E. of Innot Hot Springs",-
+P011_WF05,SRR17213016,Deltocephalinae,Chiasmini,Leofa,Leofa,truncata,James N. Zahniser,8.60%,8.50%,-,01-Jun-2007,"India: Krnataka, Bangalore, Hebbal",-
+P012_WA01,SRR17213015,Deltocephalinae,Chiasmini,Doratura,Doraturina,homophyla,Christopher H. Dietrich,8.70%,8.60%,-,08-Aug-2018,"France: Corsica, Montans",-
+P014_WA05,SRR17213014,Deltocephalinae,Chiasmini,Chiasmus,-,conspurcatus,Christopher H. Dietrich,3.00%,3.10%,-,12-Jun-2017,"Switzerland: Gordola, Reviscai, Riserva Bolle di Magadino",196m
+P014_WB05,SRR17213013,Deltocephalinae,Chiasmini,Driotura,-,robusta,Christopher H. Dietrich,4.60%,4.50%,-,20-Apr-2005,"USA: California, Modoc County, long-Damon Dire 1996, hwy 139 4.8 mi S jct Rt. 10",1365m
+P014_WC05,SRR17213012,Deltocephalinae,Chiasmini,Icaia,-,laoroya,James N. Zahniser,9.90%,9.90%,-,17-Oct-2002,"Peru: Junin, 42 km NE La Oroya",4000m
+P014_WC06,SRR17213011,Deltocephalinae,Chiasmini,Exitianus,-,distanti,James N. Zahniser,12.00%,11.90%,-,17-Jan-2004,"Rwanda: Rukara Dist., Kawangure; Lake Mubazi",-
+P014_WC07,SRR17213010,Deltocephalinae,Chiasmini,Icaia,-,straminea,James N. Zahniser,9.60%,9.60%,-,28-Oct-2002,Peru: Huanuco 13 km S Ambo,2350m
+P014_WC08,SRR17213008,Deltocephalinae,Chiasmini,Athysanella,Amphipyga,turgida,James N. Zahniser,8.80%,8.80%,-,26-Apr-1998,"USA: California, San Bernardino County, 2.5 mi NW Cima",1372m
+P014_WC09,SRR17213007,Deltocephalinae,Chiasmini,Exitianus,-,excavatus,James N. Zahniser,7.70%,7.70%,-,18-Oct-2005,"Mexico: DF, Rt. 95 km 41 S. Mexico City",2970m
+P014_WC10,SRR17213006,Deltocephalinae,Chiasmini,Exitianus,-,picatus,James N. Zahniser,5.80%,5.80%,-,27-Oct-2005,"Mexico, Durango, Rt. 45 km 100 ca. San Juan del Rio",1820m
+P014_WC11,SRR17213005,Deltocephalinae,Chiasmini,Exitianus,-,quadratulus,James N. Zahniser,5.80%,5.70%,-,31-May-1996,"Brasil: Goias, Uruacu",-
+P014_WC12,SRR17213004,Deltocephalinae,Chiasmini,Athysanella,Diphipyga,triodana,James N. Zahniser,5.90%,5.90%,-,29-Oct-2005,"Mexico, Coahuila, Rt. 57 km 33 ca. Las Encinas",1150m
+P014_WD01,SRR17213003,Deltocephalinae,Chiasmini,Aconurella,-,ussurica,James N. Zahniser,6.10%,6.10%,-,10-July-2005,"Mongolia: Bulgan, Teshig, Wetland near confluence of Tariakhtain Gol and Egiin Gol",936m
+P014_WD02,SRR17213002,Deltocephalinae,Chiasmini,Nephotettix,-,virescens,James N. Zahniser,4.70%,4.60%,-,24-Sep-2005/25-Sep-2005,"India: Goa, Sanguem District, Boundry Bhagwan Mahaveer Sanctury",-
+P014_WD03,SRR17213001,Deltocephalinae,Chiasmini,Exitianus,-,indicus,James N. Zahniser,7.30%,7.30%,-,24-Sep-2005/25-Sep-2005,"India: Goa, Sanguem District, Boundry Bhagwan Mahaveer Sanctury",-
+P015_WE09,SRR17213000,Deltocephalinae,Chiasmini,Exitianus,-,apophysisiosus,James N. Zahniser,7.80%,7.70%,-,22-Jan-2001/09-Mar-2001,"Madagascar: Toamasina Prov., 7 km SE of Andasibe National Park head-quarters",-
+P015_WG08,SRR17212999,Deltocephalinae,Chiasmini,Exitianus,-,nanus,James N. Zahniser,7.10%,7.10%,-,04-Jun-2004 ,"China: Taiwan, Taichung",-
+P005_WH11,SRR17213367,Deltocephalinae,Deltocephalini,Alobaldia,-,tobae,Christopher H. Dietrich,5.60%,5.50%,-,21-Oct-2011,"China: Shaanxi, Yangling, Northwest A&F University Campus",-
+P001_WH08,SRR17213366,Deltocephalinae,Deltocephalini,Bolarga,-,nigriloba,Christopher H. Dietrich,5.00%,5.00%,-,16-Feb-2014,"Argentina: Entre Rios, Rt. 14 5 km N Guayaguaychu",-
+P006_WE11,SRR17213365,Deltocephalinae,Deltocephalini,Corrientesia,-,ochrescens,Christopher H. Dietrich,5.60%,5.60%,-,12-Jan-2008,"Argentina: Chaco, Parque Nacional Chaco",-
+P005_WA02,SRR17213364,Deltocephalinae,Deltocephalini,Daltonia,-,condita,Christopher H. Dietrich,2.70%,2.70%,-,31-Oct-2001,Mexico: Veracruz,70m
+P005_WA04,SRR17213363,Deltocephalinae,Deltocephalini,Deltella,-,decisa,Christopher H. Dietrich,2.40%,2.40%,-,05-Jun-2007,"USA: Illinois, Pope County, Rt. 146 1.1 mi. W Humm Wye",-
+P002_WG06,SRR17213362,Deltocephalinae,Deltocephalini,Destria,-,fumida,Christopher H. Dietrich,4.40%,4.40%,-,09-Aug-2016,"USA: Illinois, Livingston County, US rt. 66 3.6 mi SW Dwight",-
+P005_WA07,SRR17213361,Deltocephalinae,Deltocephalini,Endria,-,inimicus,Christopher H. Dietrich,9.40%,9.30%,-,01-Jul-2003,"USA: Illinois, Cook County, Calumet, Marion Byrnes Nat. Area",-
+P002_WH05,SRR17213360,Deltocephalinae,Deltocephalini,Haldorus,Haldorellus,furcatus,Christopher H. Dietrich,7.30%,7.30%,-,12-Jan-2008,"Argentina: Chaco, Parque Nacional Chaco",-
+P008_WB11,SRR17213359,Deltocephalinae,Deltocephalini,Haldorus,Haldorus,maculipes,Christopher H. Dietrich,3.60%,3.60%,-,09-Jan-2008,"Argentina: Corrientes, Parque Nacional Mburucuya campground",-
+P007_WA04,SRR17213358,Deltocephalinae,Deltocephalini,Limpica,-,pallida,Christopher H. Dietrich,3.00%,3.00%,grass,25-March-2016,Brazil: RoraimaReserva Maraca,100m
+P005_WA08,SRR17213355,Deltocephalinae,Deltocephalini,Lonatura,-,catalina,Christopher H. Dietrich,6.90%,6.90%,-,01-Jul-2004,"USA: Illinois, Cook County, Calumet, Marion Byrnes Nat. Area",-
+P007_WE01,SRR17213354,Deltocephalinae,Deltocephalini,Loreta,Loreta,ornaticeps,Christopher H. Dietrich,5.50%,5.40%,-,16-Mar-2015,"Brazil: Minas Gerais, Santuario do Caraca, Lobo Guara Trail",1260m
+P001_WH10,SRR17213353,Deltocephalinae,Deltocephalini,Mattogrossus,-,colonoides,Christopher H. Dietrich,8.60%,8.60%,-,13-Nov-2009,"Bolivia: Canta Cruz, ca. Buena Vista",390m
+P008_WG04,SRR17213352,Deltocephalinae,Deltocephalini,Phetchabunia,-,janteabi,Christopher H. Dietrich,6.10%,6.10%,-,09-Oct-2006/16-Oct-2006,"Thailand: Phetchabun, Nam Nao National Park",891m
+P007_WG09,SRR17213351,Deltocephalinae,Deltocephalini,Polyamia,Copolyamia,brevipennis,Christopher H. Dietrich,2.60%,2.60%,-,12-Jun-2017,"USA: North Carolina, Burke County, Linville Gorge",-
+P015_WB05,SRR17213350,Deltocephalinae,Deltocephalini,Polyamia,Polyamia,weedi,Christopher H. Dietrich,9.60%,9.60%,-,04-Jun-2020,"USA: Illinois, Jefferson County, Ten Mile Creek Wildlife Area",-
+P015_WG05,SRR17213349,Deltocephalinae,Deltocephalini,Recilia,-,coronifer,Christopher H. Dietrich,5.20%,5.20%,-,12-Jul-2012,"China: Shaanxi, 8km ENE Chenhexiang",660m
+P005_WA03,SRR17213348,Deltocephalinae,Deltocephalini,Sanctanus,Sanctanus,elegans,Christopher H. Dietrich,3.30%,3.30%,-,15-Oct-2001,"Mexico: Jalisco, ca. La Huerta",480m
+P005_WA05,SRR17213347,Deltocephalinae,Deltocephalini,Toldoanus,-,marginellus,Christopher H. Dietrich,4.70%,4.70%,-,07-Jan-2008,"Argentina: Misiones, Pto. Iguazu, Viejo Amer. Campgound",200m
+P005_WA01,SRR17213346,Deltocephalinae,Deltocephalini,Unerus,-,colonus,Christopher H. Dietrich,4.80%,4.70%,-,10-Jan-2008,"Argentina: Chaco, Parque Nacional Chaco",70m
+P006_WF02,SRR17213344,Deltocephalinae,Deltocephalini,Wyushinamia,-,bifurcata,Christopher H. Dietrich,3.50%,3.40%,-,10-Sep-2016,"China: Chongqing, Jinyan Shan",785m
+P001_WG10,SRR17213439,Deltocephalinae,Deltocephalini,Amplicephalus,Nanctasus,anayensis,Christopher H. Dietrich,7.70%,7.70%,grasses,18-Jan-2014,"Chile: Araucania, Parque Nacional Nahuelbuta, Cerro Anay road",-
+P002_WE02,SRR17213438,Deltocephalinae,Deltocephalini,Horouta,-,aristarche,Christopher H. Dietrich,2.40%,2.40%,sedge/grass,22-Feb-2015,"Australia: Queensland, Crow's Nest National Park",454m
+P015_WA12,SRR17213437,Deltocephalinae,Deltocephalini,Horouta,-,lotis,Christopher H. Dietrich,8.40%,8.40%,-,19-Feb-2015,"Australia: Queensland, Lamington National Park",865m
+P002_WE01,SRR17213436,Deltocephalinae,Deltocephalini,Planicephalus,-,flavocostatus,Christopher H. Dietrich,2.40%,2.40%,-,09-Aug-2016 ,"USA: Illinois, Livingston County, US rt. 66, 3.6 mi SW Dwight",200m
+P014_WD09,SRR17213435,Deltocephalinae,Deltocephalini,Planicephalus,-,flavicosta,Christopher H. Dietrich,5.20%,5.20%,-,14-Oct-2001,"Mexico: Jalisco, ca. La Huerta",460m
+P005_WB05,SRR17213434,Deltocephalinae,Deltocephalini,Yuanamia,-,producta,Christopher H. Dietrich,9.20%,9.10%,-,01-Nov-2007/07-Nov-2007,"Thailand: Lampang, Chae Son National Park, Huay Yen",419m
+P007_WH12,SRR17213433,Deltocephalinae,Deltocephalini,Loeia,-,tamtipi,Christopher H. Dietrich,3.20%,3.20%,-,19-Jul-2006/26-Jul-2006,"Thailand: Loei, Phu Ruea National Park, Subhnonghin",860m
+P002_WH08,SRR17213432,Deltocephalinae,Deltocephalini,Parandanus,-,hilaris,Christopher H. Dietrich,5.40%,5.40%,-,26-Oct-2002,"Peru: Huanuco, 5 km W Tingo Maria",-
+P007_WE04,SRR17213431,Deltocephalinae,Deltocephalini,Parandanus,-,longistylus,Christopher H. Dietrich,4.10%,4.10%,-,30-Aug-2012,Peru,-
+P011_WB09,SRR17213429,Deltocephalinae,Deltocephalini,Parandanus,-,nigricephalus,Christopher H. Dietrich,2.30%,2.30%,-,12-Oct-2002,"Peru: Pasco Department, Parque Nacional Yanachaga Chemillen, nr. Refugio El Cedro",2500m
+P012_WA08,SRR17213428,Deltocephalinae,Deltocephalini,Amblysellus,-,curtisii,Christopher H. Dietrich,1.80%,1.80%,-,29-Jun-2016,"USA: Wisconsin, Burnett County, 7.1 km E Rush City, Minnesota",-
+P007_WH06,SRR17213427,Deltocephalinae,Deltocephalini,Mendozellus,-,paralaredanus,Christopher H. Dietrich,4.60%,4.60%,-,14-Feb-2014,"Argentina: Entre Rios, Parque Nacional El Palmar, Calera del Palmar",-
+P007_WH11,SRR17213426,Deltocephalinae,Deltocephalini,Deltocephalus,-,vanfus,Christopher H. Dietrich,3.20%,3.10%,-,26-Oct-2005,"Mexico: Durango, rt.40 km 158 ca. La Ermita",2700m
+P014_WE11,SRR17213425,Deltocephalinae,Deltocephalini,Graminella,-,nigripennis,Christopher H. Dietrich,4.20%,4.20%,-,02-May-2017,"USA: Florida, Hillsborough County, ca. Myakka River State Park Entrance",-
+P002_WA10,SRR17213424,Deltocephalinae,Deltocephalini,Maiestas,-,maculata,Christopher H. Dietrich,6.50%,6.50%,-,02-May-2014,"China: Guizhou, Qianlingshan Park",-
+P006_WG12,SRR17213423,Deltocephalinae,Paralimnini,Acharis,-,ussuriensis,Christopher H. Dietrich,9.70%,9.70%,-,09-Jul-2005/10-Jul-2006,"Mongolia: Bulgan Aimag, Teshig Soum, Main Branch of Tariakhtain Gol ",1203m
+P004_WA04,SRR17213422,Deltocephalinae,Paralimnini,Aflexia,-,rubranura,James N. Zahniser,5.80%,5.80%,-,Aug-1993,"USA: Wisconsin, Sauk County",-
+P005_WB02,SRR17213421,Deltocephalinae,Paralimnini,Altaiotettix,-,oshanini,Christopher H. Dietrich,6.10%,6.10%,-,17-Jul-2000,"Kyrgyzstan: Naryn, Arpa Valley",2967m
+P005_WD07,SRR17213420,Deltocephalinae,Paralimnini,Arocephalus,-,roborovskii,Christopher H. Dietrich,8.20%,8.10%,-,15-Jul-2000,"Kyrgyzstan: Dzhalal-Abad, 18 km WSW Kazarman",1550m
+P005_WB10,SRR17213418,Deltocephalinae,Paralimnini,Arthaldeus,-,arenarius,Christopher H. Dietrich,11.70%,11.70%,-,15-Jul-2000,"Kyrgyzstan: Dzhalal-Abad, 18 km WSW Kazarman",1550m
+P005_WE11,SRR17213417,Deltocephalinae,Paralimnini,Auridius,-,xanthus,Christopher H. Dietrich,1.40%,1.40%,-,24-Jul-2002/25-Jul-2002,"USA: Arizona, Cochise County, Chiricahua Mountains, Buena Vista Peak",2585m
+P005_WC11,SRR17213416,Deltocephalinae,Paralimnini,Cedarotettix,-,cogani,Christopher H. Dietrich,5.00%,5.00%,-,02-Dec-2009,Swaziland: Mmlawula,-
+P005_WB11,SRR17212853,Deltocephalinae,Paralimnini,Coelestinus,-,incertus,Christopher H. Dietrich,4.50%,4.50%,-,15-Jul-2001,"Kyrgyzstan: Dzhalal-Abad, 18 km WSW Kazarman",1550m
+P004_WA06,SRR17212852,Deltocephalinae,Paralimnini,Commellus,-,comma,James N. Zahniser,4.30%,4.30%,-,Aug-1993,"USA: Wisconsin, Sauk County",-
+P002_WF11,SRR17212851,Deltocephalinae,Paralimnini,Enantiocephalus,-,cornutus,Christopher H. Dietrich,3.80%,3.80%,-,15-Jul-2000,Kyrgyzstan: Juncion of Kokerim and Kugart Rivers,-
+P005_WD06,SRR17212850,Deltocephalinae,Paralimnini,Futasujinus,-,candidus,Christopher H. Dietrich,2.90%,2.90%,-,15-Jun-2004,"China: Taiwan, Nantou, Reiyen Res., Chifong Rd. 1 km N Rt. 14",2200m
+P006_WH01,SRR17212849,Deltocephalinae,Paralimnini,Henschia,Henschia,acuta,Christopher H. Dietrich,8.10%,8.10%,-,11-Jul-2005/13-Jul-2005,"Mongolia: Bulgan Aimag, Teshig Soum, Egiin Gol, 12.7 km SW of Teshig",998m
+P002_WE08,SRR17212848,Deltocephalinae,Paralimnini,Jannius,-,mecus,Christopher H. Dietrich,6.60%,6.60%,-,02-Nov-2007,"Zambia: Northwestern Prov., Mwinilunga",-
+P006_WH04,SRR17212847,Deltocephalinae,Paralimnini,Lebradea,-,flavovirens,Christopher H. Dietrich,8.30%,8.30%,-,09-Jul-2005/10-Jul-2006,"Mongolia: Bulgan Aimag, Teshig Soum, Main Branch of Tariakhtain Gol ",1203m
+P002_WF04,SRR17212845,Deltocephalinae,Paralimnini,Lecacis,-,platypennis,Christopher H. Dietrich,10.60%,10.60%,-,Jan-2009,Swaziland: Mmlawula,-
+P006_WG11,SRR17212844,Deltocephalinae,Paralimnini,Metalimnus,-,formosus,Christopher H. Dietrich,7.60%,7.60%,-,17-Jul-2005/18-Jul-2005,"Mongolia: Hovsgol Aimag,  Chandmani-Ondor Soum, Khalkhan Gol",1220m
+P005_WC01,SRR17212843,Deltocephalinae,Paralimnini,Mogangella,-,straminea,Christopher H. Dietrich,12.20%,12.10%,-,18-Jul-2000,"Kyrgyzstan: Naryn, Arpa Valley",2830m
+P005_WC02,SRR17212842,Deltocephalinae,Paralimnini,Mogangina,Mogangina,bromi,Christopher H. Dietrich,6.50%,6.40%,-,30-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, 5 km E Kosh Bulak",1820m
+P005_WC04,SRR17212841,Deltocephalinae,Paralimnini,Mongolojassus,-,tianshanicus,Christopher H. Dietrich,7.20%,7.10%,-,20-Jul-2000,"Kyrgyzstan: Issyk-Kul, Sary-Dzhaz R. 3 km NE jct. Ottuk R.",2760m
+P007_WB04,SRR17212840,Deltocephalinae,Paralimnini,Naudeus,-,bivittatus,Christopher H. Dietrich,7.90%,7.90%,-,09-Dec-2004  ,"South Africa: Western Cape Prov., Vishoek",85.4m
+P001_WD10,SRR17212839,Deltocephalinae,Paralimnini,Pantallus,-,alboniger,Christopher H. Dietrich,14.30%,14.30%,-,07-Jul-2005,"Mongolia: Bulgan, Khyalgant, Cold Spring near Baruun Burkhiin Gol",-
+P002_WB11,SRR17212838,Deltocephalinae,Paralimnini,Paralaevicephalus,-,primus,Christopher H. Dietrich,7.10%,7.10%,-,23-Sep-2017,"China: Guangxi, Longtan National Forest Park",610m
+P004_WF07,SRR17212837,Deltocephalinae,Paralimnini,Paralimnus,Anthocallis,angusticeps,James N. Zahniser,11.50%,11.40%,-,05-Sep-1998,"Kyrgyzstan: Issyk-Kul S shore Issyk Kul Lake, 10 km E Kadzhi-Saj",1675m
+P005_WC12,SRR17212836,Deltocephalinae,Paralimnini,Paramesus,-,major,Christopher H. Dietrich,7.10%,7.10%,-,30-Aug-1998,"Kyrgyzstan: Naryn, Naryn River valley ca. Ak-Tal-Tchat",1688m
+P002_WE04,SRR17212834,Deltocephalinae,Paralimnini,Pasaremus,-,concentricus,Christopher H. Dietrich,6.40%,6.30%,-,21-Jul-2010/29-Jul-2010,"USA: Oregon, Lake County, 52km SW Silver Lake",1370m
+P005_WD05,SRR17212833,Deltocephalinae,Paralimnini,Peconus,-,scriptanus,Christopher H. Dietrich,8.00%,8.00%,-,2009,USA: New Mexico,-
+P006_WH02,SRR17212832,Deltocephalinae,Paralimnini,Philaia,-,jassargiforma,Christopher H. Dietrich,7.60%,7.50%,-,11-Jul-2005/13-Jul-2005,"Mongolia: Bulgan Aimag, Teshig Soum, Egiin Gol, 12.7 km SW of Teshig",998m
+P002_WE06,SRR17212831,Deltocephalinae,Paralimnini,Phlebiastes,Phlebiastes,tianshanicus,Christopher H. Dietrich,4.70%,4.70%,-,16-Jul-2000,"Kyrgyzstan: Naryn Alabuga River, 25 km W Baetovo",1700m
+P006_WH05,SRR17212830,Deltocephalinae,Paralimnini,Pinumius,-,areatus,Christopher H. Dietrich,6.20%,6.20%,-,23-Jul-2005,"Mongolia: Hovsgol Aimag, Tumurbulag Soum, Bugcei (Bugceiin) Gol",1618m
+P005_WC03,SRR17213415,Deltocephalinae,Paralimnini,Praganus,-,hofferi,Christopher H. Dietrich,11.70%,11.70%,-,17-Jul-2000,"Kyrgyzstan: Naryn, Arpa Valley",2967m
+P005_WC05,SRR17213414,Deltocephalinae,Paralimnini,Rhoananus,-,hypochlorus,Christopher H. Dietrich,5.70%,5.70%,-,30-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, 5 km E Kosh Bulak",1820m
+P005_WC06,SRR17213413,Deltocephalinae,Paralimnini,Rosenus,-,pantherinus,Christopher H. Dietrich,11.50%,11.50%,-,10-Jul-2000,"Kyrgyzstan: Osh, N slope Trans Alaj Ridge, 8 km SW Nura",3100m
+P002_WH11,SRR17213412,Deltocephalinae,Paralimnini,Soracte,-,apollonos,Christopher H. Dietrich,6.20%,6.20%,-,24-Feb-2015,"Australia: Queensland, ca. Malanda Rose Gum Retreat",-
+P005_WB04,SRR17213411,Deltocephalinae,Paralimnini,Tiaratus,-,caricis,Christopher H. Dietrich,5.50%,5.40%,-,17-Jul-2001,"Kyrgyzstan: Naryn, Arpa Valley",-
+P005_WC07,SRR17213409,Deltocephalinae,Paralimnini,Triasargus,-,ancoratus,Christopher H. Dietrich,10.40%,10.30%,-,21-Jun-1999,"Kyrgyzstan: Dzhalal-abad, Chandalash, R. 6 km N jct Chatkal R.",1630m
+P002_WG08,SRR17213408,Deltocephalinae,Paralimnini,Turrutus,-,personatus,Christopher H. Dietrich,5.80%,5.80%,-,28-Jul-2016,"USA: Wisconsin, Burnett County, 7.1 km E Rush City, Minnesota",-
+P002_WF07,SRR17213407,Deltocephalinae,Paralimnini,Vilargus,-,pumilicans,Christopher H. Dietrich,7.80%,7.70%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Arthurs Seat hill",-
+P006_WC08,SRR17213406,Deltocephalinae,Paralimnini,Yanocephalus,-,yanonis,Christopher H. Dietrich,6.40%,6.40%,-,02-May-2014,"China: Guizhou, Qianlingshan Park",-
+P008_WC04,SRR17213405,Deltocephalinae,Paralimnini,Adarrus,Belaunus,taurus,Christopher H. Dietrich,8.80%,8.80%,-,25-May-2008/05-Jun-2008,"Spain: Catalunya, Prorat, 2km E Marca, Mother's Gargen",350m
+P014_WF01,SRR17213404,Deltocephalinae,Paralimnini,Coganus,-,breviatus,Christopher H. Dietrich,2.50%,2.50%,-,05-Dec-2004,"South Africa: Western Cape Prov., Eersterivier",66.5m
+P015_WE11,SRR17213403,Deltocephalinae,Paralimnini,Ctenotettix,-,kirgysicus,Christopher H. Dietrich,10.10%,10.10%,-,18-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, Kara Kysmak & Chaktal R. ",2240m
+P007_WB03,SRR17213402,Deltocephalinae,Paralimnini,Elginus,-,furcillatus,Christopher H. Dietrich,5.30%,5.30%,-,09-Dec-2004  ,"South Africa: Western Cape Prov., Vishoek",85.4m
+P005_WF02,SRR17213401,Deltocephalinae,Paralimnini,Emeljanovianus,-,acarifer,Christopher H. Dietrich,3.30%,3.30%,-,13-Jul-2005/14-Jul-2005,"Mongolia: Hovsgol Aimag, Erdenebulgan Soum, Emt Gol",1496m
+P002_WF08,SRR17213400,Deltocephalinae,Paralimnini,Falcitettix,Falcitettix,guttiger,Christopher H. Dietrich,4.60%,4.60%,-,10-Jul-2005,"Mongolia: Bulgan, Teshig, Wetland near confluence of Tariakhtain Gol and Egiin Gol",-
+P005_WB12,SRR17213398,Deltocephalinae,Paralimnini,Hebecephalus,-,pamiricus,Christopher H. Dietrich,4.30%,4.30%,-,17-Jul-2000,"Kyrgyzstan: Naryn, Arpa Valley",2967m
+P007_WH02,SRR17213397,Deltocephalinae,Paralimnini,Ladya,-,longipennis,Christopher H. Dietrich,5.80%,5.70%,-,27-Dec-2004,"South Africa: KwaZulu-Natal Prov., Arthurs Seat hill",1583m
+P005_WC08,SRR17213396,Deltocephalinae,Paralimnini,Laevicephalus,-,monticola,Christopher H. Dietrich,6.70%,6.70%,-,26-Oct-2005,"Mexico: Durango, Rt. 40 km 117, 14 km W El Salto",2680m
+P015_WG12,SRR17213395,Deltocephalinae,Paralimnini,Latalus,-,personatus,Christopher H. Dietrich,7.30%,7.30%,-,06-Aug-2010,"USA: Montana: Flathead County, 12 mi. S. Palebridge",-
+P005_WC09,SRR17213394,Deltocephalinae,Paralimnini,Micrelloides,-,polemon,Christopher H. Dietrich,5.40%,5.40%,-,01-Feb-2006,"Australia: Northern Territory, 9.4km N of Larrimah at WWII airstrip, just off Stuart Hwy",-
+P011_WH12,SRR17213393,Deltocephalinae,Paralimnini,Spartopyge,-,mexicana,Christopher H. Dietrich,7.00%,7.00%,-,27-Oct-2005,"Mexico: Durango, Rt. 45 km 121 ca. Fco.Primo Verdad",1590m
+P007_WH03,SRR17213392,Deltocephalinae,Paralimnini,Vecaulis,-,attenuatus,Christopher H. Dietrich,3.50%,3.50%,-,11-Dec-2004,"South Africa: Western Cape Prov., De Hoop Nature Reserve",15m
+P012_WB05,SRR17213343,Deltocephalinae,Paralimnini,Mayawa,-,facialis,Christopher H. Dietrich,6.80%,6.80%,-,Jan-2010,Australia: Western Australia,-
+P002_WE11,SRR17213342,Deltocephalinae,Paralimnini,Soractellus,-,nigrominutus,Christopher H. Dietrich,0.90%,0.90%,-,13-Nov-2007,"Zambia: Copperbelt Prov., ~45 km S of Ndola Nsobe Game Camp",-
+P005_WD02,SRR17213341,Deltocephalinae,Paralimnini,Agudus,-,cyrtobrachium,Christopher H. Dietrich,5.70%,5.70%,-,05-Jan-2008,"Argentina: Corrientes, 1 km S. Pte. Internacional, Santo Tome",-
+P012_WA07,SRR17213339,Deltocephalinae,Paralimnini,Diplocolenus,Diplocolenus,configuratus,Christopher H. Dietrich,3.40%,3.40%,-,27-Jun-2016,"USA: Wisconsin, Washburn County, 16.0 km WNW Lampson at Howell Landing Road ",-
+P002_WG04,SRR17213338,Deltocephalinae,Paralimnini,Psammotettix,-,lividellus,Christopher H. Dietrich,5.00%,5.00%,-,10-Aug-2016,"USA: Illinois, Livingston County, RR prairie, 1 mi NE Cayuga",-
+P001_WE09,SRR17213337,Deltocephalinae,Paralimnini,Cosmotettix,-,beirnei,Christopher H. Dietrich,3.70%,3.60%,-,28-Jun-2016,"USA: Wisconsin Burnett County, 7.8km N Grantsburg",-
+P015_WE04,SRR17213336,Deltocephalinae,Paralimnini,Jassargus,-,bisubulatus,Christopher H. Dietrich,7.40%,7.40%,-,12-Jun-2017,"Switzerland: Gordola, Reviscai, Riserva Bolle di Magadino",196m
+P015_WE12,SRR17213335,Deltocephalinae,Paralimnini,Emeljanovianus,-,pratensis,Christopher H. Dietrich,4.60%,4.60%,-,10-Jul-2000,"Kyrgyzstan: Osh, N slope Trans Alaj Ridge, 8 km SW Nura",3100m
+P002_WG05,SRR17213334,Deltocephalinae,Paralimnini,Flexamia,-,inflata,Christopher H. Dietrich,4.20%,4.20%,-,09-Aug-2016,"USA: Illinois, Livingston County, US rt. 66 2 mi SW Odell",-
+P002_WF06,SRR17213333,Deltocephalinae,Paralimnini,Nicolaus,-,dentatus,Christopher H. Dietrich,6.60%,6.60%,-,15-Dec-2004,"South Africa: Western Cape Prov., Wemmershoek Dam, N of Franschhoek",-
+P007_WH01,SRR17213332,Deltocephalinae,Paralimnini,Pravistylus,-,trunculidiscus,Christopher H. Dietrich,4.60%,4.60%,-,11-Dec-2004,"South Africa: Western Cape Prov., Arniston",8.54m
+P002_WA12,SRR17213331,Deltocephalinae,Scaphoideini,Amimenus,-,mojiensis,Christopher H. Dietrich,3.40%,3.40%,-,12-Jul-2012,"China: Shaanxi, 8km ENE Chenhexiang",660m
+P005_WG02,SRR17213330,Deltocephalinae,Scaphoideini,Caphodus,-,n.sp.,Christopher H. Dietrich,3.60%,3.60%,-,25-Oct-2003/12-Nov-2003,"Argentina: Tucuman, 4 km S Capitan Caceres",430m
+P003_WG04,SRR17213328,Deltocephalinae,Scaphoideini,Euscelidella,-,n.sp.,Christopher H. Dietrich,2.20%,2.20%,-,09-Nov-2008/24-Nov-2008,"Madagascar: Fianarantsoa Prov., Ranomafana National Park, nr. Centre ValBio",-
+P006_WH11,SRR17213327,Deltocephalinae,Scaphoideini,Gunghuyana,-,n.sp.,Christopher H. Dietrich,4.00%,4.00%,-,07-Jun-2005,"Ghana: Western Region, Ankasa Resource Reserve, Nkwanta Camp",-
+P008_WB06,SRR17213326,Deltocephalinae,Scaphoideini,Madagella,-,n.sp.,Christopher H. Dietrich,3.80%,3.80%,-,23-Oct-2012/29-Oct-2012,"Madagascar: Tulear, Ambohimahavelona village",45m
+P003_WA01,SRR17213325,Deltocephalinae,Scaphoideini,Melanetettix,-,semeraroae,Christopher H. Dietrich,2.10%,2.10%,-,28-Feb-2015,"Australia: Queensland, Mt. Bartle Frere trailhead ",-
+P001_WB02,SRR17213324,Deltocephalinae,Scaphoideini,Mimotettix,-,alboguttulatus,Christopher H. Dietrich,3.30%,3.30%,-,10-Jun-2005/12-Jun-2005,"Ghana: Greater Accra Region, Shai Hills Resource Reserve",-
+P004_WC05,SRR17213323,Deltocephalinae,Scaphoideini,Moorada,-,n.sp.,James N. Zahniser,5.00%,5.00%,-,Nov-2007,"Zambia: Northwestern Prov., ~11km SW Mwinilunga, Nkunyi Local Forest",-
+P005_WF05,SRR17213322,Deltocephalinae,Scaphoideini,Neophlepsius,Neophlepsius,multifarius,Christopher H. Dietrich,1.80%,1.80%,-,25-Sep-2009/1-Oct-2009,"Argentina: Salta, 3 km W Cafayate",1760m
+P008_WE06,SRR17213321,Deltocephalinae,Scaphoideini,Penthigrampta,-,n.sp.,Christopher H. Dietrich,8.50%,8.50%,-,24-Oct-2002,"Peru: Huanuco, 8 km S Tingo Maria, Pte. Cuevas",670m
+P006_WG02,SRR17213320,Deltocephalinae,Scaphoideini,Perugramptella,-,hirsuta,Christopher H. Dietrich,3.80%,3.80%,-,Oct-2012,Peru: Cuzco Dept.,-
+P007_WA02,SRR17212829,Deltocephalinae,Scaphoideini,Platyretus,-,gangeticus,Christopher H. Dietrich,4.00%,4.00%,-,02-Oct-2005,"India: Maharashtra, Pune District, 5 km E Mulshi Lake near Tamini Village",-
+P004_WA07,SRR17212826,Deltocephalinae,Scaphoideini,Scaphoidophyes,-,n.sp.,James N. Zahniser,2.30%,2.30%,-,13-Nov-2007,"Zambia: Copperbelt Prov., ~45 km S of Ndola, Nsobe Game Camp",1255m
+P003_WG06,SRR17212825,Deltocephalinae,Scaphoideini,Thamnophryne,-,n.sp.,Christopher H. Dietrich,3.00%,3.00%,-,22-Feb-2015,"Australia: Queensland, Helodin St. For.",-
+P012_WB02,SRR17212824,Deltocephalinae,Scaphoideini,Tongdotettix,-,youngeouni,Christopher H. Dietrich,4.60%,4.60%,-,12-Oct-2006/19-Oct-2006,"Thailand: Loei, Phu Ruea National Park, Suan hin Palee",-
+P004_WC06,SRR17212823,Deltocephalinae,Scaphoideini,Loipothea,-,n.sp.,James N. Zahniser,15.50%,15.50%,-,11-Nov-2007,"Zambia: Copperbelt Prov., ~12 km SSE of Kitwe, Greystone Farm",1247m
+P002_WE09,SRR17212822,Deltocephalinae,Scaphoideini,Acastroma,-,introductum,Christopher H. Dietrich,4.60%,4.60%,-,16-Mar-2009/30-Mar-2009,"Cameroon : Southwest, nr. Korup National Park at bridge over river",-
+P003_WB05,SRR17212821,Deltocephalinae,Scaphoideini,Anoplotettix,-,fuscovenosus,Christopher H. Dietrich,2.10%,2.10%,-,01-Jun-2016,"Switzerland: Canton Ticino, Croglio",-
+P001_WB05,SRR17212820,Deltocephalinae,Scaphoideini,Delospilopterus,-,scoliopeus,Christopher H. Dietrich,3.40%,3.40%,-,24-Nov-2008,Republic of Congo: Iboubikro,-
+P012_WA03,SRR17212819,Deltocephalinae,Scaphoideini,Perugrampta,-,denticula,Christopher H. Dietrich,2.60%,2.60%,-,20-Jan-2004,Ecuador: Yanayacu Biological Station ,-
+P012_WB01,SRR17212818,Deltocephalinae,Scaphoideini,Scaphoidella,-,clavatella,Christopher H. Dietrich,2.60%,2.60%,-,12-Oct-2006/19-Oct-2006,"Thailand: Loei, Phu Ruea National Park, Suan hin Palee",-
+P007_WG07,SRR17212817,Deltocephalinae,Scaphoideini,Scaphoidula,-,dentata,Christopher H. Dietrich,4.10%,4.00%,-,25-March-2016,Brazil: RoraimaReserva Maraca,100m
+P001_WE10,SRR17212815,Deltocephalinae,Scaphoideini,Spathanus,-,acuminatus,Christopher H. Dietrich,6.00%,6.00%,-,10-Jun-2016/30-Jun-2016,"USA: Arizona, La Paz County",-
+P002_WG12,SRR17212814,Deltocephalinae,Scaphoideini,Phlogotettix,-,polyphemus,Christopher H. Dietrich,3.40%,3.40%,-,22-Jun-2004/25-Jun-2004,"China: Taiwan, Kaohsiung, Shanping Forest Reserve Station, 9km SE Liouguei",-
+P007_WH08,SRR17212813,Deltocephalinae,Scaphoideini,Omanana,-,torquea,Christopher H. Dietrich,4.60%,4.50%,-,13-Oct-2001,"Mexico: Jalisco, 13 km ESE Tuscacuesco",900m
+P005_WG08,SRR17212812,Deltocephalinae,Scaphoideini,Phlogothamnus,-,polymaculatus,Christopher H. Dietrich,2.50%,2.40%,-,25-Jul-2018,"China: Zheijiang, Tianmushan",714m
+P011_WD07,SRR17212811,Deltocephalinae,Scaphoideini,Scaphomonus,-,furcatus,Christopher H. Dietrich,2.80%,2.70%,-,30-Jun-2019,"China: Taiwan, Miaoli County, Rt. 124, Nanchuang",-
+P002_WD07,SRR17212810,Deltocephalinae,Scaphoideini,Osbornellus,-,tenuis,Christopher H. Dietrich,4.80%,4.80%,-,29-May-2015/07-Jun-2015,"USA: Arizona, Graham County, Ash Creek nr. Cluff Ranch Wildlife Area",1370m
+P003_WB02,SRR17212809,Deltocephalinae,Scaphoideini,Scaphoideus,Scaphoideus,titanus,Christopher H. Dietrich,2.70%,2.70%,-,10-Aug-2016,"Switzerland: Canton Ticino, Lumino",-
+P001_WB07,SRR17212808,Deltocephalinae,Athysanini,Mesamia,-,bifurcata,Christopher H. Dietrich,3.40%,3.40%,-,20-Oct-2005,"Mexico: Michoacan, nr. Angangueo, rd. km 9.5",2400m
+P001_WB12,SRR17212807,Deltocephalinae,Athysanini,Eusama,-,amanda,Christopher H. Dietrich,3.80%,3.80%,-,30-Oct-2005,"Mexico: Coahuila, Cuahtemoc rd. km 15.9",2400m
+P001_WC09,SRR17212806,Deltocephalinae,Athysanini,Allygidius,Allygidius,detectus,Christopher H. Dietrich,6.50%,6.50%,-,29-Jun-2010,"France: Provence-Alpes-Cote d'Azur, Vaucluse, Vaison-la-Romaine",-
+P001_WC10,SRR17213318,Deltocephalinae,Athysanini,Thamnotettix,Loepotettix,dilutior,Christopher H. Dietrich,10.50%,10.50%,-,30-Jun-2010,France: Mt. Ventoux,-
+P001_WC12,SRR17213317,Deltocephalinae,Athysanini,Speudotettix,-,subfusculus,Christopher H. Dietrich,7.20%,7.20%,-,30-Jun-2010,France: Mt. Ventoux,-
+P001_WD01,SRR17213316,Deltocephalinae,Athysanini,Artianus,-,interstitialis,Christopher H. Dietrich,8.90%,8.90%,-,30-Jun-2010,France: Mt. Ventoux,-
+P001_WD08,SRR17213315,Deltocephalinae,Athysanini,Matsumurella,Matsumurella,expansa,Christopher H. Dietrich,8.80%,8.70%,-,08-Jul-2005,"Mongolia: Bulgan, Hualgant, Selenge River near Hyalgant Bridge",-
+P001_WD11,SRR17213314,Deltocephalinae,Athysanini,Hardya,-,turanica,Christopher H. Dietrich,11.40%,11.40%,-,23-Jun-1999,"Kyrgyzstan: Dzhalal-AbadAt-Ojnoksky Ridge, Kurpsaj Ravine",924m
+P001_WE01,SRR17213313,Deltocephalinae,Athysanini,Condylotes,-,gussakovskii,Christopher H. Dietrich,2.40%,2.40%,-,23-Jun-1999,"Kyrgyzstan: Dzhalal-AbadAt-Ojnoksky Ridge, Kurpsaj Ravine",924m
+P001_WE02,SRR17213312,Deltocephalinae,Athysanini,Handianus,Ephemerinus,imperator,Christopher H. Dietrich,4.40%,4.40%,-,05-Jul-1999,"Kyrgyzstan: Issyk-Kul, Barskaun Ravine",1890m
+P001_WE04,SRR17213311,Deltocephalinae,Athysanini,Thamnotettix,Thamnotettix,confinis,Christopher H. Dietrich,1.90%,1.90%,-,27-Jun-2016,"USA: Wisconsin, Washburn County",-
+P001_WE06,SRR17213310,Deltocephalinae,Athysanini,Extrusanus,-,oryssus,Christopher H. Dietrich,20.70%,20.50%,-,29-Jun-2016,"USA: Wisconsin, Burnett County, 7.1 km E Rush City, Minnesota",-
+P001_WE08,SRR17213309,Deltocephalinae,Athysanini,Fitchana,-,vitellina,Christopher H. Dietrich,6.10%,6.10%,"grasses, oaks",28-Jun-2016,"USA: Wisconsin, Burnett County, 7.1 km E Rush City, Minnesota",-
+P001_WE11,SRR17213307,Deltocephalinae,Athysanini,Watanabella,-,graminea,Christopher H. Dietrich,33.90%,33.80%,-,18-Jul-2012,"China: Shaanxi, Jialing River Source Park",2300m
+P001_WF03,SRR17213306,Deltocephalinae,Athysanini,Orientus,-,ishidae,Christopher H. Dietrich,6.80%,6.80%,-,13-Jun-2004,"China: Taiwan, Nantou, Pei Tung, Mt. Yan",1550m
+P001_WG09,SRR17213305,Deltocephalinae,Athysanini,Paratanus,-,variegatus,Christopher H. Dietrich,5.70%,5.70%,bamboo,20-Jan-2014,"Chile: Los Lagos, Parque Nacional Puyehue, Anticura, Sendero El Puma",-
+P001_WG11,SRR17213304,Deltocephalinae,Athysanini,Brazosa,-,appendiculata,Christopher H. Dietrich,4.80%,4.80%,-,20-Oct-2002,"Peru: Junin, Pueblo Libre Alto Yurinaqui",1000m
+P001_WG12,SRR17213303,Deltocephalinae,Athysanini,Atanus,-,lobatus,Christopher H. Dietrich,2.00%,2.00%,-,16-Jan-2008,"Argentina: Jujuy, rt 9 km 1706, Finca Yala",1500m
+P001_WH03,SRR17213302,Deltocephalinae,Athysanini,Pachytettix,-,sagittarius,Christopher H. Dietrich,11.10%,11.10%,-,14-Nov-2009,"Bolivia: Canta Cruz, nr. Buena Vista",390m
+P001_WH12,SRR17213301,Deltocephalinae,Athysanini,Carelmapu,Carelmapu,ramosi,Christopher H. Dietrich,2.80%,2.80%,-,14-Jan-2014,Chile: Senda Darwin Biological Station,-
+P002_WA01,SRR17213300,Deltocephalinae,Athysanini,Chimaerotettix,-,ochrescens,Christopher H. Dietrich,20.10%,20.00%,-,01-Oct-1996,"Ecuador: Orellana, Transect Ent. 1 km S. Onkone Gare Camp, Reserva Etnica Waorani",220m
+P002_WB07,SRR17213299,Deltocephalinae,Athysanini,Tambocerus,-,elongatus,Christopher H. Dietrich,4.70%,4.60%,-,23-Sep-2017,"China: Guangxi, Longtan National Forest Park, Longtan Villa",390m
+P002_WB10,SRR17213298,Deltocephalinae,Athysanini,Abrus,-,graciaedeagus,Christopher H. Dietrich,2.60%,2.60%,-,19-Sep-2017 ,"China: Guangxi, ca. Qinbei, Bazhaigou Scenic Spot",-
+P002_WC10,SRR17213296,Deltocephalinae,Athysanini,Arawa,-,pulchra,Christopher H. Dietrich,4.30%,4.30%,-,2010,Australia: Western Australia,-
+P002_WD01,SRR17213391,Deltocephalinae,Athysanini,Aplanus,-,albidus,Christopher H. Dietrich,2.50%,2.50%,-,26-Aug-2014,"USA: California, Kern County, Kern River Preserve, Weldon",806m
+P002_WD02,SRR17213390,Deltocephalinae,Athysanini,Norvellina,-,bicolorata,Christopher H. Dietrich,3.00%,3.00%,-,25-Aug-2014/29-Aug-2014,"USA: California, San Bernardino County, Granit Mountains",960m
+P002_WH04,SRR17213389,Deltocephalinae,Athysanini,Baroma,-,reticulata,Christopher H. Dietrich,5.70%,5.70%,-,15-Jan-2008,"Argentina: Jujuy,Parque Nacional Calilegua, ca. campground",-
+P003_WA10,SRR17213388,Deltocephalinae,Athysanini,Euscelidius,-,variegatus,Christopher H. Dietrich,2.90%,2.90%,on herbaceous wild understory in vineyards,11-Jul-2015,Switzerland: Canton Vaud,-
+P003_WB06,SRR17213387,Deltocephalinae,Athysanini,Duocrassana,-,longula,Christopher H. Dietrich,2.40%,2.40%,-,26-Jul-2019,"Mexico: Oaxaca, Santa Maria Ecatepec",536m
+P003_WB07,SRR17213386,Deltocephalinae,Athysanini,Idiodonus,-,kennicotti,Christopher H. Dietrich,1.90%,1.90%,-,21-Sep-2019,"USA: Illinois, Danville, the Vermilion River Observatory",-
+P003_WB08,SRR17213385,Deltocephalinae,Athysanini,Colladonus,-,clitellarius,Christopher H. Dietrich,2.50%,2.50%,-,21-Sep-2019,"USA: Illinois, Danville, the Vermilion River Observatory",-
+P003_WB09,SRR17213384,Deltocephalinae,Athysanini,Acunasus,-,luteus,Christopher H. Dietrich,2.40%,2.40%,-,01-Oct-2018,"Mexico: Guerrero, Tepecuacuilco de Trujano, Ejido Mayanalan, Xolonia",1059m
+P003_WB10,SRR17213383,Deltocephalinae,Athysanini,Costamia,-,venosa,Christopher H. Dietrich,2.10%,2.10%,-,01-Oct-2018,"Mexico: Guerrero, Tepecuacuilco de Trujano, Ejido Mayanalan, Xolonia",1059m
+P003_WB11,SRR17213381,Deltocephalinae,Athysanini,Cocrassana,-,sexvarus,Christopher H. Dietrich,4.50%,4.50%,-,01-Sep-2018,"Mexico: Jalisco, Tala, Tala",1341m
+P003_WB12,SRR17213380,Deltocephalinae,Athysanini,Crassana,Macrasana,marginella,Christopher H. Dietrich,2.60%,2.60%,-,30-Sep-2018,"Mexico: Guerrero, Cocula, Cocula, Rio San Juan",597m
+P003_WC01,SRR17213379,Deltocephalinae,Athysanini,Crassana,Crassana,goniana,Christopher H. Dietrich,2.30%,2.30%,-,01-Oct-2018,"Mexico: Guerrero, Tepecuacuilco de Trujano, Ejido Mayanalan, Xolonia",1059m
+P003_WC05,SRR17213378,Deltocephalinae,Athysanini,Zabrosa,-,amazonensis,Christopher H. Dietrich,19.30%,19.20%,-,12-Apr-2019,"Mexico: Chiapas, Palenque, Profesor Roberto Barrios",157m
+P003_WC06,SRR17213377,Deltocephalinae,Athysanini,Retusanus,-,punctatus,Christopher H. Dietrich,2.90%,2.90%,-,29-Sep-2018,"Mexico: Guerrero, Cocula, Apango",650m
+P003_WC07,SRR17213376,Deltocephalinae,Athysanini,Comayagua,-,taeniata,Christopher H. Dietrich,4.50%,4.50%,-,28-Feb-2018,"Mexico: Oaxaca, San Mateo Rio Hondo, San Jose del Pacifico",2456m
+P003_WC09,SRR17213375,Deltocephalinae,Athysanini,Devolana,-,tuxcacuensis,Christopher H. Dietrich,12.40%,12.40%,-,08-Sep-2018,"Mexico: Jalisco, Tuxcacuesco",864m
+P003_WC11,SRR17213374,Deltocephalinae,Athysanini,Pseutettix,-,binotata,Christopher H. Dietrich,5.70%,5.70%,-,14-Aug- 2018,"Mexico: San Luis Potosi, Camino a Copalillos",1192m
+P003_WC12,SRR17213373,Deltocephalinae,Athysanini,Angubahita,Mairana,nigrens,Christopher H. Dietrich,10.40%,10.40%,-,23-Feb-2018,"Argentina: Tucuman Prov., San Miguel de Tucuman",500m
+P003_WD01,SRR17213372,Deltocephalinae,Athysanini,Pseudaligia,-,nigropunctata,Christopher H. Dietrich,4.20%,4.30%,-,14-Aug-2017,Mexico: Hidalgo,1336m
+P003_WD02,SRR17213370,Deltocephalinae,Athysanini,Bandara,Bandara,curvata,Christopher H. Dietrich,3.20%,3.20%,-,11-Sep-2019,"USA: Illinois, Danville, Vermilion County",-
+P003_WD03,SRR17213369,Deltocephalinae,Athysanini,Neocrassana,-,undata,Christopher H. Dietrich,4.80%,4.80%,-,05-Jan-2018,Argentina: Misiones,450m
+P003_WD04,SRR17213368,Deltocephalinae,Athysanini,Stoneana,-,marthae,Christopher H. Dietrich,2.30%,2.20%,-,26-Jul-2019,"Mexico: Oaxaca, Santa Maria Ecatepec",536m
+P003_WD09,SRR17212997,Deltocephalinae,Athysanini,Ollarianus,-,sexmaculatus,Christopher H. Dietrich,6.80%,6.80%,-,02-Oct-2018,"Mexico: Guerrero, Tepecuacuilco de Trujano, Ejido Mayanalan, Xolonia",1059m
+P003_WD12,SRR17212996,Deltocephalinae,Athysanini,Cozadanus,-,n.sp.,Christopher H. Dietrich,3.30%,3.30%,-,23-Oct-2005 ,"Mexico: Zacatecas, 24km W Baluarte",2200m
+P003_WE05,SRR17212995,Deltocephalinae,Athysanini,Platymetopius,Platymetopius,pardalis,Christopher H. Dietrich,2.50%,2.50%,-,23-Jun-1999,"Kyrgyzstan: Dzhalal-AbadAt-Ojnoksky Ridge, Kurpsaj Ravine",924m
+P003_WE11,SRR17212994,Deltocephalinae,Athysanini,Napo,-,n.sp.,Christopher H. Dietrich,2.20%,2.20%,-,11-Nov-2009,"Bolivia: Santa Cruz Department, nr. Pampa Grande",1480m
+P003_WG08,SRR17212993,Deltocephalinae,Athysanini,Cahya,-,variabilis,Christopher H. Dietrich,3.10%,3.00%,-,03-Mar-2018,"Mexico: Oaxaca, San Bartolo Yautepec",870m
+P003_WG11,SRR17212992,Deltocephalinae,Athysanini,Alladanus,-,n.sp.,Christopher H. Dietrich,2.40%,2.40%,-,28-Sep-2018,"Mexico: Guerrero, Taxco de Alarcon, Parque ecologico ""Rancho El Romerito""",2320m
+P003_WG12,SRR17212991,Deltocephalinae,Athysanini,Spinulana,-,n.sp.,Christopher H. Dietrich,3.90%,3.90%,-,30-Sep-2018,"Mexico: Guerrero, Iguala de la independencia, Tuxpan",885m
+P003_WH03,SRR17212989,Deltocephalinae,Athysanini,Conversana,-,n.sp.,Christopher H. Dietrich,15.20%,15.20%,-,28-Sep-2018,"Mexico: Guerrero, Taxco de Alarcon, Parque ecologico ""Rancho El Romerito""",2320m
+P003_WH04,SRR17212988,Deltocephalinae,Athysanini,Jaacunga,-,n.sp.,Christopher H. Dietrich,2.60%,2.60%,-,28-Sep-2018,"Mexico: Guerrero, Taxco de Alarcon, Parque ecologico ""Rancho El Romerito""",2320m
+P003_WH05,SRR17212987,Deltocephalinae,Athysanini,Angulanus,-,n.sp.,Christopher H. Dietrich,7.10%,7.10%,-,03-Mar- 2018,"Mexico: Oaxaca, Santa Maria Zoquitlan",1700m
+P003_WH11,SRR17212986,Deltocephalinae,Athysanini,Allygus,-,theryi,Christopher H. Dietrich,4.00%,4.00%,-,08-Aug-2018,"France: Corsica, Montans",-
+P004_WA10,SRR17212985,Deltocephalinae,Athysanini,Eutettix,Eutettix,pictus,James N. Zahniser,3.80%,3.90%,-,22-May-2007,"USA: Illinois, Johnson County, Rt. 146 2 mi. E Grantsburg",-
+P004_WC04,SRR17212984,Deltocephalinae,Athysanini,Anoterostemma,-,ivanoffi,James N. Zahniser,3.70%,3.60%,-,03-Aug-2010,"Scotland: VC 73 Kirkcudbrightshire, Kippford",-
+P004_WD01,SRR17212983,Deltocephalinae,Athysanini,Loralia,-,sp.,James N. Zahniser,7.10%,7.10%,-,21-Jan-2004,"Australia: South Australia, Kangaroo Island, Flinders Chase National Park",-
+P004_WD07,SRR17212982,Deltocephalinae,Athysanini,Caranavia,-,separata,James N. Zahniser,5.60%,5.60%,-,17-Oct-2002,"Peru: Junin, San Ramon",800m
+P004_WD12,SRR17212981,Deltocephalinae,Athysanini,Cerrillus,-,sp.,James N. Zahniser,7.80%,7.70%,-,15-Nov-2007,"Peru: San Martin, 19 km NE Picota",375m
+P004_WE01,SRR17212980,Deltocephalinae,Athysanini,Dagama,-,forcipata,James N. Zahniser,5.00%,5.00%,-,16-Dec-2004,"South Africa: Western Cape Prov.,¬†Villiersdorp",-
+P004_WE06,SRR17212978,Deltocephalinae,Athysanini,Athysanus,-,argentarius,James N. Zahniser,3.90%,3.90%,-,08-Jul-2004,"USA: Illinois, Iriquois County, Medewin Dolomite Prairie, S Kankakee",-
+P004_WE11,SRR17212977,Deltocephalinae,Athysanini,Nesothamnus,-,sanguineus,James N. Zahniser,7.30%,7.20%,-,07-Feb-1996,"Ecuador: Orellana, Reserva Etnica Waorani",220m
+P005_WA10,SRR17212976,Deltocephalinae,Athysanini,Egenus,-,sp.,Christopher H. Dietrich,19.60%,19.50%,-,08-Jan-2008,"Argentina: Corrientes, Parque Nacional Mburucuya, 8 km W campground",50m
+P005_WE09,SRR17212975,Deltocephalinae,Athysanini,Macustus,-,grisescens,Christopher H. Dietrich,0.60%,0.60%,-,20-Jul-2000,"Kyrgyzstan: Issyk-Kul Terskey Alatoo, Turuk-2 Pass",3370m
+P005_WE12,SRR17212974,Deltocephalinae,Athysanini,Eusceloidia,-,nitida,Christopher H. Dietrich,2.70%,2.80%,-,06-Mar-2005/15-Mar-2005,"Peru: San Martin Prov., 23 km S Picota; Concervacion Mun. Zona Barreal",335m
+P005_WF03,SRR17212805,Deltocephalinae,Athysanini,Handianus,Pycnoides,flavovarius,Christopher H. Dietrich,1.90%,1.90%,-,07-Jul-2005/08-Jul-2005,"Mongolia: Bulgan Aimag, Khyalgant Soum, Baruun Burkhiin Gol",1015m
+P005_WG01,SRR17212804,Deltocephalinae,Athysanini,Streptanus,-,sp.,Christopher H. Dietrich,3.90%,3.90%,-,07-Jul-2005/08-Jul-2005,"Mongolia: Bulgan Aimag, Khyalgant Soum, Baruun Burkhiin Gol",1015m
+P005_WG09,SRR17212803,Deltocephalinae,Athysanini,Pingellus,-,n.sp.,Christopher H. Dietrich,2.20%,2.20%,-,29-Nov-2011,"Australia: Northern Territory, Keep River National Park",-
+P005_WG10,SRR17212802,Deltocephalinae,Athysanini,Neurotettix,-,bifurcatus,Christopher H. Dietrich,1.30%,1.30%,-,Jan-2011,Australia: Northern Territory,-
+P005_WH02,SRR17212801,Deltocephalinae,Athysanini,Aeternus,-,n.sp.,Christopher H. Dietrich,4.30%,4.30%,-,05-Jul-2012,"Vietnam: Ninh Binh, Cuc Phuong National Park ca. entrance",-
+P006_WA01,SRR17212799,Deltocephalinae,Athysanini,Bardana,-,n.sp.2,Christopher H. Dietrich,5.40%,5.30%,-,08-Sep-2018,"Mexico: Jalisco, Tuxcacuesco",864m
+P006_WA04,SRR17212798,Deltocephalinae,Athysanini,Neodonus,-,piperatus,Christopher H. Dietrich,8.80%,8.80%,-,26-Jan-2019,"Mexico: Michoacan, Coeneo, Cerrito",2275m
+P006_WA05,SRR17212797,Deltocephalinae,Athysanini,Bergolix,-,signatipennis,Christopher H. Dietrich,3.50%,3.50%,-,18-Jan-2008,Argentina: Salta,1250m
+P006_WC06,SRR17212796,Deltocephalinae,Athysanini,Doleranus,-,lucidus,Christopher H. Dietrich,6.60%,6.70%,-,29-May-2015/07-Jun-2015,"USA: Arizona, Graham County, Ash Creek nr. Cluff Ranch Wildlife Area",1370m
+P006_WF01,SRR17212795,Deltocephalinae,Athysanini,Euleimonios,-,sinuatus,Christopher H. Dietrich,4.30%,4.30%,sedge/grass,22-Feb-2015,"Australia: Queensland, Crow's Nest National Park",454m
+P006_WH03,SRR17212794,Deltocephalinae,Athysanini,Andanus,-,bimaculatus,Christopher H. Dietrich,4.50%,4.50%,-,Sep-2004,"Peru: Madre de Dios, Rio Tambopata, Posada Amazonas",-
+P007_WC06,SRR17212793,Deltocephalinae,Athysanini,Lineana,-,albipunctata,Christopher H. Dietrich,5.90%,5.90%,-,05-Jan-2007/12-Jan-2007,"Thailand: Phetchabun, Khao Kho National Park",168m
+P007_WD06,SRR17212792,Deltocephalinae,Athysanini,Bonneyana,-,schwarzi,Christopher H. Dietrich,4.70%,4.70%,-,03-Apr-2011/08-Apr-2011,"USA, California, San Bernardino County, Piute Mts",800m
+P007_WD12,SRR17212791,Deltocephalinae,Athysanini,Aligia,-,alvona,Christopher H. Dietrich,5.30%,5.30%,-,26-Oct-2005,"Mexico: Durango, Rt. 40 39km E El Salto",2500m
+P007_WE02,SRR17212790,Deltocephalinae,Athysanini,Hegira,-,brunnea,Christopher H. Dietrich,3.60%,3.60%,-,22-Aug-2012,"Peru: Cuzco, 26 rd. km. W Quincemil, Rio Araza",985m
+P007_WG05,SRR17212787,Deltocephalinae,Athysanini,Consepusa,-,crassistylus,Christopher H. Dietrich,2.50%,2.40%,-,19-Jan-2006,"Chile: Region VIII  Bio-Bio, Parque National Laguna del Lajo",-
+P008_WC07,SRR17212786,Deltocephalinae,Athysanini,Huancabamba,-,n.sp.PE1,Christopher H. Dietrich,3.70%,3.60%,-,14-Sep-2009/17-Sep-2009,"Peru: Ancash Region, 7 km E Carhuaz, Pampamarca",3000m
+P008_WC10,SRR17212785,Deltocephalinae,Athysanini,Dolyobius,-,n.sp.,Christopher H. Dietrich,6.70%,6.60%,-,13-Sep-2009/18-Sep-2009,"Peru: Ancash Region, 10 km W Cajacay",2050m
+P008_WF02,SRR17212784,Deltocephalinae,Athysanini,Branchana,-,xanthota,Christopher H. Dietrich,3.60%,3.60%,Phyllostachy ssp.,28-Jul-2018,"China: Shaanxi, Yangling, Northwest A&F University Campus",478m
+P008_WF03,SRR17212783,Deltocephalinae,Athysanini,Handianus,Dlabolia,ephedrae,Christopher H. Dietrich,2.90%,2.90%,-,Jun-2019,Kazakhstan,-
+P008_WF04,SRR17212782,Deltocephalinae,Athysanini,Poliona,-,marmorata,Christopher H. Dietrich,5.30%,5.30%,-,Jun-2019,Kazakhstan,-
+P009_WA02,SRR17213295,Deltocephalinae,Athysanini,Bolotheta,-,punctata,Christopher H. Dietrich,12.60%,12.60%,-,13-Nov-2009,"Bolivia: Dpto. Santa Cruz, nr. Buena Vista",334m
+P009_WA03,SRR17213294,Deltocephalinae,Athysanini,Graphocraerus,-,ventralis,Christopher H. Dietrich,7.80%,7.80%,-,06-Jul-1999,"Kyrgyzstan: Chuy, Boom Ravine 3 km N Kyz-Kujo",1380m
+P009_WB11,SRR17213293,Deltocephalinae,Athysanini,Bambusananus,-,sp.,Christopher H. Dietrich,5.10%,5.10%,-,05-Jul-2012,"China: Shaanxi, Qinling Mountains, ca. Huoditang",1679m
+P009_WC08,SRR17213292,Deltocephalinae,Athysanini,Laburrus,Laburrus,handlirschi,Christopher H. Dietrich,11.80%,11.80%,-,05-Sep-1998,"Kyrgyzstan: Issyk-Kul, S shore Issyk Kul Lake, 10 km E Kadzhi-Saj",1675m
+P009_WC11,SRR17213290,Deltocephalinae,Athysanini,Napo,-,brazosellus,Christopher H. Dietrich,53.70%,53.70%,-,11-May-2011,"Brazil: Amazonas, Ipixuna, Rio Liberdade",175m
+P009_WD05,SRR17213289,Deltocephalinae,Athysanini,Pithyotettix,Abietotettix,altaicus,Christopher H. Dietrich,13.10%,13.10%,-,04-Sep-1998,"Kyrgyzstan: Issyk-Kul, Barskaun Ravine 16 km S Barskaun",2320m
+P009_WD07,SRR17213288,Deltocephalinae,Athysanini,Paraganus,-,n.sp.,Christopher H. Dietrich,16.80%,16.80%,-,16-Mar-2015,"Brazil: Minas Gerais, Santuario do Caraca, Banho do Belchior",280m
+P009_WD08,SRR17213287,Deltocephalinae,Athysanini,Perundanus,-,n.sp.,Christopher H. Dietrich,66.50%,66.40%,-,11-May-2012,"Brazil: Amazonas, Ipixuna, Rio Liberdade",175m
+P009_WD10,SRR17213286,Deltocephalinae,Athysanini,Neomesus,-,obtusiceps,Christopher H. Dietrich,16.60%,16.50%,-,20-Jan-2006,"Chile: Region VIII  Bio-Bio, Route 160 15 km S San Pedro",-
+P009_WE02,SRR17213285,Deltocephalinae,Athysanini,Stictocoris,-,picturatus,Christopher H. Dietrich,13.20%,13.20%,-,26-Jul-2000,"Kyrgyzstan: Chuy, Karagajly-Bulak, 9 km W Ak-Tyuz",3000m
+P009_WE12,SRR17213284,Deltocephalinae,Athysanini,Allotapes,-,nigrifacies,Christopher H. Dietrich,12.90%,12.90%,-,19-Aug-1998,"Kyrgyzstan: Dzhalal-Abad, At-Ojnoksky Mt. Ridge, Kurpsaj Ravine",924m
+P009_WF10,SRR17213283,Deltocephalinae,Athysanini,Cyanidius,-,cyanescens,Christopher H. Dietrich,6.20%,6.10%,-,29-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, jct. Kokerim & Kugart Rivers",1247m
+P011_WF11,SRR17213282,Deltocephalinae,Athysanini,Idioceromimus,-,delector,James N. Zahniser,4.10%,4.00%,-,28-Jun-2003,"Brazil: Amazonas, Barcelos, Parque Nacional Jau, Seringalzinho",20m
+P011_WG04,SRR17213281,Deltocephalinae,Athysanini,Renonus,-,rubraviridis,James N. Zahniser,10.00%,10.00%,-,15-Oct-2001,"Mexico: Jalisco, ca. La Huerta","480,"
+P012_WC05,SRR17213279,Deltocephalinae,Athysanini,Cahya,-,chapadensis,Christopher H. Dietrich,10.00%,10.00%,-,07-Sep-2012,"Brazil: PR, Cera Azul, Rio Manocl, Gomes",560m
+P012_WC10,SRR17213278,Deltocephalinae,Athysanini,Yungasia,-,ornata,Christopher H. Dietrich,2.60%,2.60%,-,30-Aug-2012,Peru,-
+P012_WH03,SRR17213277,Deltocephalinae,Athysanini,Caranavia,-,sp.,Christopher H. Dietrich,2.90%,2.90%,-,05-Sep- 2017,"Mexico: San Luis Potosi, Ciudad Valles, Reserva de la Biosfera Sierra del Abra Tanchipa",323m
+P012_WH12,SRR17213276,Deltocephalinae,Athysanini,Handianus,Pycnoides,potanini,Christopher H. Dietrich,6.00%,6.00%,-,07-Jul-2005,"Mongolia: Bulgan, Khyalgant, Cold Spring near Baruun Burkhiin Gol",-
+P014_WC04,SRR17213275,Deltocephalinae,Athysanini,Bambusana,-,biflaka,Christopher H. Dietrich,3.10%,3.10%,-,10-Jul-2019/13-Jul-2019,"Vietnam: Vinh Phuc, Tam Dao",-
+P014_WD06,SRR17213274,Deltocephalinae,Athysanini,Euscelis,-,seriphidii,James N. Zahniser,2.20%,2.20%,-,27-Jun-1999,"Kyrgyzstan: Dzhalal-Abad, 10 km W Dzhalal-Abad",807m
+P014_WD07,SRR17213273,Deltocephalinae,Athysanini,Neohegira,-,breviceps,James N. Zahniser,9.30%,9.30%,-,25-Oct-2002,"Peru: Huanuco, 5km S Tingo Maria",600m
+P014_WG10,SRR17213272,Deltocephalinae,Athysanini,Eusora,-,sp.,Christopher H. Dietrich,5.10%,5.10%,-,05-Jun-2012/15-Jun-2012,"USA: Arizona, Mohave County, 11km ESE Kingman, nr. Hualapai Mountain Park",1500m
+P015_WB01,SRR17212973,Deltocephalinae,Athysanini,Phlepsanus,-,denudatus,Christopher H. Dietrich,3.50%,3.50%,-,15-Jul-2010/31-Jul-2010,"USA, Arizona, Maricopa County, Gila River, 10 km S Arlington",200m
+P015_WB06,SRR17212972,Deltocephalinae,Athysanini,Mesadorus,-,undatus,Christopher H. Dietrich,6.90%,6.90%,-,24-Aug-2020,"USA: Illinois, Mason County, Sand Prairie-Scrub Oak Nature Preserve",-

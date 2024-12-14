@@ -1,0 +1,39 @@
+---
+title: "01_rawdata"
+author: "Ava Gabrys"
+date: "2024-05-28"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyverse)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload ...}
+# Upload data from files obtained by BLASTing gene sequences for each Pursuit sample (obtained from LINUX shell)
+# Results are combined for all samples
+BLAST_rawdata <- read.delim("raw_data/combinedBLASTresults-allsamplesallgenes.txt")
+colnames(BLAST_rawdata)<- c("qseqid", "sallseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore", "score", "saccver", "qcovs", "sscinames", "staxids")
+
+# BLAST results from Yanghui Cao (2022)
+genemetadata <- read.delim("raw_data/plant_gene_identification_20230303.txt")
+# BLAST_rawdata qseqid is the AHE sample code/latter part of the IL_137402_ID. sampleidentifers below pairs them with other GoLife_IDs for later conversion.
+sampleidentifiers <- read.delim("raw_data/sampleidentifiers.txt")
+
+# Data on samples
+samplemetadata <- read.csv("raw_data/samplemetadata.csv", header = TRUE)
+```
+
+
+```{r save}
+save(
+  BLAST_rawdata,genemetadata,samplemetadata,sampleidentifiers,
+  file="data/rawdata.RData"
+)
+```
+

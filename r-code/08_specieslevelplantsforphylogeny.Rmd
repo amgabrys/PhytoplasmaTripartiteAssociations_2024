@@ -1,0 +1,112 @@
+---
+title: "08_specieslevelplantsforphylogeny"
+author: "Ava Gabrys"
+date: "2024-09-16"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(tidyverse)
+#devtools::install_github("jinyizju/V.PhyloMaker2")
+library("V.PhyloMaker2")
+library(ape)
+library(castor)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.RData") # Need sequencesummarytable_formatted: taxonomic classification of each BLAST sequences and joinedsummmarytable_combineduplicates: which samples should be combined as the sample insect
+load("data/insectphylogeny.Rdata") # Need: insecttree: phylogeny with samples from Cao et al., and insecttipdata with complementary information (see 07_insectphylogeny)
+```
+
+```{r get plants at species level resolution}
+# If results were to GENUS level and corroborated or of sufficient length, record everything (including species)
+# Subset data frame to be sequences with results to at least the genus level
+genussupportedsequence <- sequencesummarytable_formatted %>% filter(GenusClassificationSupported == "Yes")
+
+# Make a separate subset to add in later of sequences ≥ 220 bp (not needed to be corroborated)
+longgenussupported <- genussupportedsequence %>% filter(Length >= 220)
+# Make a separate subset where the genera appears more than once for a sample (corroborating)
+duplicate_index <- which(duplicated(genussupportedsequence[c("SampleName", "TopGenus")]) | duplicated(genussupportedsequence[c("SampleName", "TopGenus")], fromLast = TRUE))
+genuscorroborated <- genussupportedsequence[duplicate_index, ]
+
+# Combine the length-sufficient and corroborated tables, removing duplicates
+genussupportedbysample <- unique(rbind(longgenussupported, genuscorroborated))
+
+#####################################################################
+# If species classification matches, record species for that sample
+
+samplespecieslist <- as.data.frame(matrix(nrow= 0, ncol = 5)) # Begin df 
+
+for (sample in unique(genussupportedbysample$SampleName)){
+  sampledf <- genussupportedbysample %>% filter(SampleName == sample)
+for (genus in unique(sampledf$TopGenus)){
+  genusdf <- sampledf %>% filter(TopGenus == genus)
+    genusspecies <- unique(genusdf[duplicated(genusdf$TopSpecies), c("SampleName", "TopSpecies", "TopGenus", "TopOrder", "TopFamily")]) # Keep species where ≥2 sequences are in agreement
+    # If there are no species in agreement, choose the species with the highest percent identity to represent the genera
+if (length(genusspecies$SampleName) < 1){
+      genusspecies <- genusdf[order(genusdf$`%SpeciesDesignation`), ][nrow(genusdf[order(genusdf$`%SpeciesDesignation`), ]), c("SampleName", "TopSpecies", "TopGenus", "TopOrder", "TopFamily")] }
+    # Add list to existing df
+  samplespecieslist <- rbind(samplespecieslist, genusspecies)
+} }
+```
+
+```{r combine molecular samples for the same insect}
+for (individualname in samplespecieslist$SampleName) {
+  fullname <- joinedsummmarytable_combineduplicates$SampleName[[grep(individualname, joinedsummmarytable_combineduplicates$SampleName)]]
+  samplespecieslist$SampleName[samplespecieslist$SampleName == individualname] <- fullname }
+
+samplespecieslist <- unique(samplespecieslist) # Remove any duplicate rows this now causes
+```
+
+```{r get species tree and subset insect tree}
+# Only include samples included in the insect tree
+# Also exclude samples sister taxa (samples P001_WD06 and P001_WC12)
+speciestable <- samplespecieslist %>% filter(SampleName %in% insecttipdata$SampleName) %>% filter(SampleName != "P001_WD06" & SampleName != "P001_WC12" )
+
+# Check and make sure the list only includes vascular plants; remove any non-vascular plants because they will not be in the mega-tree
+# P001_WE04 had results in the Thamnobryum genus, and other results
+# P001_WF06 had results to the Klebsormidium genus, and other results
+# P001_WF03 results were ALL in the Thamnobryum genus, so note it will ultimately be removed from the tree and co-phylogenetic analysis
+speciestable <- speciestable %>% filter(TopGenus != "Thamnobryum" & TopGenus != "Klebsormidium")
+
+# Check on hybrids. I manually searched the P001_WG09_k50.126590_matK sequence, which was giving results to Citrus x, and found it better classifies as Citrus japonica than any particular hybrid (difference due to how the earlier script handles hybrid names)
+speciestable[speciestable$SampleName == "P001_WG09" & speciestable$TopGenus == "Citrus", "TopSpecies" ] <- "japonica"
+
+# Subset the insect tree to only include samples with these genus/species level results
+insecttipdata_subset <- insecttipdata %>% filter(SampleName %in% speciestable$SampleName) # Need to first get associated tip names for these
+insecttree_subset <- (get_subtree_with_tips(insecttree, only_tips = insecttipdata_subset$InsectTreeName))$subtree
+
+# Format table into three columns: Genus species, Genus, and Family, for PhyloMaker input
+speciestable_phyloinput <- speciestable
+speciestable_phyloinput$species <- paste(speciestable_phyloinput$TopGenus, sep = " ", speciestable_phyloinput$TopSpecies)
+speciestable_phyloinput <- speciestable_phyloinput[, c("species", "TopGenus", "TopFamily")]
+
+# Obtain tree with PhyloMaker using sample list. Use the vascular plant tree (expanded time-calibrated megaphylogeny, names standardized as in The Plant List) with Scenario 3 model (species added as needed as polytomies at the middle point of the branch length of the genus).
+tree <- phylo.maker(sp.list = speciestable_phyloinput, tree = GBOTB.extended.TPL, nodes = nodes.info.1.TPL, scenarios = "S3")
+
+# The resulting tree is not bifuricating, which would impact the co-phylogenetic analysis.
+# Expand multi-bifurications to bifurications
+planttree <- multifurcations_to_bifurcations(tree$scenario.3)$tree
+```
+
+```{r merge tables}
+plantinsecttreetable <- left_join(insecttipdata_subset, speciestable, by = "SampleName")
+plantinsecttreetable$PlantTreeName <- paste(plantinsecttreetable$TopGenus, plantinsecttreetable$TopSpecies, sep = " ")
+plantinsecttreetable <- left_join(plantinsecttreetable, tree$species.list[c("status", "species")], by = c("PlantTreeName" = "species"))
+plantinsecttreetable$PlantTreeName <- gsub(" ", "_", plantinsecttreetable$PlantTreeName)
+```
+
+```{r calculate total included of each type}
+types <- unique(plantinsecttreetable[c("SampleName", "InsectTreeName", "Type")])
+types %>% group_by(Type) %>% count()
+```
+
+```{r save}
+write.tree(insecttree_subset, "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/data/insecttree_subset.tre") # Save subset insect tree
+write.tree(planttree, "/Users/avagabrys/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/data/planttree.tre") # Save plant tree
+write_csv(plantinsecttreetable, "~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/plantinsecttreetable.csv") # Save sample names with corresponding species-level BLAST results
+```

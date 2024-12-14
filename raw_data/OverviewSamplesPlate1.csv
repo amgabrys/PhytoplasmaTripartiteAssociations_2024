@@ -1,0 +1,116 @@
+﻿Row Sort,Column Sort,RAPiD Genomics Sample Code,Unique Client Code,Ct value,Assembly quality,# phyt_protein-coding genes,,# phyt_barcode_gene,,# other_phyt_gene,,# plant_barcode_gene,,RAPiD Genomics Lab Use ONLYConcentration (ng / uL),RAPiD Genomics Lab Use ONLYTotal DNA (ng),Concentration (ng / uL),Volume (uL),ul,eluition,16Sr assignment,Tuf,SecA,SecY,rpIV-rpsC,groEl,amp gene,other rp,Dnak,ffh,ftsY,GroES,GrpE,imp,yidC,vmp,Subfamily,Tribe,subtribe,Genus,species,Country,,,,,,,,,
+,,,,,,180,prop.%,43,prop.%,133,prop.%,4,prop.%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,1,ILL_137402_P001_WA01,5-64.1,23.67,good,93,52,12,28,80,60,1,25,9.053939967,316.8878989,1,35,,,16SrXIV-E,VI,V,,V,V,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Athysanini,,New Genus T1,n. sp.,Thailand,17°27.901'N,101°21.301'E,700m,5-12.xii.2006,Malaise trap,Patikom Tumtip leg.,Phu Ruea NP Old road to the park  ,,
+2,9,ILL_137402_P001_WA02,2-14.1,32.09,bad,3,2,0,0,0,0,3,75,25.60758555,896.2654944,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3,17,ILL_137402_P001_WA03,2-33.1,34.11,bad,4,2,0,0,2,2,2,50,21.63870578,757.3547022,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4,25,ILL_137402_P001_WA04,32.81.1,32.64,bad,3,2,0,0,2,2,1,25,9.73732324,340.8063134,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5,33,ILL_137402_P001_WA05,33-9.1,20.41,good,132,73,16,37,114,86,2,50,4.55938075,159.5783262,1,35,30,1,,XI,XI,XI,XI,XI,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Stenometopiini,,Stirellus,productus,CHINA,30.77105ºN,106.12040ºE ,Sichuan Nanchong 303m 8 Sept 2015 CH Dietrich sweeping grass,,,,,,
+6,41,ILL_137402_P001_WA06,34.17.1,32.44,bad,22,12,4,9,18,14,0,0,2.672191558,93.52670452,1,35,20,2,16SrXIV-E var,oBa,,,,,,oBA(rpIB)/16SrXI(rpIP),16SrXI,,,,,,,,Deltocephalinae,Penthimiini,,Vulturnus,sp.,MADAGASCAR,23° 26.45' S,43° 53.98’,"Tulear, Ambohimahavelona village 33 km NE of Tulear  8 – 17  September  2012  E Calif.  Acad.  of  Sciences coll:  M.Irwin,  R.Harin'Hala, malaise trap, dry forest, elev 45 m, MG-50B-100",,,,,,
+7,49,ILL_137402_P001_WA07,1-1.1,32.36,bad,3,2,1,2,0,0,2,50,16.13484203,564.7194712,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+8,57,ILL_137402_P001_WA08,1-2.1,33.08,bad,8,4,1,2,6,5,1,25,14.05315145,491.8603007,1,35,,,16SrXIV-E ,,,,,,,,,,,,,,,,Deltocephalinae,Scaphoideini,,Scaphoidophyes,n. sp.,"ZAMBIA: Northwestern Prov.~11km SW Mwinilunga Nkunyi Local Forest S11°48.809’ E 24°21.953’sweep,    .XI.2007, JN Zahniser ZA-04-1",,,,,,,,,
+9,65,ILL_137402_P001_WA09,5-60.1,33.34,bad,8,4,2,5,3,2,3,75,24.24081901,848.4286653,1,35,,,,,,,,,,rpIB/rpsS,,,,,,,,,,,,,,,,,,,,,,,
+10,73,ILL_137402_P001_WA10,5-56.1,26.87,no data,no data,,,0,,0,,0,24.40377964,854.1322872,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+11,81,ILL_137402_P001_WA11,5-36.1,34.02,bad,11,6,2,5,8,6,1,25,12.53919466,438.8718131,1,35,,,16SrXIV-D,0Ba,,,,,,,,,,,,,,,Deltocephalinae,Deltocephalini,,Horouta,spinosa?,Australia,34 09.009'S,150 49.789'E,"New South Wales: 75/203 Fairburn Rd, Wedderburn, south of Sydney. Home of Dave and Tish Britton.  135m. 1-Jan-11. K. Hill and D. Marshall. MV light",,,,,,
+12,89,ILL_137402_P001_WA12,5-26.1,34.36,no data,no data,,,0,,0,,0,9.458713137,331.0549598,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+13,2,ILL_137402_P001_WB01,5-21.2,34.16,bad,9,5,2,5,5,4,2,50,1.14772118,40.17024129,1,35,10,2,,oBa,,,,,,rpIP,,,,,,,,,Deltocephalinae,Stenometopiini,,Stirellus,indrus,"TAIWAN: TaichungWufeng, Taiwan Agr. Res. Inst.200m,24°1'37""N120°41'44""E20 Jun 2004, C.H. Dietrich23-1, sweeping",,,,,,,,,
+14,10,ILL_137402_P001_WB02,30-20.1,20.01,good,156,87,20,47,133,100,,0,1.668143826,58.38503391,1,35,25,1,,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Deltocephalini,,Graminella,sonora,"USA:Arizona, Pinal Co., Gila R. Mgmt. Area, The Shores, 5 km N Winkelman  33º01.26'N 110º44.32'W, 600m 11-21.ix.2014 ME Irwin, MJ Sharkey, Malaise in dry outwash",,,,,,,,,
+15,18,ILL_137402_P001_WB03,6-54.1,28.29,bad,25,14,1,2,21,16,3,75,15.14130789,529.9457762,1,35,,,16SrXI-B,,,,,,,,,,,,,,,,Deltocephalinae,Deltocephalini,,Bolarga,nigriloba,"ARGENTINA: Entre Rios,Rt. 14 5 km N Guayaguaychu,32.96674ºS,58.58857ºW,20,16-Feb-14,16-Feb-14,C.H.Dietrich,vacuum,AR14-30-1",,,,,,,,,
+16,26,ILL_137402_P001_WB04,7-3.1(1),18.57,good,85,47,11,26,72,54,2,50,14.78910267,517.6185933,1,35,,,,XI,XI,,XI,XI,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Chiasmini,,Gurawa,minorcephala,"CHINA: Shaanxi, Qinling Mts., ca. Huoditang, 33.44370N 108.44682E 1679m 5-Jul-2012 CH Dietrich, vacuum",,,,,,,,,
+17,34,ILL_137402_P001_WB05,7-3.1(2),24.62,good,121,67,14,33,105,79,2,50,14.89423855,521.2983494,1,35,,,,XI,XI,XI,XI,XI,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Chiasmini,,Gurawa,minorcephala,,,,,,,,,,
+18,42,ILL_137402_P001_WB06,5-48.1,34.03,bad,5,3,0,0,2,2,3,75,20.82390264,728.8365925,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+19,50,ILL_137402_P001_WB07,5-50.1,34.39,bad,15,8,4,9,9,7,2,50,13.51695842,473.0935447,1,35,,,,oBa,oBa,,,,,rpIB/rpIO/rpIP,,,,,,,,,Deltocephalinae,Hecalini,Hecalina,Fangamanus,tripunctatus,"CHINA:Shaanxi, 8km ENE Chenhexiang, 33.98133N  108.16384E 12 Jul 2012, C.H.Dietrich, vacuum",,,,,,,,,
+20,58,ILL_137402_P001_WB08,42-48.1,33.49,bad,21,12,4,9,15,11,2,50,1.258113862,44.03398518,1,35,,1,,I,,,,,,,,,,,,,,,Deltocephalinae,Opsiini,Opsiina,Navaia,filicola,Fiji,"Viti Levu Isl. Rewa Prov. 3.8 km W Veisari. Waivudawa Log Rd. 25.iv.-25.v.2003 malaise 300m Schlinger, Tokota’a FJVL10b_W02-09
+
+-18.0792º 178.3625º",,,,,,,,
+21,66,ILL_137402_P001_WB09,42-52.1,33.08,bad,2,1,0,0,0,0,2,50,22.16438522,775.7534826,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+22,74,ILL_137402_P001_WB10,42-53.1,31.69,bad,23,13,1,2,21,16,1,25,12.2185302,427.648557,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+23,82,ILL_137402_P001_WB11,42-70.1,32.4,bad,1,1,0,0,0,0,1,25,22.77943016,797.2800557,1,35,,,16SrXI,,,,,,,,,,,,,,,,Deltocephalinae,Pendarini,,Texananus (Excultanus),excultus,"USA: NC, Avery Co. ca. Newland 36.07ºN 81.94ºW 26 July 2021 C.H.Dietrich, lights",,,,,,,,,
+24,90,ILL_137402_P001_WB12,50-4.1,33.85,bad,8,4,1,2,4,3,3,75,14.68396678,513.9388372,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+25,3,ILL_137402_P001_WC01,50-28.1,32.18,bad,7,4,1,2,3,2,3,75,10.9989539,384.9633864,1,35,,,,oBa,,,,,,,,,,,,,,,Deltocephalinae,Pendarini,,Chlorotettix,sp.,"BRAZIL: MG, Santuariodo Caraça, 20.09274ºS 43.49905ºW1300m 13 Mar 2015CH Dietrich, vacuum cerrado, BR15-02-",,,,,,,,,
+26,11,ILL_137402_P001_WC02,38-14.1,32.78,bad,4,2,2,5,1,1,1,25,10.75188456,376.3159596,1,35,,,,oBa,oBa,,,,,,,,,,,,,,Ulopinae,Ulopini,,Conlopa,bredoni,Swaziland TAC 2009/301,,,,,,,,,
+27,19,ILL_137402_P001_WC03,50-9.1,34.28,bad,2,1,0,0,0,0,2,50,6.982762971,244.396704,1,35,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+28,27,ILL_137402_P001_WC04,41-52.1,34.32,bad,10,6,0,0,7,5,3,75,11.17242811,391.034984,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+29,35,ILL_137402_P001_WC05,35-68.1,34.7,bad,4,2,1,2,2,2,1,25,0.054307943,1.900778006,1,35,30,2,,,,,,,,rpIO,,,,,,,,,,,,,,,,,,,,,,,
+30,43,ILL_137402_P001_WC06,42-72.1,34.28,no data,no data,,,0,,0,,0,22.30106187,780.5371655,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+31,51,ILL_137402_P001_WC07,38-34.1,27.3,bad,13,7,1,2,8,6,4,100,4.280770646,149.8269726,1,35,25,2,16SrIII,,,,,,,,,,,,,,,,Eurymelinae,Chiasmodolini,,Rotundicerus,n. sp.,Fr. Guiana 1 H. Romack 2008,,,,,,,,,
+32,59,ILL_137402_P001_WC08,42-58.1,31.13,bad,3,2,0,0,1,1,2,50,18.45834516,646.0420806,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+33,67,ILL_137402_P001_WC09,42-52.1,32.5,bad,11,6,1,2,8,6,2,50,6.478110708,226.7338748,1,35,30,1,16SrXI,,,,,,,,,,,,,,,,Deltocephalinae,Scaphoideini,,New Genus PH2,n. sp. 1,"PHILIPPINES: Mindanao, Bukidnon, 
+Mt. Kitanglad summit trail 8º9.63'N
+124º55.90'E 1885m 1 April 2012
+T.A. Catanach, TAC 2012035",,,,,,,,,
+34,75,ILL_137402_P001_WC10,45-18.1,33.69,bad,4,2,0,0,2,2,2,50,23.41024549,819.3585922,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+35,83,ILL_137402_P001_WC11,45-23.1,25.68,good,87,48,11,26,73,55,3,75,0.806029543,28.21103401,1,35,,1,,XI,XI,XI,V,XIV,,rpIB/rpIP,,,,,,,,,Deltocephalinae,Bonaspeiini,,Coganus,breviatus,SOUTH AFRICA: WCape Prov. Cape of Good Hope Nat. Res.S34°13.855' E18°24.766'  54.2 m 10-XII-2004  #04-16col. J.N. Zahniser  sweep,,,,,,,,,
+36,91,ILL_137402_P001_WC12,45-28.1,25.51,good,50,28,7,16,41,31,2,50,15.23593019,533.2575566,1,35,,,,XI,VIII,na,,XI,,rpIB/rpIO,,,,,,,,,Deltocephalinae,Paralimnini,,Vilargus,pumilicans,"SOUTH AFRICA: KZN Prov., Arthurs Seat hill, S28°53.985' E29°26.084'  1583 m, 27-XII-2004  #04-68, col. J.N. Zahniser  sweep",,,,,,,,,
+37,4,ILL_137402_P001_WD01,45-23.1(2),25.77,good,115,64,17,40,96,72,2,50,5.542401304,193.9840456,1,35,20,2,,XI,XI,XI,XI,XI,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Bonaspeiini,,Coganus,breviatus,,,,,,,,,,
+38,12,ILL_137402_P001_WD02,45-28.1(2),27.67,bad,23,13,6,14,16,12,1,25,17.70136677,619.5478368,1,35,,,16SrXIV-F,,XI,XI,,XI,,"oBa(rpIB)/16SrXI(rpIO,rpIP)",,,,,,,,,Deltocephalinae,Paralimnini,,Vilargus,pumilicans,"SOUTH AFRICA: KZN Prov., Arthurs Seat hill, S28°53.985' E29°26.084'  1583 m, 27-XII-2004  #04-68, col. J.N. Zahniser  sweep",,,,,,,,,
+39,20,ILL_137402_P001_WD03,45-29.1,31.37,bad,14,8,2,5,12,9,0,0,4.937869947,172.8254481,1,35,27,1,16SrI-B,,,,,,,rpsS,,,,,,,,,Deltocephalinae,Paralimnini,,Pravistylus,dentidiscus,"SOUTH AFRICA: KZN Prov., Arthurs Seat hill, S28°53.985' E29°26.084'  1583 m, 27-XII-2004  #04-68, col. J.N. Zahniser  sweep",,,,,,,,,
+40,28,ILL_137402_P001_WD04,45-29.1(2),31.35,bad,13,7,3,7,9,7,1,25,16.75514377,586.4300321,1,35,,,,oBa,,,,,,rpIB/rpIP,,,,,,,,,Deltocephalinae,Paralimnini,,Pravistylus,dentidiscus,"SOUTH AFRICA: KZN Prov., Arthurs Seat hill, S28°53.985' E29°26.084'  1583 m, 27-XII-2004  #04-68, col. J.N. Zahniser  sweep",,,,,,,,,
+41,36,ILL_137402_P001_WD05,41-51.1,33.47,bad,2,1,1,2,1,1,0,0,0.070078326,2.452741418,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+42,44,ILL_137402_P001_WD06,DEL-117,32.05,bad,5,3,1,2,1,1,3,75,2.966572044,103.8300216,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43,52,ILL_137402_P001_WD07,DEL-116,,bad,4,2,1,2,0,0,3,75,0,0,1,35,,,,,,,,,,rpIB,,,,,,,,,go back to original samples for extraction,,,,,,,,,,,,,,
+44,60,ILL_137402_P001_WD08,DEL-105,28.3,bad,22,12,3,7,15,11,4,100,0.028023971,0.980838984,1,35,,,16SrXIV-E,oBa,,,I,,,rpIO,,,,,,,,,Deltocephalinae,Paralimnini,Paralimnina,Multiproductus,,"THAILAND Loei  
+Phu Ruea NP Nern Wibaak ditch  
+17º29.907'N101º20.483'E 1196m
+Malaise trap 26.ii-2.iii.2007
+Patikhom Tumtip leg. T1714 ",,,,,,,,,
+45,68,ILL_137402_P001_WD09,DEL-108,31.02,bad,42,23,5,12,34,26,3,75,1.762766125,61.69681438,1,35,,,16SrXIV,oBa,XI,na,,XI,,rpIB,,,,,,,,,Deltocephalinae,Macrostelini,,Nesoclutha,phryne,"Australia Queensland 13 Feb 2008  Approx 1.5km W of Noonbah Station driveway. GPS estimated 24⁰5.7’S      143⁰ 10.4’E 180 m K. Hill, D. Marshall, C. Owen, M. Moulds, M. Humphrey-24.095,143.173333",,,,,,,,,
+46,76,ILL_137402_P001_WD10,DEL-100,30.09,bad,19,11,2,5,14,11,3,75,5.248020817,183.6807286,1,35,,,,oBa,XI,,,,,,,,,,,,,,Deltocephalinae,Paralimnini,Paralimnina,Acharis,ussuriensis,"CHINA:Shaanxi, 8km ENE Chenhexiang, 33.98133N  108.16384E 12 Jul 2012, C.H.Dietrich, vacuum",,,,,,,,,
+47,84,ILL_137402_P001_WD11,45-40.1,28.19,bad,46,26,9,21,34,26,3,75,10.95164275,383.3074962,1,35,,,,oBa,VIII,,V,XI,,rpIB/rpIO,,,,,,,,,Deltocephalinae,Paralimnini,,Vilargus,pumilicans,"SOUTH AFRICA: KZN Prov., SE of Kamberg, S29°26.796' E29°46.443'  1783 m, 26-XII-2004  #04-65, col. J.N. Zahniser  sweep",,,,,,,,,
+48,92,ILL_137402_P001_WD12,45-41.1,33.34,bad,7,4,3,7,3,2,1,25,10.27351627,359.5730694,1,35,,,16SrXIV-F,oBa,,,,XI,,,16SrXI,,,,,,,,Deltocephalinae,Paralimnini,,Pravistylus,exquadratus,,,,,,,,,,
+49,5,ILL_137402_P001_WE01,45-40.1(2),31.16,bad,19,11,3,7,14,11,2,50,14.51049256,507.8672397,1,35,,,16SrXI,,,,rpIV,,,rpsS,,,,,,,,,Deltocephalinae,Paralimnini,,Vilargus,pumilicans,"SOUTH AFRICA: KZN Prov., SE of Kamberg, S29°26.796' E29°46.443'  1783 m, 26-XII-2004  #04-65, col. J.N. Zahniser  sweep",,,,,,,,,
+50,13,ILL_137402_P001_WE02,45-43.1,34.4,bad,2,1,1,2,1,1,0,0,21.06045839,737.1160437,1,35,,,,,,,,,,rpIB,,,,,,,,,,,,,,,,,,,,,,,
+51,21,ILL_137402_P001_WE03,46-38.1,31.54,bad,6,3,1,2,3,2,2,50,0.464337907,16.25182674,1,35,,,16SrVI,,,,,,,,,,,,,,,,Deltocephalinae,Scaphoideini,,New Genus MG5,n. sp. 1,"MADAGASCAR  Mahajanga
+Alaotra  Mangoro  Region,
+Mitsinjo Reserve  22 km  SE
+of Andasibe village
+el 760m     Dec 22-27,  2015
+18° 55' 03” S    48° 25’ 50”  E
+California Acad. of  Sciences
+colls:  M.Irwin,   R.Harin'Hala
+malaise trap     in low altitude 
+rain forest              MG-68-34",,,,,,,,,
+52,29,ILL_137402_P001_WE04,46-39.1,34.41,bad,5,3,1,2,2,2,2,50,1.452615255,50.84153393,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+53,37,ILL_137402_P001_WE05,46-61.1,28.45,bad,27,15,2,5,23,17,2,50,10.02644693,350.9256426,1,35,,,16SrV,,,V,,,,rpIP,,,,,,,,,Deltocephalinae,Scaphoideini,,Scaphomonus,n. sp. T1,THAILAND Chiang Mai   Doi Chiang Dao WS Nature trail  19º24.278'N98º55.311'E 491mMalaise trap 3-10.iii.2008Songkran & Apichart leg. T3155,,,,,,,,,
+54,45,ILL_137402_P001_WE06,38-36.1,34.65,bad,15,8,0,0,13,10,2,50,11.51937654,403.178179,1,35,,,16SrXIV,,,,,,,,,,,,,,,,Eurymelinae,Megipocerini,,Chunra,n. sp. PH1,Philippines,,,,,,,,,
+55,53,ILL_137402_P001_WE07,LH 143.2,17.36,good,146,81,19,44,125,94,2,50,14.44215423,505.4753982,1,35,,,16SrXIV,oBa,XI,V,V,XIV,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Paralimnini,Paralimnina,Acharis,ussuriensis,,,,,,,,,,
+56,61,ILL_137402_P001_WE08,LH 143.4,,good,157,87,21,49,133,100,3,75,2.146512117,75.12792409,1,35,,,,oBA,I,V,V,I,16SrI-C,16SrI,16SrI,16SrXI,16SrI,16SrI,,16SrI,,,Deltocephalinae,Paralimnini,Paralimnina,Acharis,ussuriensis,,,,,,,,,,
+57,69,ILL_137402_P001_WE09,LH 143.5,,good,144,80,18,42,123,92,3,75,2.188566472,76.59982653,1,35,,,16SrXIV-E,oBa,XI,XI,V,XIV,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Paralimnini,Paralimnina,Acharis,ussuriensis,,,,,,,,,,
+58,77,ILL_137402_P001_WE10,35-14.2,23.7,good,153,85,19,44,132,99,2,50,4.985181097,174.4813384,1,35,,,,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Macrostelini,,Dalbulus,elimatus,Brazil,"Paraná, PN Iguaçú, Rio Iguaçú, Prasa Santos Dumont
+
+25º41’33.5”S 54º26’03.1”W
+
+188 m 8 Nov 2012 P. Avelino-Capistrano, panobranco",,,,,,,,
+59,85,ILL_137402_P001_WE11,30-14.1,33.58,bad,13,7,3,7,8,6,2,50,9.285238921,324.9833622,1,35,,,,,algae,,,,,rpIB,,,,,,,,,Deltocephalinae,Opsiini,Circuliferina,Dixianus,utahnus,"USA. Arizona Cochise Co; Bisbee 1429 Franklie Street; Malaise trap 1585m AS Menke; 17-23.vi.2013 31°24'23""N 109°55'57""W",,,,,,,,,
+60,93,ILL_137402_P001_WE12,7-9.1,27.79,good,107,59,16,37,88,66,3,75,24.91368869,871.9791042,1,35,,,16SrI-B,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Scaphoideini,,Amimenus,mojiensis,"CHINA Shaanxi Vac Wei Cong 8km ENE Chenhexiang 33.98133N 108.16384E 660m July 12, 2012",,,,,,,,,
+61,6,ILL_137402_P001_WF01,1-2.1,33.49,bad,18,10,1,2,15,11,2,50,15.6932713,549.2644956,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+62,14,ILL_137402_P001_WF02,40-61.1,26.2,good,148,82,19,44,127,95,2,50,1.710198181,59.85693634,1,35,,,,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Macrostelini,,Macrosteles,guttatus,"MONGOLIA:Hovsgol, Tumurbulag, Bugcei (Bugceiin) Gol 45.5 km SW of Moron 49°15.7008N  99°5294520E 1618m 23 Jul 2005 C. Bartlett SRP05072301",,,,,,,,,
+63,22,ILL_137402_P001_WF03,42-43.1,30.98,bad,26,14,2,5,22,17,2,50,0.74294801,26.00318036,1,35,,,,oBa,,,,,,rpsS,,,,,,,,,Deltocephalinae,Macrostelini,,Balclutha,n. sp. FI1,Fiji,,,,,,,,,
+64,30,ILL_137402_P001_WF04,DEL 203,31.27,good,138,77,18,42,117,88,3,75,3.828686327,134.0040214,1,35,,,16SrV-C,V-C/D,16SrV-C/D,16SrV-C/D,V,V-C/D,,rpIB/rpIO/rpIP/rpsS,16SrV-C/D,16SrV-C/D,,,,,,,Deltocephalinae,Scaphoideini,,Osbornellus_(Osbornellus),auronitens,"Switzerland, Stabio",,,,,,,,,
+65,38,ILL_137402_P001_WF05,BM1-VT3,22.08,good,113,63,15,35,95,71,3,75,0.895395048,31.33882668,1,35,,,16SrVI-L,V-C/D,V,VI,VI,V,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Cicadulini,,Rhopalopyx,elongata,"Switzerland, Bolle di Magadino",,,,,,,,,
+66,46,ILL_137402_P001_WF06,DEL 104,27.65,bad,7,4,2,5,3,2,2,50,1.210802713,42.37809494,1,35,,,,oBa,,,,,,rpIB,,,,,,,,,Deltocephalinae,Scaphoideini,,Tongdotettix,youngeouni,"SOUTH AFRICA: WCape Prov., Theewaterskloof Dam, Franschhoek-Villiersdorp Rd., S33°58.491' E19°10.360'  328 m, 16-XII-2004  #04-48, col. J.N. Zahniser  sweep",,,,,,,,,
+67,54,ILL_137402_P001_WF07,DEL 204,26.4,good,153,85,18,42,132,99,3,75,10.82022289,378.7078011,1,35,,,16SrI-F,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Athysanini,,Euscelidius,variegatus,Switzerland Canton Vaud,,,,,,,,,
+68,62,ILL_137402_P001_WF08,1-1.1,32.4,bad,6,3,1,2,3,2,2,50,17.65405562,617.8919466,1,35,,,,oBa,,,,,,,,,,,,,,,Deltocephalinae,Stenometopiini,,Stirellus,sp.,"ZAMBIA: Northwestern Prov. ~11km SW Mwinilunga Nkunyi Local Forest S11°48.809’ E 24°21.953’ sweep,   .XI.2007 ZA-04-2, JN Zahniser",,,,,,,,,
+69,70,ILL_137402_P001_WF09,DEL-087,32.74,bad,13,7,3,7,7,5,3,75,1.610319087,56.36116806,1,35,20,,,oBa,,,,IX,,rpIB,,,,,,,,,Deltocephalinae,Paralimnini,Paralimnina,Adarrus,n. sp. ?,"MONGOLIA, Hovsgol Erdenebulgan Uur (Uuriin) Gol 32.6 km NE of Erdenebulgan 7/14-15/2005 9:00 PM to 11:00 AM
+1063m elev 50°18.1158 N 101°55.7214E1012 Gelhaus Field Number 65 Way Pt",,,,,,,,,
+70,78,ILL_137402_P001_WF10,DEL-092,30.63,bad,18,10,4,9,11,8,3,75,0,0,1,35,30,,,oBa,oBa,,,,,rpIB/rpIO,,,,,,,,,Deltocephalinae,Scaphoideini,,New Genus ZA5,,"Rep. of Congo, Dept. Pool
+Iboubikro site, MT 6
+Lesio-Loun Pk, 340m. 
+3º16.196’S, 015º28.267’E
+05 viii, 2008, Braet + Sharkey",,,,,,,,,
+71,86,ILL_137402_P001_WF11,DEL 011,27.204,good,84,47,10,23,70,53,4,100,2.992856016,104.7499606,1,35,,,,oBa,IV,,na,algae,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Stenometopiini,,gen.,sp.,,Madagascar,,"21°13'34.2""S","47°22'11.4""E",,1110,rainforest,,"Fianarantsoa Prov., Parc National Ranomafana, Vohiparara, at broken bridge"
+72,94,ILL_137402_P001_WF12,G14,21.3,good,146,81,18,42,126,95,2,50,2.751043474,96.28652158,1,35,,,16SrIX-J,oBa,V,IX,IX,XIV,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Opsiini,,Neoaliturus,argillaceus ,Israel,"31°59'33.1""N",,"34°48'45.6""E",,,,,Rishon Lezion,
+73,7,ILL_137402_P001_WG01,50-46.1,20.27,good,156,87,20,47,133,100,3,75,1.179261946,41.27416811,1,35,,,,I,I,I,I,I,,rpIB/rpIO/rpIP/rpsS,,,,,,,,,Deltocephalinae,Scaphytopiini,,Scaphytopius (Cloanthanus),aequus,Mexico,"19°59'00.0""N",,"97°11'00.0""W",,200,rainforest,,"Veracruz, 6km NE 6 km NE Tlapacoyan, Cascada Encantada",
+74,15,ILL_137402_P001_WG02,Q*,28.3,bad,9,5,3,7,3,2,3,75,21.67550334,758.6426168,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+75,23,ILL_137402_P001_WG03,CHI 005,31.8,bad,14,8,2,5,9,7,3,75,10.87804763,380.7316669,1,35,,,16SrIII,oBa,,,,,,,,,,,,,,,Deltocephalinae,Chiasmini,,Exitianus,obscurinervis,Peru,,,,,,,,,
+76,31,ILL_137402_P001_WG04,3-50.1,,no data,no data,,,0,,0,,0,0,0,,,,,,,,,,,,,,,,,,,,,go back to original samples for extraction,,,,,,,,,,,,,,
+77,39,ILL_137402_P001_WG05,46-9.1,,bad,14,8,4,9,8,6,2,50,2.467176576,86.35118015,1,35,,,,oBa,,,,I,,rpIB,,,,,,,,,Deltocephalinae,Opsiini,Opsiina,Hishimonus,pallidus,"THAILAND Ubon Ratchathani   
+Pha Taem NP Rong Hi  
+15º40.016'N105º30.502'E 246m
+Malaise trap 14-21.i.2007
+Thongkam & Pakdee leg. T1480 ",,,,,,,,,
+78,47,ILL_137402_P001_WG06,46-8.1,,bad,8,4,2,5,3,2,3,75,13.28565946,464.9980813,1,35,,,,,,,I,,,rpIB,,,,,,,,,Deltocephalinae,Opsiini,Opsiina,Paralampridius,sinuatus,THAILAND Nakhon Si Thammarat  Namtok Yong NP Klong Jang waterfall  8º16.283'N99º38.702'E 154mMalaise trap 19-26.i.2009Samnaokan;S. leg. T4310 ,,,,,,,,,
+79,55,ILL_137402_P001_WG07,46-65.1,,bad,1,1,0,0,0,0,1,25,9.553335436,334.3667403,1,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+80,63,ILL_137402_P001_WG08,51-29.2,,bad,8,4,2,5,6,5,0,0,0.133159859,4.660595069,1,35,,,16SrXIV-D,,oBa,,,,,,,,,,,,,,Deltocephalinae,Scaphoideini,,Diemoides,n. sp. 1,"AUSTRALIA: QLDBrisbane, Mt. Coot-thaReservoir Trail27.4619ºS152.9546ºE 194m 21 Feb 2015CH Dietrich, Hg vapor lightAU15-06-2",,,,,,,,,
+81,71,ILL_137402_P001_WG09,41-53.1,,bad,11,6,3,7,5,4,3,75,0.52741944,18.45968039,1,35,,,,oBa,,,,,,rpIB,,,,,,,,,Deltocephalinae,Opsiini,,New Genus ML1,n. sp. 1,"Malaysia:Sarawak; Gunung Mulu National Park, near hdqtrs; 04.04.25-114.81.38; 5-26 Jan 2009;S. Krishnankutty",,,,,,,,,
+82,79,ILL_137402_P001_WG10,DEL-011,25.85,good,106,59,13,30,91,68,2,50,1.105666824,38.69833885,,,,,new group,XXI,IV,IV,IV,IV,,rpIB/rpIO/rpIP,,,,,,,,,Deltocephalinae,Opsiini,,Alishania,formosana,Taiwan,"24°07'12.0""N",,"121°14'22.0""E",,2700,,,"Nantou Yuanfeng, Rt.14 km",
+83,87,ILL_137402_P001_WG11,De30,29.25,bad,40,22,5,12,33,25,2,50,9.705782474,339.7023866,,,,,16SrXI-G ,V,XI,,,XI,,rpIP,,,,,,,,,Deltocephalinae,Limotettigini,,Limotettix (Neodrylix),urnura,Canada,,,,,,,,,

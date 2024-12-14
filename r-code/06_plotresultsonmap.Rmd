@@ -1,0 +1,185 @@
+---
+title: "06_plotresultsonmap"
+author: "Ava Gabrys"
+date: "2024-06-05"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+library(tidyverse)
+library(ggmap)
+library(ggimage)
+library(rsvg)
+library(ggrepel)
+library(geosphere)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.Rdata")
+# Table below contains phytoplasma information/classification at different loci (as well as insect classifications, but we already have those). Samples have ILL_137402 IDs that can be used to bind to samples
+phytoplasmaidentification <- read.csv("raw_data/OverviewSamplesPlate1.csv", header = TRUE)
+# Note uses 05_sampleBLASTvisualization resulting images for plotting
+```
+
+```{r prepare data}
+# Remove any rows where there is no metadata and hence no coordinate information as well as no BLAST results
+summarytablewstrain <- condensedsummarytable %>% drop_na(cooX)
+summarytablewstrain <- summarytablewstrain[summarytablewstrain$SummarizedBLASTResults != "",]
+
+# Coordinates need to be converted from Degrees, Minutes, and Seconds (DMS) format to Decimal Degrees (DD) format
+convert_dms_to_dd <- function(dms, direction) {
+  # Split the DMS string into components
+  dms_parts <- strsplit(dms, "°|'|\"")[[1]]
+  degrees <- as.numeric(dms_parts[1])
+  minutes <- as.numeric(dms_parts[2])
+  seconds <- as.numeric(dms_parts[3])
+  # Calculate the decimal degrees
+  dd <- degrees + minutes / 60 + seconds / 3600
+  # Adjust the sign based on the direction
+  if (direction == "S" || direction == "W") {
+    dd <- -dd
+  }
+  return(dd)
+}
+for (i in seq_along(summarytablewstrain$cooX)){
+  dms <- summarytablewstrain[i, "cooX"]
+  direction <- substr(dms, nchar(dms), nchar(dms))
+  dms <- substr(dms, 1, nchar(dms) - 1)
+  summarytablewstrain$cooXDD[i] <- convert_dms_to_dd(dms, direction)
+}
+for (i in seq_along(summarytablewstrain$cooY)){
+  dms <- summarytablewstrain[i, "cooY"]
+  direction <- substr(dms, nchar(dms), nchar(dms))
+  dms <- substr(dms, 1, nchar(dms) - 1)
+  summarytablewstrain$cooYDD[i] <- convert_dms_to_dd(dms, direction)
+}
+
+# Add in phytoplasma and other sample information
+# Convert ILL_137402 IDs into SampleNames by dropping the "ILL_137402_" at the start
+phytoplasmaidentification$SampleName2 <- gsub("ILL_137402_", "", phytoplasmaidentification$RAPiD.Genomics.Sample.Code)
+# Add in strain classification based on 16Sr, Tuf, SecA, SecY, rplVrpsC, groEl by binding their columns in that order for a single string. First replace any empty cells (no characterization for that gene) with a "-" placeholder to keep when joining
+phytoplasmaidentification$X16Sr.assignment[phytoplasmaidentification$X16Sr.assignment == ""] <- gsub("", "-", phytoplasmaidentification$X16Sr.assignment[phytoplasmaidentification$X16Sr.assignment == ""])
+phytoplasmaidentification$Tuf[phytoplasmaidentification$Tuf == ""] <- gsub("", "-", phytoplasmaidentification$Tuf[phytoplasmaidentification$Tuf == ""])
+phytoplasmaidentification$SecA[phytoplasmaidentification$SecA == ""] <- gsub("", "-", phytoplasmaidentification$SecA[phytoplasmaidentification$SecA == ""])
+phytoplasmaidentification$SecY[phytoplasmaidentification$SecY == ""] <- gsub("", "-", phytoplasmaidentification$SecY[phytoplasmaidentification$SecY == ""])
+phytoplasmaidentification$rpIV.rpsC[phytoplasmaidentification$rpIV.rpsC == ""] <- gsub("", "-", phytoplasmaidentification$rpIV.rpsC[phytoplasmaidentification$rpIV.rpsC == ""])
+phytoplasmaidentification$groEl[phytoplasmaidentification$groEl == ""] <- gsub("", "-", phytoplasmaidentification$groEl[phytoplasmaidentification$groEl == ""])
+
+phytoplasmaidentification$PhytoplasmaSummary <- paste0(phytoplasmaidentification$X16Sr.assignment, sep = "|", phytoplasmaidentification$Tuf, sep = "|", phytoplasmaidentification$SecA, sep = "|", phytoplasmaidentification$SecY, sep = "|", phytoplasmaidentification$rpIV.rpsC, sep = "|", phytoplasmaidentification$groEl) #Join
+phytoplasmaidentification$PhytoplasmaSummary[phytoplasmaidentification$PhytoplasmaSummary == "-|-|-|-|-|-"] <- "NA" # Replace any where no genes are classified
+
+# Join the tables
+# Need to temporarily split the sample names in the condensed table that are joined (because of duplicates) to be able to merge, as the names are individual in the second table. Take the first name. Merge with just one of the names
+summarytablewstrain$SampleName2 <- sub("/.*", "", summarytablewstrain$SampleName)
+summarytablewstrain <- left_join(summarytablewstrain, phytoplasmaidentification[c("PhytoplasmaSummary", "SampleName2")], by = "SampleName2")
+# MANUAL CHECK FOR COMBINED SAMPLES
+# I've manually changed the classifications where appropriate for samples sent to AHE twice (elutions etc.) to reflect the classifications of both/all AHE sequences obtained independently
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WB09/P001_WC09"] <- "16SrXI|-|-|-|-"
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WC11/P001_WD01"] <- "16SrXI|XI|XI|V/XI|XIV/XI"
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WD11/P001_WE01"] <- "16SrX|oBa|VIII|-|V|XI"
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WB04/P001_WB05"] <- "16SrXI|XI|XI|XI|XI|XI"
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WF11/P001_WG10"] <- "newgroup|XXI/oBa|IV|IV|IV/na|IV/algae"
+summarytablewstrain$PhytoplasmaSummary[summarytablewstrain$SampleName == "P001_WE07/P001_WE08/P001_WE09"] <- "16SrXIV|oBa|XI/I|V/XI|V|XIV/I"
+
+# Format insect and strain names together for the table
+summarytablewstrain$MapSummary <- paste0(summarytablewstrain$genus, " ", summarytablewstrain$species, "\n", summarytablewstrain$PhytoplasmaSummary)
+
+# Assign the points their images. Format names
+summarytablewstrain$SampleName <- gsub("/", "-", summarytablewstrain$SampleName)
+summarytablewstrain$Image <- paste("BLASTsamplevisualizations/", summarytablewstrain$SampleName, "_chartedblastresults-annotated.png", sep = "")
+
+###########################################################
+# If points are close, they will overlap. So, if any points are within the indicated distance, we will separate them out. Unfortunately ggplot does not have an option for images for this, so we will do it more manually. The distance between each pair of points will be measured and adjusted as needed, iterating until all points are adequately separated.
+# We will retain the original coordinate to be able to draw a line to the original location.
+
+# Specify minimum distance apart for points (in meters). This amount can vary depending on the zoom
+min_distance <- 800000
+# Isolate the coordinates from the original table. These will be adjusted
+summary <- summarytablewstrain %>% drop_na(cooXDD)
+coords <- summary[, c("SampleName", "cooXDD", "cooYDD")]
+colnames(coords) <- c("SampleName", "cooXDDadjusted", "cooYDDadjusted")
+
+# Calculate a distance matrix
+distmatrix<-distm(coords[, c("cooXDDadjusted", "cooYDDadjusted")])
+
+# Find which coordinates are considered too close. The output is pairs of points
+too_close <- which(distmatrix < min_distance, arr.ind = TRUE)
+
+# Now we will continue looping until all are adequately separated, no non-self pairs
+while (nrow(too_close) > nrow(coords)){
+  print(nrow(too_close)-nrow(coords)) # Just to watch progress
+for (i in 1:nrow(too_close)){
+  # Extract the point # for each in the pair
+  point1 <- too_close[i, 1]
+  point2 <- too_close[i, 2]
+# Ignore comparisons of self points
+if (point1 != point2){
+  # Use that to extract the coordinate for each in the pair
+  point1coord <- c(coords$`cooXDDadjusted`[point1], coords$`cooYDDadjusted`[point1])
+  point2coord <- c(coords$cooXDDadjusted[point2], coords$cooYDDadjusted[point2])
+  # Calculate the bearing between the points (so we will be able to move them in the appropriate direction to achieve a minimum changed distance)
+  bearing <- bearingRhumb(point1coord, point2coord)
+  # If the points are identical, bearing cannot be calculated. Separate them at 30º, which should allow good positioning for the text label. Move both points so the line/segment for the moved point does not land on the other point that would stay, but rotate the second one slightly so there is not a line connecting them.
+  if (is.na(bearing)){
+    bearing <- 30
+    bearing2 <- 180
+    adjusted_point2 <- destPoint(point1coord, bearing, min_distance/2)
+    adjusted_point1 <- destPoint(point1coord, bearing * -1.3, min_distance/2)
+    } else{
+  adjusted_point2 <- destPoint(point1coord, bearing, min_distance)
+  adjusted_point1 <- point1coord # Otherwise just move one point
+    }
+coords$cooXDDadjusted[point1] <- adjusted_point1[1]
+coords$cooYDDadjusted[point1] <- adjusted_point1[2]
+coords$cooXDDadjusted[point2] <- adjusted_point2[1]
+coords$cooYDDadjusted[point2] <- adjusted_point2[2]
+} }
+# Calculate a distance matrix
+distmatrix<-distm(coords[, c("cooXDDadjusted", "cooYDDadjusted")])
+# Find which coordinates are considered too close. The output is pairs of points
+too_close <- which(distmatrix < min_distance, arr.ind = TRUE)
+# And....iterate
+}
+
+# Once separated, add these new points to the data frame
+summarytablewstrain <- left_join(summarytablewstrain, coords, by = "SampleName")
+```
+
+```{r map data}
+register_stadiamaps("key..........", write = FALSE)
+# Get boundaries for roughly the whole world and each continent
+worldboundaries <- c(left = -168, bottom = -58, right = 179, top = 78)
+namericaboundaries <- c(left = -130, bottom = 8, right = -67, top = 55)
+samericaboundaries <- c(left = -85, bottom = -56, right = -35, top = 13)
+europeboundaries <- c(left = -9, bottom = 20, right = 55, top = 60)
+africaboundaries <- c(left = -9, bottom = -45, right = 55, top = 20)
+asiaboundaries <- c(left = 55, bottom = 6, right = 140, top = 60)
+oceaniaboundaries <- c(left = 82, bottom = -30, right = 179, top = 35)
+
+world <- get_stadiamap(worldboundaries, zoom = 4, maptype = "stamen_terrain_background")
+namerica <- get_stadiamap(namericaboundaries, zoom = 5, maptype = "stamen_terrain_background")
+samerica <- get_stadiamap(samericaboundaries, zoom = 5, maptype = "stamen_terrain_background")
+europe <- get_stadiamap(europeboundaries, zoom = 5, maptype = "stamen_terrain_background")
+africa <- get_stadiamap(africaboundaries, zoom = 5, maptype = "stamen_terrain_background")
+asia <- get_stadiamap(asiaboundaries, zoom = 5, maptype = "stamen_terrain_background")
+oceania <- get_stadiamap(oceaniaboundaries, zoom = 5, maptype = "stamen_terrain_background")
+
+# Plot points with images, repeat for each area. Note after this I manually adjusted labeling and positioning in the svg files Adobe, as well removing duplicate times samples appeared (parts of Asia are in both the oceania and asia maps here).
+mapimage <- ggmap(oceania) + 
+  geom_segment(data = summarytablewstrain, aes(x = cooXDDadjusted, y = cooYDDadjusted, xend = cooXDD, yend = cooYDD), color = "black", arrow = arrow(length = unit(0.15, "cm"))) +
+  geom_image(data = summarytablewstrain, aes(x = cooXDDadjusted, y = cooYDDadjusted, image = Image), size = 0.17) +
+ # Add text labels to the moved location
+geom_text_repel(data = summarytablewstrain, aes(label = MapSummary, x = cooXDDadjusted, y = cooYDDadjusted), size = 4.5) +
+  theme_minimal()
+
+ggsave(paste0("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/Maps/", "ocenia", "-map.svg", sep = ""), mapimage, dpi = 300)
+
+```
+

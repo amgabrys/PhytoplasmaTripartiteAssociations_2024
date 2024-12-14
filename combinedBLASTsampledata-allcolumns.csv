@@ -1,0 +1,217 @@
+"joinedsummarytable$GoLife_ID","SampleName","SummarizedBLASTResults","ILL_137402_ID","origin","person","personal.id","sampling_event_code_2022","molecular.id_AHE","Subfamily","tribe","tribe_uncert","subtribe","genus","genus_uncert","species","species_uncert","sex","sex_uncert","date_DNAextraction","year","country","Date","collector","collection_Method","Country","cooY","cooX","altitude","location","AHE1","AHE1.length","AHE.BLAST","AHE.BLAST.hit","AHE.identity.coverage.","iPhycl","AHE1.iPhycl.Ca..Phytoplasma.ass.","AHE1.iPhycl.16S.group.subgroup.classification","RFLP.unique.restriction.enzymes","AHE2.length","AHE1.AHE2","AHE2.iPhycl.Ca..Phytoplasma.ass.","AHE2.iPhycl.16S.group.subgroup.classification","CAT.AHE","CATcons.AHE","AHE.probe.kit.2","qPCR","qPCR.Cq","CAT.qPCR"
+"'7-9","P001_WE12","Dipsacales;None;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Sapindales;Simaroubaceae;Ailanthus
+Myrtales;Melastomataceae;Miconia","ILL_137402_P001_WE12",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"*-Q","P001_WG02","Caryophyllales;Caryophyllaceae;Silene
+Ginkgoales;Ginkgoaceae;Ginkgo
+Poales;Poaceae;None","ILL_137402_P001_WG02","GoLife","VT","*-Q","11FR","P003_WH12","Deltocephalinae","Fieberiellini","","","Synophropsis","","lauri","","M","","",2018,"France","8-Aug-18","","","France","43°51'08.3""N","1°49'26.9""E","","Corsica: Montans","full","1522","16SrIII J or 16SrIIIU","KY778013.1","99.60(98)","16SrIII-U variant","The query 16S rDNA sequence shares 99.1% similarity with that of the ‘'Candidatus Phytoplasma pruni' rrnA ’ reference strain (GenBank accession: JQ044393). The phytoplasma under study is a ‘'Candidatus Phytoplasma pruni' rrnA ’-related strain.","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is most similar to the reference pattern of the 16Sr group III, subgroup U (GenBank accession: HM589213), with a pattern similarity coefficient of 0.98. The phytoplasma under study is a variant of 16SrIII-U .","",1521,"identical","","","full","phy",NA,"pos","28.289","phy"
+"1-1.1","P001_WA07","Poales;Poaceae;Cenchrus","ILL_137402_P001_WA07","GoLife","","1-1.1-","","","Deltocephalinae","Stenometopiini","","","Stirellus","","sp.","","F","","",2007,"Zambia","7-Nov","J.N. Zahniser","sweep","Zambia","11°48'48.5""S","24°21'57.2""E","","Northwestern Prov. ~11km SW Mwinilunga Nkunyi Local Forest","","","","","","","","","",NA,"","","","","",NA,"pos","32.36",""
+"1-2.1","P001_WA08/P001_WF01","Fabales;Fabaceae;Brachystegia
+Asterales;Asteraceae;None
+Fabales;Fabaceae;None
+Gentianales;Apocynaceae;None
+Laurales;Lauraceae;Cassytha
+Sapindales;Rutaceae;None
+Solanales;Solanaceae;Solanum
+Fabales;Fabaceae;Indigofera
+Liliales;Smilacaceae;Smilax
+Zingiberales;None;None
+Lamiales;Verbenaceae;None","ILL_137402_P001_WA08","GoLife","","1-2.1-","","","Deltocephalinae","Scaphoideini","","","Scaphoidophyes","","n.sp.","","M","","",2007,"Zambia","7.XI.2007","J.N. Zahniser","Hg light","Zambia","11°48'48.5""S","24°21'57.2""E","","Northwestern Prov. ~11km SW Mwinilunga Nkunyi Local Forest","","","","","","","","","",NA,"","","","","",NA,"pos","33.03",""
+"2-14.1","P001_WA02","Asterales;Asteraceae;None","ILL_137402_P001_WA02","GoLife","","2-14.1-","","","Deltocephalinae","Phlepsiini","","","Texananus","","ovatus","","M","","",2005,"Mexico","29-X-2005","C.H. Dietrich","sweep","Mexico","25°15'05.6""N","101°04'41.8""W","1970","COAH:Huachichil rd. 2km E rt.54","","","","","","","","","",NA,"","","","","",NA,"pos","32.09",""
+"2-33.1","P001_WA03","Asterales;Asteraceae;None
+Asterales;Asteraceae;Ambrosia","ILL_137402_P001_WA03","GoLife","","2-33.1+","","","Deltocephalinae","Phlepsiini","","","Texananus","","","","",NA,"",2005,"Mexico","30-X-2005","C.H. Dietrich","sweep","Mexico","25°19'23.9""N","100°43'53.2""W","2000","COAH:San Antonio rd. 6.6km E rt.57","","","","","","","","","",NA,"","","","","",NA,"pos","34.11",""
+"30-14.1","P001_WE11","Fabales;Fabaceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum","ILL_137402_P001_WE11","GoLife","","30-14.1","","","Deltocephalinae","Opsiini","","Circuliferina","Dixianus","","utahnus","","M","","",2013,"Usa","17-23.vi.2013","A.S. Menke","Malaise","USA","31°24'23.0""N","109°55'57.0""W","1585","Arizona Cochise Co; Bisbee 1429 Franklie Street","na","","","","","","","","",NA,"","","","","",NA,"pos","33.582",""
+"30-20.1","P001_WB02","Asterales;Asteraceae;None
+Asterales;Asteraceae;Xanthium
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Drymaria
+Piperales;Piperaceae;Peperomia
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Rosales;Moraceae;None","ILL_137402_P001_WB02","GoLife","","30-20.1+","","","Deltocephalinae","Deltocephalini","","","Graminella","","sonora","","M","","",2014,"Usa","11-21.ix.2014","M.E. Irwin, M.J. Sharkey","Malaise","Usa","33°01'15.6""N","110°44'19.2""W","600","Arizona, Pinal Co., Gila R. Mgmt. Area, The Shores, 5 km N Winkelman","","","","","","","","","",NA,"","","","","",NA,"pos","20.01",""
+"32-81.1","P001_WA04","Solanales;Solanaceae;Solanum
+Apiales;Apiaceae;None","ILL_137402_P001_WA04","GoLife","","32-81.1-","","","Deltocephalinae","Paralimnini","","Paralimnina","Phlebiastes","","tianshanica","","M","","",2000,"Kyrgyzstan","16-Jul-00","C.H. Dietrich","vacuum","Kyrgyzstan","41°17'47.0""N","74°39'20.0""E","1700","Naryn Alabuga River 25 km W Baetovo","","","","","","","","","",NA,"","","","","",NA,"pos","32.64",""
+"33-9.1","P001_WA05","Poales;Poaceae;None
+Fagales;Fagaceae;None","ILL_137402_P001_WA05","GoLife","","33-9.1+","","","Deltocephalinae","Stenometopiini","","","Stirellus","","productus","","M","","",2015,"China","8-Sep-15","C.H. Dietrich","sweep","China","30°46'15.8""N","106°07'13.4""E","303","Sichuan Nanchong","","","","","","","","","",NA,"","","","","",NA,"pos","20.41",""
+"35-14.2","P001_WE10","Sapindales;Rutaceae;None
+Sapindales;Rutaceae;Citrus
+Zingiberales;Musaceae;Musa
+Polypodiales;Nephrolepidaceae;Nephrolepis","ILL_137402_P001_WE10","GoLife","YC","35-14.2","13BR","P006_WF07","Deltocephalinae","Macrostelini","","","Dalbulus","","maidis","","M","","",2011,"Brazil","10-May-11","Cavichioli, Gonçalves, D.M Takiya","light","Brazil","7°19'46.0""S","71°50'46.0""W","169","Brazil: State of Amazonas, Ipixuna, Rio Liberdade, Com. Santa Catarina","full","1378","16SrI-B","CP035949.1","100(100)","I-K related strain new subgroup","The query 16S rDNA sequence shares 99.9% similarity with that of the ‘'Candidatus Phytoplasma asteris' ’ reference strain (GenBank accession: M30790). The phytoplasma under study is a ‘'Candidatus Phytoplasma asteris' ’-related strain","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group I, subgroup K (GenBank accession: U96616), with a similarity coefficient of 0.92, which is less than or equal to 0.97. This strain may represent a new subgroup within the 16Sr group I. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new subgroup pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependent upon sequence information, any error in a query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accuracy of your query sequence before using iPhyClassifier.","AluI, BfaI, BstUI, DraI,HaeIII,HpaII, KpnI",1395,"identical a little bit onger","","","full","phy",NA,"pos","23.748","phy"
+"35-68.1","P001_WC05","Pottiales;Pottiaceae;None","ILL_137402_P001_WC05","GoLife","","35-68.1","","","Deltocephalinae","Deltocephalini","","","Cortona","","n.sp.","","M","","",2015,"Brazil","16-Mar-15","C.H. Dietrich","vacuum","Brazil","20°06'24.4""S","43°28'38.5""W","1261","MG, Santuario do Caraça, Lobo Guará Trl. ca. waterfall","","","","","","","","","",NA,"","","","","",NA,"pos","34.7",""
+"38-14.1","P001_WC02","Commelinales;Commelinaceae;None
+Commelinales;Commelinaceae;Commelina
+Fabales;Fabaceae;None
+Poales;Poaceae;Aristida
+Poales;Poaceae;Oropetium
+Fabales;Fabaceae;Vigna
+Lamiales;Lamiaceae;None","ILL_137402_P001_WC02","GoLife","","38-14.1","","","Ulopinae","Ulopini","","-","Conlopa","","bredoni","","F","","",2009,"Eswatini","9-Dec","T.A. Catanach","","Eswatini","26°18'35.4""S","31°59'30.2""E","527","Mlawula Nature Reserve","","","","","","","","","",NA,"","","","","",NA,"pos","32.78",""
+"38-34.1","P001_WC07","Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Cupressales;Cupressaceae;None","ILL_137402_P001_WC07","GoLife","","38-34.1","","","Eurymelinae","Chiasmodolini","","","Rotundicerus","","n.sp.","","M","","",2008,"French Guiana","1 Feb. 2008","H. Romack","","French Guiana","4°33'49.9""N","52°12'04.9""W","","Kaw Mountain Reserve; 0.5km Rt. Rd. de Kaw (the hole); 1 H. Romack 2008","","","","","","","","","",NA,"","","","","",NA,"pos","27.3",""
+"38-36","P001_WE06","Rosales;Moraceae;None
+Rosales;Moraceae;Morus
+Rosales;Rosaceae;Prunus
+Fabales;Fabaceae;Trifolium","ILL_137402_P001_WE06","GoLife","","38-36","","","Eurymelinae","Megipocerini","","","Chunra","","n.sp.PH1","","M","","",2012,"Philippines","4/23/12","","light","Philippines","6°45'40.4""N","126°14'30.3""E","62","E side of Mt Hamiguitan on mine road. Forest area","","","","","","","","","",NA,"","","","","",NA,"pos","34.65",""
+"41-52.1","P001_WC04","Caryophyllales;Caryophyllaceae;Silene
+Myrtales;None;None
+Myrtales;Myrtaceae;None
+Myrtales;Myrtaceae;Syzygium
+Pottiales;Pottiaceae;None","ILL_137402_P001_WC04","GoLife","","41-52.1","","","Deltocephalinae","Stegelytrini","","","Kunasia","","carina","","F","","",2009,"Malaysia","5-26 Jan 2009","S. Krishnankutty","","Malaysia","4°04'15.0""N","114°51'22.8""E","","Sarawak; Gunung Mulu National Park, near hdqtrs","","","","","","","","","",NA,"","","","","",NA,"pos","34.32",""
+"41-53.1","P001_WG09","Malvales;Dipterocarpaceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Sapindales;Rutaceae;None
+Sapindales;Rutaceae;Citrus","ILL_137402_P001_WG09","","","41-53.1","","","Deltocephalinae","Opsiini","","","New Genus ML1","","n. sp. 1","","M","","",2009,"Malaysia","5-26 Jan 2009","","","Malaysia","4°02'33.0""N","114°48'49.7""E","","","","","","","","","","","",NA,"","","","","",NA,"","",""
+"42-43.1","P001_WF03","Hypnales;None;None
+Hypnales;Neckeraceae;None
+Hypnales;Neckeraceae;Thamnobryum
+Poales;Poaceae;None","ILL_137402_P001_WF03","GoLife","YC","42-43.1","","","Deltocephalinae","Macrostelini","","","Balclutha","","n.sp.FI1","","M","","",NA,"Fiji","missing","","","Fiji","missing","FBA084382","","","na","","","","","","","","",NA,"","","","","",NA,"pos","30.984",""
+"42-48.1","P001_WB08","Poales;Poaceae;None","ILL_137402_P001_WB08","GoLife","","42-48.1","","","Deltocephalinae","Opsiini","","Opsiina","Navaia","","filicola","","M","","",NA,"Fiji","missing","","","Fiji","missing","","","","","","","","","","","","",NA,"","","","","",NA,"pos","33.49",""
+"42-52.1","P001_WB09/P001_WC09","Oxalidales;Cunoniaceae;Opocunonia
+Poales;Poaceae;None","ILL_137402_P001_WB09","GoLife","","42-52.1","","","Deltocephalinae","Scaphoideini","","","n.gen.PH2","","n.sp.1","","M","","",2012,"Philippines","1-Apr-12","T.A. Catanach","","Philippines","8°09'37.8""N","124°55'54.0""E","1885","Mindanao, Bukidnon, Mt. Kitanglad summit trail","","","","","","","","","",NA,"","","","","",NA,"pos","33.08",""
+"42-53.1","P001_WB10","Dipsacales;Adoxaceae;Sambucus
+Oxalidales;Cunoniaceae;None
+Oxalidales;Cunoniaceae;Opocunonia
+Myrtales;Myrtaceae;Syzygium","ILL_137402_P001_WB10","GoLife","","42-53.1","26PH","P012_WD03","Deltocephalinae","Scaphoideini","","","n.gen.PH1","","n.sp.","","M","","",2012,"Philippines","1-Apr-12","T.A. Catanach","sweep","Philippines","8°09'37.8""N","124°55'54.0""E","1885","Mindanao, Bukidnon, Mt. Kitanglad summit trail ","part","423","","","","","","","",1539,"identical but longer and 1 bp differenrt and several N","","","full","phy",NA,"pos","29.881","phy"
+"42-58.1","P001_WC08","Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WC08","GoLife","","42-58.1","","","Deltocephalinae","Drabescini","","Paraboloponina","n.gen.PH3","","n.sp.1","","M","","",2012,"Philippines","22-Apr-12","T.A. Catanach","light","Philippines","7°14'14.3""N","125°38'05.9""E","43","Mindanao, Banauan Brgy. Bacnuten","","","","","","","","","",NA,"","","","","",NA,"neg","",""
+"45-18.1","P001_WC10","Rosales;Moraceae;None
+Rosales;Moraceae;Morus","ILL_137402_P001_WC10","GoLife","","45-18.1+","","","Deltocephalinae","Bonaspeiini","","","Curvostylus","","chloridulus","","M","","",2004,"South Africa","13-XII-2004","J.N. Zahniser","sweep","South Africa","33°14'16.5""S","19°19'31.4""E","945","SOUTH AFRICA: WCape Prov. Gydo Pass, N Prince Alfred Hamlet","","","","","","","","","",NA,"","","","","",NA,"pos","33.69",""
+"45-23.1","P001_WC11/P001_WD01","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Zingiberales;None;None
+Apiales;Apiaceae;None","ILL_137402_P001_WC11","GoLife","","45-23.1+","","","Deltocephalinae","Bonaspeiini","","","Coganus","","breviatus","","M","","",2004,"South Africa","10-XII-2004","J.N. Zahniser","sweep","South Africa","34°13'51.3""S","18°24'46.0""E","54.2","WCape Prov. Cape of Good Hope Nat. Res.","","","","","","","","","",NA,"","","","","",NA,"pos","25.68",""
+"45-28.1","P001_WC12","Poales;Poaceae;None","ILL_137402_P001_WC12","GoLife","","45-28.1+","","","Deltocephalinae","Paralimnini","","","Vilargus","","pumilicans","","M","","",2004,"South Africa","27-XII-2004","J.N. Zahniser","sweep","South Africa","28°53'59.1""S","29°26'05.0""E","1583","KZN Prov., Arthurs Seat hill","","","","","","","","","",NA,"","","","","",NA,"pos","25.51",""
+"45-40.1","P001_WD11/P001_WE01","Asterales;Asteraceae;None
+Poales;Poaceae;None
+Malvales;Malvaceae;Gossypium","ILL_137402_P001_WD11","GoLife","","45-40.1+","","","Deltocephalinae","Paralimnini","","","Vilargus","","pumilicans","","M","","",2004,"South Africa","26-XII-2004","J.N. Zahniser","sweep","South Africa","29°26'47.8""S","29°46'26.6""E","1783","KZN Prov., SE of Kamberg","","","","","","","","","",NA,"","","","","",NA,"pos","28.19",""
+"46-38.1","P001_WE03","Hypnales;None;None
+Hypnales;Neckeraceae;None","ILL_137402_P001_WE03","GoLife","","46-38.1","","","Deltocephalinae","Scaphoideini","","","n.gen.MG5","","n.sp.1","","M","","",2015,"Madagascar","Dec 22-27 , 2015","M.E. Irwin & R. Harin'Hala","Malaise","MADAGASCAR","18°55'03.0""S","48°25'50.0""E","760","","","","","","","","","","",NA,"","","","","",NA,"pos","31.54",""
+"46-39.1","P001_WE04","Hypnales;None;None
+Hypnales;Neckeraceae;None
+Poales;Poaceae;None
+Hypnales;Neckeraceae;Thamnobryum
+Asterales;Asteraceae;Bidens","ILL_137402_P001_WE04","GoLife","","46-39.1","","","Deltocephalinae","Stegelytrini","","","n.gen.T1","","n.sp.1","","M","","",2009,"Thailand","10-17.ii.2009","Pongphan","Malaise","THAILAND","8°53'43.5""N","98°39'01.5""E","87","","","","","","","","","","",NA,"","","","","",NA,"pos","34.41",""
+"46-61.1","P001_WE05","Hypnales;None;None
+Hypnales;Neckeraceae;None","ILL_137402_P001_WE05","GoLife","","46-61.1","","","Deltocephalinae","Scaphoideini","","","Scaphomonus","","n.sp.T1","","M","","",2008,"Thailand","3-10.iii.2008","Songkran & Apichart","Malaise","THAILAND","19°24'16.7""N","98°55'18.7""E","491","","","","","","","","","","",NA,"","","","","",NA,"pos","28.45",""
+"46-65.1","P001_WG07","Caryophyllales;Caryophyllaceae;None","ILL_137402_P001_WG07","","","46-65.1","","","Deltocephalinae","Opsiini","","Opsiina","New Genus T3","","n. sp. 1","","M","","",2008,"Thailand","17-24.iii.2008","","Malaise trap ","Thailand","19º24.278'N","98º55.311'E","491 m","","","","","","","","","","",NA,"","","","","",NA,"","",""
+"46-8.1","P001_WG06","Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;None
+Pottiales;Pottiaceae;None","ILL_137402_P001_WG06","","","46-8.1","","","Deltocephalinae","Opsiini","","Opsiina","Paralampridius","","sinuatus","","M","","",2009,"Thailand","19-26.i.2009","Dai et al.","Malaise trap","Thailand","8º16.283'N","99º38.702'E ","154 m","","","","","","","","","","",NA,"","","","","",NA,"","",""
+"5-21.1","P001_WB01","Poales;Poaceae;Avena
+Polypodiales;Pteridaceae;None
+Solanales;Solanaceae;Solanum
+Polypodiales;Pteridaceae;Hemionitis","ILL_137402_P001_WB01","GoLife","","5-21.1-","","","Deltocephalinae","Stenometopiini","","","Stirellus","","indrus","","M","","",2004,"Taiwan","20-Jun-04","C.H. Dietrich","sweep","Taiwan","24°01'37.0""N","120°41'44.0""E","200","TaichungWufeng, Taiwan Agr. Res. Inst.","","","","","","","","","",NA,"","","","","",NA,"pos","34.16",""
+"5-48.1","P001_WB06","Ericales;Actinidiaceae;None
+Ericales;Actinidiaceae;Actinidia
+Rosales;Cannabaceae;Cannabis
+Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WB06","GoLife","","5-48.1-","","","Deltocephalinae","Drabescini","","Paraboloponina","Dryadomorpha","","pallida","","M","","",2004,"Taiwan","24-Jun-04","C.H. Dietrich","Hg light","Taiwan","22°58'02.0""N","120°41'14.0""E","700","Kaohsiung,ShanpingForest Res.Sta.,9km SE Liouguei","","","","","","","","","",NA,"","","","","",NA,"pos","34.03",""
+"5-50.1","P001_WB07","Malvales;Malvaceae;None
+Poales;Poaceae;None","ILL_137402_P001_WB07","GoLife","","5-50.1-","","","Deltocephalinae","Hecalini","","Hecalina","Fangamanus","","tripunctatus","","M","","",2012,"China","12-Jul-12","C.H. Dietrich","vacuum","China","33°58'52.8""N","108°09'49.8""E","","Shaanxi, 8km ENE Chenhexiang","","","","","","","","","",NA,"","","","","",NA,"pos","34.39",""
+"50-28.1","P001_WC01","Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WC01","GoLife","","50-28.1","","","Deltocephalinae","Pendarini","","","Chlorotettix","","sp.","","F","","",2015,"Brazil","13-Mar-15","C.H. Dietrich","vacuum","Brazil","20°05'33.9""S","43°29'56.6""W","1300","MG, Santuariodo Caraça","","","","","","","","","",NA,"","","","","",NA,"pos","32.18",""
+"50-4.1","P001_WB12","Lamiales;Lamiaceae;Salvia","ILL_137402_P001_WB12","GoLife","","50-4.1","","","Deltocephalinae","Athysanini","","","Atanus","","n.sp.BR1","","M","","",2015,"Brazil","16-Mar-15","C.H. Dietrich","sweep","Brazil","20°05'55.6""S","43°29'12.4""W","1280","MG, Santuariodo Caraça, Lobo Guará Trl., sweep","","","","","","","","","",NA,"","","","","",NA,"pos","33.85",""
+"50-46.1","P001_WG01","Solanales;Solanaceae;None
+Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WG01","GoLife","YC","50-46.1","5MX","P017_WB03","Deltocephalinae","Scaphytopiini","","","Scaphytopius","","aequus","","M","","",2001,"Mexico","25-Oct-01","C.H. Dietrich","sweep","Mexico","19°59'00.0""N","97°11'00.0""W","200","Veracruz, 6km NE 6 km NE Tlapacoyan, Cascada Encantada","full","1527","16SrI-B","EU215425.2","99.8(99)","16SrI-B variant","The query 16S rDNA sequence shares 99.5% similarity with that of the ‘'Candidatus Phytoplasma asteris' ’ reference strain (GenBank accession: M30790). The phytoplasma under study is a ‘'Candidatus Phytoplasma asteris' ’-related strain","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is most similar to the reference pattern of the 16Sr group I, subgroup B (GenBank accession: AP006628), with a pattern similarity coefficient of 0.98. The phytoplasma under study is a variant of 16SrI-B","",1527,"identical","","","full","phy",NA,"pos","20.279","phy"
+"50-9.1","P001_WC03","Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WC03","GoLife","","50-9.1","","","Deltocephalinae","Chiasmini","","","Athysanella","","texana","","M","","",2020,"Usa","18-VII-2020","C.H. Dietrich","sweep","USA","39°40'22.0""N","99°08'30.9""W","","Kansas","","","","","","","","","",NA,"","","","","",NA,"pos","34.28",""
+"51-29.2","P001_WG08","Solanales;Solanaceae;None","ILL_137402_P001_WG08",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"6-54.1","P001_WB03","Apiales;Apiaceae;None
+Asterales;Asteraceae;None
+Poales;Poaceae;None","ILL_137402_P001_WB03","GoLife","","6-54.1+","","","Deltocephalinae","Deltocephalini","","","Bolarga","","nigriloba","","M","","",2014,"Argentina","16-Feb-14","C.H. Dietrich","vacuum","Argentina","32°58'00.3""S","58°35'18.9""W","20","Entre Rios,Rt. 14 5 km N Guayaguaychu","","","","","","","","","",NA,"","","","","",NA,"pos","28.29",""
+"7-3.1","P001_WB04/P001_WB05","Asterales;Asteraceae;Youngia
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Polygonaceae;None
+Hypnales;None;None
+Poales;Poaceae;None
+Pottiales;Pottiaceae;None
+Rosales;Rosaceae;Rubus
+Caryophyllales;Caryophyllaceae;Stellaria
+Ophioglossales;Ophioglossaceae;Botrychium","ILL_137402_P001_WB04","GoLife","","7-3.1+","","","Deltocephalinae","Chiasmini","","","Gurawa","","minorcephala","","M","","",2012,"China","5-Jul-12","C.H. Dietrich","vacuum","China","33°26'37.3""N","108°26'48.6""E","1679","Shaanxi, Qinling Mts., ca. Huoditang,","","","","","","","","","",NA,"","","","","",NA,"pos","18.57",""
+"BM1-VT3","P001_WF05","Hypnales;None;None
+Ginkgoales;Ginkgoaceae;Ginkgo","ILL_137402_P001_WF05","GoLife","VT","BM1-VT3","1CH","P014_WA03","Deltocephalinae","Cicadulini","","","Rhopalopyx","","elongata","","M","","",2017,"Switzerland","12-Jun-17","V. Trivellone","sweep","Switzerland","46°10'07.4""N","8°51'44.9""E","196","Ticino: Gordola, Reviscái, Riserva Bolle di Magadino","full","1530","16SrVI-A Ca. P. trifolii","AB279597","99.41 (100)","proposed 16Sr VI-L","The query 16S rDNA sequence shares 99.4% similarity with that of the ‘'Candidatus Phytoplasma trifolii' ’ reference strain (GenBank accession: AY390261). The phytoplasma under study is a ‘'Candidatus Phytoplasma trifolii' ’-related strain","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group VI, subgroup D (GenBank accession: X83431), with a similarity coefficient of 0.96, which is less than or equal to 0.97. This strain may represent a new subgroup within the 16Sr group VI. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new subgroup pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependent upon sequence information, any error in a query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accuracy of your query sequence before using iPhyClassifier.","AluI sliglhy different from AF190225",1530,"identical","","","full","phy",NA,"pos","22.082","phy"
+"CHI_5","P001_WG03","Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WG03","not in GoLife","JZ","CHI_5","20PE","P004_WH11","Deltocephalinae","Chiasmini","","","Exitianus","","obscurinervis","","M","","",2002,"Peru","23-Oct-02","C.H. Dietrich","Hg light","Peru","9°23'27""S","75°59'49""W","650","Huanuco, 30 km S Tingo Maria","part","1179","16SrIII J or 16SrIIIU","KY778013.1","99.83(100)","-","-","the run does not work, but it works if we copy and paste the first 25 nuclotide of F2 segment that is missing here","-",1200,"identical a little bit onger","","","full","phy",NA,"pos","31.827(1:5)","oB"
+"DEL-011","P001_WF11/P001_WG10","Cupressales;Taxaceae;Taxus
+Rosales;Ulmaceae;None
+Rosales;Ulmaceae;Ulmus
+Solanales;Solanaceae;None
+Solanales;Solanaceae;Capsicum
+Fabales;Fabaceae;Glycine
+Fagales;None;None
+Fagales;Fagaceae;None","ILL_137402_P001_WF11","GoLife","VT","DEL-011","9TW","P002_WH03","Deltocephalinae","Opsiini","","Opsiina","Alishania","","formosana","","M","","",2004,"Taiwan","15-Jun-04","C.H. Dietrich","sweep","Taiwan","24°07'12.0""N","121°14'22.0""E","2700","Nantou Yuanfeng, Rt.14 km","full","1523","16SrIV-C","X80117.1","96(100)","XXIV A related new group","The query 16S rDNA sequence shares less than 97.5% similarity with that of any previously recognized ‘Candidatus Phytoplasma’ species reference strain. The most closely related phytoplasma is ‘Sorghum bunchy shoot phytoplasma ’ (GenBank accession: AF509322), whose 16S rDNA sequence shares 96.4459930313589% similarity with the query. According to IRPCM (2004), the phytoplasma under study may represent a new ‘Candidatus Phytoplasma’ species. Please be advised that operation of iPhyClassifier is soley dependant upon sequence information, any error in a query seqeunce, which misrepresents the phytoplasma strain under study, could result in errorneous 'Candidatus Phytoplasma' species assignment. Please make sure the accuracy of your query sequence before using iPhyClassifier","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group XXIV, subgroup A (GenBank accession: AF509322), with a similarity coefficient of 0.81, which is less than 0.85. This strain may represent a new group. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new RFLP pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependant upon sequence information, any error ina query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accurace of your query sequence before using iPhyClassifier.","BfaI, BstUI, HaeIII, Hinfl, MseI, TaqI",1523,"identical","1 The query 16S rDNA sequence shares less than 97.5% similarity with that of any previously recognized ‘Candidatus Phytoplasma’ species reference strain. The most closely related phytoplasma is ‘Sorghum bunchy shoot phytoplasma ’ (GenBank accession: AF509322), whose 16S rDNA sequence shares 96.5083798882682% similarity with the query. According to IRPCM (2004), the phytoplasma under study may represent a new ‘Candidatus Phytoplasma’ species. Please be advised that operation of iPhyClassifier is soley dependant upon sequence information, any error in a query seqeunce, which misrepresents the phytoplasma strain under study, could result in errorneous 'Candidatus Phytoplasma' species assignment. Please make sure the accuracy of your query sequence before using iPhyClassifier","1 --The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group XXIV, subgroup A (GenBank accession: AF509322), with a similarity coefficient of 0.81, which is less than 0.85. This strain may represent a new group. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new RFLP pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependant upon sequence information, any error ina query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accurace of your query sequence before using iPhyClassifier.","full","phy",NA,"pos","25.851","phy"
+"DEL-087","P001_WF09","Asterales;None;None
+Caryophyllales;Caryophyllaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Caryophyllales;Caryophyllaceae;Silene
+Sapindales;Rutaceae;None","ILL_137402_P001_WF09","GoLife","VT","DEL-087","18MN","P003_WG01","Deltocephalinae","Paralimnini","","Paralimnina","Adarrus","","n.sp.","?","M","","",2005,"Mongolia","7/14-15/2005","","","Mongolia","50°18'07.0""N","101°55'43.3""E","1063","Hovsgol Erdenebulgan Uur (Uuriin) Gol 32.6 km NE of Erdenebulgan, 1012 Gelhaus Field Number 65 Way Pt","part","1235","16SrV-C","FN562932.1","99.6(100)","??","The query 16S rDNA sequence shares 99.7% similarity with that of the ‘'Candidatus Phytoplasma vitis' ’ reference strain (GenBank accession: AF176319). The phytoplasma under study is a ‘'Candidatus Phytoplasma vitis' ’-related strain","the run does not work","",1235,"identical","","RUN with NEW SEQ: The query 16S rDNA sequence shares 98.0% similarity with that of the ‘'Candidatus Phytoplasma ziziphi' ’ reference strain (GenBank accession: AB052876). The phytoplasma under study is a ‘'Candidatus Phytoplasma ziziphi' ’-related strain.","full","phy",NA,"pos","32.74","oB"
+"DEL-092","P001_WF10","Vitales;Vitaceae;None","ILL_137402_P001_WF10","GoLife","VT","DEL-092","19CD","P015_WH05","Deltocephalinae","Scaphoideini","","","n.gen.ZA5","","n.sp.1","","M","","",2008,"Republic of Congo","Agu,5 2008","Braet, Sharkey","","Republic of Congo","3°16'11.8""S","15°28'16.0""E","340","Dept. Pool Iboubikro site, MT #6 Lesio-Loun Wildlife Reserve","part","1235","16SrV-C","FN562932.1","99.6(100)","??","The query 16S rDNA sequence shares 99.7% similarity with that of the ‘'Candidatus Phytoplasma vitis' ’ reference strain (GenBank accession: AF176319). The phytoplasma under study is a ‘'Candidatus Phytoplasma vitis' ’-related strain","the run does not work","",1235,"identical","","4 The query 16S rDNA sequence shares less than 97.5% similarity with that of any previously recognized ‘Candidatus Phytoplasma’ species reference strain. The most closely related phytoplasma is ‘'Candidatus Phytoplasma ziziphi' ’ (GenBank accession: AB052876), whose 16S rDNA sequence shares 96.980854197349% similarity with the query. According to IRPCM (2004), the phytoplasma under study may represent a new ‘Candidatus Phytoplasma’ species. Please be advised that operation of iPhyClassifier is soley dependant upon sequence information, any error in a query seqeunce, which misrepresents the phytoplasma strain under study, could result in errorneous 'Candidatus Phytoplasma' species assignment. Please make sure the accuracy of your query sequence before using iPhyClassifier","full","phy",NA,"pos","30.63","oB"
+"DEL-100","P001_WD10","Poales;Poaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","ILL_137402_P001_WD10","GoLife","","DEL-100","","","Deltocephalinae","Paralimnini","","Paralimnina","Acharis","","n.sp.","","M","","",2012,"China","12-Jul-12","C.H. Dietrich","vacuum","China","33°58'52.8""N","108°09'49.8""E","","Shaanxi, 8km ENE Chenhexiang,","","","","","","","","","",NA,"","","","","",NA,"pos","30.09",""
+"DEL-105","P001_WD08","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","ILL_137402_P001_WD08","GoLife","","DEL-105","","","Deltocephalinae","Paralimnini","","Paralimnina","Multiproductus","","","","M","","",2007,"Thailand","6.ii-2.iii.2007","Patikhom Tumtip","Malaise","Thailand","17°29'54.4""N","101°20'29.0""E","1196","Loei ","","","","","","","","","",NA,"","","","","",NA,"pos","28.3",""
+"DEL-108","P001_WD09","Poales;Poaceae;None
+Rosales;Ulmaceae;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Caryophyllales;Caryophyllaceae;Silene
+Poales;Poaceae;Tripogonella
+Poales;Poaceae;Cenchrus","ILL_137402_P001_WD09","GoLife","","DEL-108","","","Deltocephalinae","Macrostelini","","","Nesoclutha","","phryne","","M","","",2008,"Australia","13-Feb-08","K. Hill, D. Marshall, C. Owen, M. Moulds, M. Humphrey","","Australia","24°05'42.0""S","143°10'24.0""E","180","Queensland 13 Feb 2008  Approx 1.5km W of Noonbah Station driveway","","","","","","","","","",NA,"","","","","",NA,"pos","31.02",""
+"DEL-116","P001_WD07","Poales;Poaceae;None
+Poales;Poaceae;Saccharum
+Vitales;Vitaceae;Vitis","ILL_137402_P001_WD07","GoLife","","DEL-116","","","Deltocephalinae","Deltocephalini","","","Maiestas","","webbi","","M","","",2015,"Australia","22-Feb-15","C.H. Dietrich","vacuum","Australia","27°22'22.1""S","152°10'40.8""E","768","QLD Ravensbourne","","","","","","","","","",NA,"","","","","",NA,"pos","32.14",""
+"DEL-117","P001_WD06","Vitales;None;None
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis","ILL_137402_P001_WD06","GoLife","","DEL-117","","","Deltocephalinae","Macrostelini","","","Nesoclutha","","phryne","","M","","",2015,"Australia","22-Feb-15","C.H. Dietrich","vacuum","Australia","27°22'22.1""S","152°10'40.8""E","768","QLD Ravensbourne","","","","","","","","","",NA,"","","","","",NA,"pos","32.05",""
+"DEL-203","P001_WF04","Asterales;Asteraceae;None
+Asterales;Asteraceae;Crepis
+Caryophyllales;Caryophyllaceae;None
+Caryophyllales;Caryophyllaceae;Silene
+Cornales;Cornaceae;Cornus
+Fabales;Fabaceae;None
+Fabales;Fabaceae;Medicago
+Fabales;Fabaceae;Trifolium
+Fagales;Betulaceae;None
+Fagales;Betulaceae;Corylus
+Rosales;Rhamnaceae;None
+Sapindales;Rutaceae;None
+Solanales;None;None
+Solanales;Solanaceae;Solanum
+Vitales;Vitaceae;None
+Vitales;Vitaceae;Vitis
+Commelinales;Commelinaceae;None
+Ericales;None;None","ILL_137402_P001_WF04","GoLife","VT","DEL-203","22CH","P003_WA09","Deltocephalinae","Scaphoideini","","-","Osbornellus","","auronitens","","M","","",2017,"Switzerland","13/07/2017","V. Trivellone","sweep","Switzerland","45°51'17.8""N","8°55'37.8""E","","Stabio","full","764","ALY","AY197645.1","","","","","",1521,"identical but longer","","","full","phy",NA,"pos","31.271","oB"
+"DEL-204","P001_WF07","Caryophyllales;Caryophyllaceae;None
+Fabales;Fabaceae;None
+Fabales;Fabaceae;Medicago
+Caryophyllales;Caryophyllaceae;Silene","ILL_137402_P001_WF07","GoLife","VT","DEL-204","4CH","P003_WA10","Deltocephalinae","Athysanini","","","Euscelidius","","variegatus","","M","","",2015,"Switzerland","25.06.2015","V. Trivellone","sweep","Switzerland","46°46'10.6""N ","6°33'21.4""E","","Canton Vaud","full","1527","16SrI-B","AY265212.1","99.80(100)","16SrI-F","99.4 Ca. P. asteris","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is identical (similarity coefficient 1.00) to the reference pattern of 16Sr group I, subgroup F (GenBank accession: AY265211). The phytoplasma under study is a member of 16SrI-F .","",1527,"identical","","","full","phy",NA,"pos","26.411","phy"
+"DEL_104","P001_WF06","Klebsormidiales;Klebsormidiaceae;Klebsormidium
+Hypnales;None;None
+Fabales;Fabaceae;Brachystegia","ILL_137402_P001_WF06","not in GoLife","JZ","DEL_104","12ZM","P004_WC12","Deltocephalinae","Selenocephalini","","Ianeirina","Abimwa","","sp.","","M","","",2007,"Zambia","5-Nov-07","J.N. Zahniser","Hg light","Zambia","11°34'28.2""S","24°23'40.1""E","1445","Northwestern Prov., ~15 km N Mwinilunga, Lwakera National Forest","full","1522","16SrIII J or 16SrIIIU","KY778013.1","99.67(98)","16SrIII-U variant","The query 16S rDNA sequence shares 99.0% similarity with that of the ‘'Candidatus Phytoplasma pruni' rrnA ’ reference strain (GenBank accession: JQ044393). The phytoplasma under study is a ‘'Candidatus Phytoplasma pruni' rrnA ’-related strain","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is most similar to the reference pattern of the 16Sr group III, subgroup U (GenBank accession: HM589213), with a pattern similarity coefficient of 0.98. The phytoplasma under study is a variant of 16SrIII-U .","MseI",1522,"identical","","","full","phy",NA,"pos","27.652","phy"
+"De3O","P001_WG11","Poales;Cyperaceae;None
+Poales;Cyperaceae;Eleocharis
+Poales;Poaceae;Poa","ILL_137402_P001_WG11","not in GoLife","","De3O","15CA","P017_WD06","Deltocephalinae","Limotettigini","","","Limotettix","","urnura","","M","","",1989,"Canada","29-Jul-89","K.G.A. Hamilton","sweep","Canada","45°59'10.7""N","81°56'16.8""W","","Ontario, Little Current","full","1521","16SrXI-E Ca.P. cirsii","KR869146","98.88(99)","proposed 16SrXI-G","The query 16S rDNA sequence shares 98.9% similarity with that of the ‘'Candidatus Phytoplasma cirsii' ’ reference strain (GenBank accession: KR869146). The phytoplasma under study is a ‘'Candidatus Phytoplasma cirsii' ’-related strain.","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group XI, subgroup E (GenBank accession: KR869146), with a similarity coefficient of 0.93, which is less than or equal to 0.97. This strain may represent a new subgroup within the 16Sr group XI. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new subgroup pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependent upon sequence information, any error in a query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accuracy of your query sequence before using iPhyClassifier","",1521,"identical","","","full","phy",NA,"pos","29.257","phy"
+"G14","P001_WF12","Asterales;Asteraceae;Carthamus
+Caryophyllales;Polygonaceae;None
+Lamiales;Verbenaceae;Phyla","ILL_137402_P001_WF12","not in GoLife","Guy","G14","7IL","P021_WE01","Deltocephalinae","Opsiini","","","Neoaliturus","","argillaceus","","M","","",2000,"Israel","20-Jun-20","G. Sinaiko","sweep","Israel","31°59'33.1""N","34°48'45.6""E","","Rishon Lezion","full","1525","16SrIX","MK454714.1","99.54(100)","IX-J related","The query 16S rDNA sequence shares 98.9% similarity with that of the ‘'Candidatus Phytoplasma phoenicium' ’ reference strain (GenBank accession: AF515636). The phytoplasma under study is a ‘'Candidatus Phytoplasma phoenicium' ’-related strain","The virtual RFLP pattern derived from the query 16S rDNA F2nR2 fragment is different from the reference patterns of all previously established 16Sr groups/subgroups. The most similar is the reference pattern of the 16Sr group IX, subgroup J (GenBank accession: KY986922), with a similarity coefficient of 0.97, which is less than or equal to 0.97. This strain may represent a new subgroup within the 16Sr group IX. We recommend you compare virtual RFLP patterns and identify the key enzymes that distinguish the new subgroup pattern from previously recognized group/subgroup patterns. Please be advised that operation of iPhyClassifier is solely dependent upon sequence information, any error in a query sequence, which misrepresents the phytoplasma strain under study, could result in erroneous group/subgroup classification. Please make sure the accuracy of your query sequence before using iPhyClassifier","",1525,"identical","","","full","phy",NA,"pos","21.385","phy"
+"LH 143-2","P001_WE07/P001_WE08/P001_WE09","Rosales;Cannabaceae;Celtis
+Asparagales;Amaryllidaceae;Allium
+Asparagales;Amaryllidaceae;None
+Pinales;Pinaceae;Pinus
+Sapindales;Rutaceae;Citrus
+Apiales;Apiaceae;None
+Fagales;Fagaceae;None
+Asparagales;None;None
+Asterales;Asteraceae;None
+Asterales;Asteraceae;Bidens
+Laurales;Lauraceae;None
+Poales;Poaceae;None
+Poales;Poaceae;Brachypodium
+Sapindales;Rutaceae;None
+Fabales;Fabaceae;Phaseolus","ILL_137402_P001_WE07","GoLife","","LH 143-2","","","Deltocephalinae","Paralimnini","","","Acharis","","ussuriensis","","M","","",2012,"China","12-Jul-12","","","China","33°58'52.8""N","108°09'49.8""E","","Forest natural Reserve, grasses on dry hillside","","","","","","","","","",NA,"","","","","",NA,"pos","17.36",""

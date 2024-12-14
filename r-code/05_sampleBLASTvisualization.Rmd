@@ -1,0 +1,134 @@
+---
+title: "05_sampleBLASTvisualization"
+author: "Ava Gabrys"
+date: "2024-06-10"
+output: pdf
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(ggplot2)
+library(ggrepel)
+library(dplyr)
+library(rsvg)
+library(xml2)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.Rdata")
+# Table with color scheme for orders (2 columns, order and color code) to keep colors consistent
+ordercolors <- read.delim("raw_data/OrderColors.txt", header = FALSE)
+colnames(ordercolors) <- c("Order", "Color")
+```
+
+```{r format data for visualization}
+# Add in colors for each classification based on orders
+combinedvisualizationtable <- left_join(joinedvisualizationsummarytable_combinedduplicates, ordercolors, by='Order')
+```
+
+```{r visualize each sample}
+# First format the data for a donut/pie chart, where each result gets an equal "slice"
+# There can be issues with the combined sample name formatting (now separated by slash) so change to "-"
+combinedvisualizationtable$SampleName <- gsub("/", "-", combinedvisualizationtable$SampleName)
+for (samplename in unique(combinedvisualizationtable$SampleName)){
+ samplevisualizationdata <- combinedvisualizationtable %>% filter(SampleName == samplename)
+  samplevisualizationdata$Percent <- 1/nrow(samplevisualizationdata)
+  # Creating a stacked pie chart requires effectively making 3 columns, 1 for each of the levels (order, family genus) and then circling them together with coord_polar
+# Add in order information, for the order "column"
+samplevisualizationdata_formatted <-  data.frame(
+  Name=samplevisualizationdata$Order,
+  Color=samplevisualizationdata$Color,
+  Percent=samplevisualizationdata$Percent,
+  Level="Order")
+
+# Add in family information
+samplevisualizationdata_formatted <- rbind(samplevisualizationdata_formatted, data.frame(Name=samplevisualizationdata$Family, Color=samplevisualizationdata$Color,Percent=samplevisualizationdata$Percent, Level="Family"))
+
+# Add in genus information
+samplevisualizationdata_formatted <- rbind(samplevisualizationdata_formatted, data.frame(Name=samplevisualizationdata$Genus, Color=samplevisualizationdata$Color,Percent=samplevisualizationdata$Percent, Level="Genus"))
+
+# Add in labels
+samplevisualizationdata_formatted$Label <- samplevisualizationdata_formatted$Name
+# If the classification for that level was "None", change the label to blank. This way the classification before it that was able to be classified will be the lowest label. Ex: if the order was classified but the genus and family were not, the order label will be the label for the whole result "slice".
+samplevisualizationdata_formatted[samplevisualizationdata_formatted$Label == "None", "Label"] <- " " 
+
+# Format to add a white center where we will add the number of unique results (to help identify polyphagous species)
+# Add in outline color; all will be black except the white center
+samplevisualizationdata_formatted$OutlineColor <- "black"
+# Make another "level" by copying an exising, then adjust
+tocopy <- samplevisualizationdata_formatted[samplevisualizationdata_formatted$Level == "Order", ] # Copy the level
+tocopy$Color <- "white"
+tocopy$Name <- "Center"
+tocopy$Level <- "Center"
+tocopy$Label <- ""
+tocopy$OutlineColor <- "white"
+samplevisualizationdata_formatted <- rbind(samplevisualizationdata_formatted, tocopy)
+
+##########################################################
+# Plot the data as a stacked pie/donut chart
+# Each column corresponds to a classification level (ex: order). Put these columns next to each other and circular for the pie chart.
+
+# Adjust chart labeling if there are going to be multiple labels directly horizontal to each other (as will occur when there are 2, 6, or 10 slices (multiply by 4 for 4 layers to get number of rows in data table)) using geom_text_repel so labels do not overlap
+if (nrow(samplevisualizationdata_formatted) == 8 | nrow(samplevisualizationdata_formatted) == 24 | nrow(samplevisualizationdata_formatted) == 40){
+chartedblastresults <- ggplot(samplevisualizationdata_formatted, aes(x = Level, y = Percent)) +
+# Make no space between bars with width = 1 and add outline between the levels
+ geom_bar(stat = "identity", width = 1, fill = samplevisualizationdata_formatted$Color, color = samplevisualizationdata_formatted$OutlineColor, size = 0.08) +
+# Add extra discrete layer to get open center
+  scale_x_discrete(limits = c("Center", "Order","Family", "Genus")) +
+  geom_text_repel(aes(label = Label), position = position_stack(vjust = 0.5), direction = "y", min.segment.length = 5, force = 0.5, color = "black", size = 6.5) + 
+# Make circular
+  coord_polar("y") +
+  #annotate("text", y = 0, x = 0, label = totalunique, size = 13, fontface = "bold", color = "black") +
+  theme_void()
+} else {
+chartedblastresults <- ggplot(samplevisualizationdata_formatted, aes(x = Level, y = Percent)) +
+# Make no space between bars with width = 1 and add outline between the levels
+ geom_bar(stat = "identity", width = 1, fill = samplevisualizationdata_formatted$Color, color = samplevisualizationdata_formatted$OutlineColor, size = 0.08) +
+# Add extra discrete layer to get open center
+  scale_x_discrete(limits = c("Center", "Order","Family", "Genus")) +
+# Make circular
+  coord_polar("y") +
+  #annotate("text", y = 0, x = 0, label = totalunique, size = 13, fontface = "bold", color = "black") +
+  geom_text(aes(label = Label), position = position_stack(vjust = 0.5), color = "black", size = 6.5) +
+  theme_void()
+}
+
+ggsave(paste0("BLASTsamplevisualizations/", samplename, sep = "_", "chartedblastresults.svg"), chartedblastresults)
+
+# Add in the number of unique plant taxa identified
+totalunique <- nrow(samplevisualizationdata)
+# Load the existing SVG file
+svg_file <- read_xml(paste0("BLASTsamplevisualizations/", samplename, sep = "_", "chartedblastresults.svg"))
+# Create a new text element
+# Use this and retain the center background; adding with geom_text to the pie chart leaves part of the pie chart transparent
+center_text <- xml_add_child(svg_file, "text", totalunique,
+                            x = as.character(250),
+                             y = as.character(290),
+                             `text-anchor` = "middle",
+                             `dominant-baseline` = "middle",
+                             fill = "black",
+                             style = "font-size:100px; font-weight: bold; font-family: Arial;")
+group <- xml_add_child(svg_file, "g", transform = "translate(250, 260)")
+
+# Save the edited SVG
+write_xml(svg_file, paste0("BLASTsamplevisualizations/", samplename, sep = "_", "chartedblastresults-annotated.svg"))
+}
+
+## At this point, edit SVGs as needed, fixing any overlapping text labels in samples with many results
+# Note that right now the center text is off center, but it will fix itself in the conversion to png or opening in Adobe
+```
+
+```{r convert SVGs to PNGs for plotting}
+for (samplename in unique(combinedvisualizationtable$SampleName)){
+rsvg_png(paste0("BLASTsamplevisualizations/", samplename, sep = "_", "chartedblastresults-annotated.svg"), paste0("BLASTsamplevisualizations/", samplename, sep = "_", "chartedblastresults-annotated.png"), width = 1500, height = 1500)
+}
+```
+
+```{r save data}
+save(joinedvisualizationsummarytable_combinedduplicates, ordercolors, combinedvisualizationtable,
+  file="~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/data/05_sampleBLASTvisualization.RData"
+)
+```

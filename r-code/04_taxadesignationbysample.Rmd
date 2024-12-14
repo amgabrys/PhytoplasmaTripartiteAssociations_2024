@@ -1,0 +1,281 @@
+---
+title: "04_sampletaxadesignation"
+author: "Ava Gabrys"
+date: "2024-05-28"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyverse)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysequence.Rdata")
+# SampleIdentifiers.txt is a list of ILL_137402_IDs corresponding GoLife_IDs
+sampleidentifiers <- read.delim("raw_data/sampleidentifiers.txt")
+samplemetadata <- read.csv("raw_data/samplemetadata.csv")
+```
+
+```{r add support levels to table}
+# Prepare to summarize the data for each sample. We are going to classify different plants at different taxonomic levels based on what is supported in the data and what is corroborated using different genes. Begin by making it easy to filter through which level is supported for that gene by adding descriptive columns. (For example, if the genus classification was supported (was the designated classification because it was the lowest classification where >95% of results were congruent), the family classification is also supported and can be corroborated.) 
+
+for (genename in sequencesummarytable_formatted$GeneName) {
+  designation <- sequencesummarytable_formatted$DesignationLevel[sequencesummarytable_formatted$GeneName == genename]
+  if (designation == "Species") {
+    sequencesummarytable_formatted$SpeciesClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$GenusClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$FamilyClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$OrderClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+  }
+ if (designation == "Genus") {
+    sequencesummarytable_formatted$SpeciesClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$GenusClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$FamilyClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$OrderClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+ }
+ if (designation == "Family") {
+    sequencesummarytable_formatted$SpeciesClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$GenusClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$FamilyClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+    sequencesummarytable_formatted$OrderClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+ }
+ if (designation == "Order") {
+    sequencesummarytable_formatted$SpeciesClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$GenusClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$FamilyClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$OrderClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "Yes"
+ }
+
+ if (designation == "No designation") {
+    sequencesummarytable_formatted$SpeciesClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$GenusClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$FamilyClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+    sequencesummarytable_formatted$OrderClassificationSupported[sequencesummarytable_formatted$GeneName == genename] <- "No"
+ }
+}
+```
+
+```{r summarized BLAST hits for each sample}
+# Overview: Find which taxa classifications are well-supported for each sample, taking into account the different sequences, and make a summary table. For complete and long (>220) sequences, we can be more confident in the classification. We will consider shorter genes well-supported when multiple sequences for that sample resulted in the same classification.
+# This can result in multiple well-supported classifications for each sample. 
+
+# Prepare a summary tables to fill in. The first will be condensed for table viewing, the second will be an input for visualization (genus, family, and order of results each in their own column)
+classification_samplesummaries <-  data.frame(matrix(nrow = 0, ncol = 2))
+allsamples_summaryclassification <- data.frame(matrix(nrow = 0, ncol = 4))
+colnames(allsamples_summaryclassification) <- c("SampleName", "Order", "Family", "Genus")
+
+# Start loop for each sample
+for (samplename in unique(sequencesummarytable_formatted$SampleName)){
+  print(samplename)
+# Make a temporary dataframe with just sequences from this sample
+sampledf <- sequencesummarytable_formatted[sequencesummarytable_formatted$SampleName == samplename, ]
+# Prepare an empty temporary data frame to put classifications in for this sample
+classificationsummarytablecolumns <-  c("ClassificationLevel", "Classification")
+classificationsummarytable <-  data.frame(matrix(nrow = 0, ncol = 2))
+
+# Check for matches among the sequence taxa designations, which would indicate the result is well-supported. Check at the higher levels first, beginning with seeing if there are any well-supported orders. Then, search within those matches for well-supported families, and finally well-supported genera if possible. If there are no matches for the lower level, conclude the higher level designation.
+
+# Make a table with matched orders and include the number of times the order is repeated in the sequence results for that sample.
+ordersupported <- sampledf[sampledf$OrderClassificationSupported == "Yes", c("OrderClassificationSupported", "TopOrder")]
+matchedorders <- data.frame(table(ordersupported[duplicated(ordersupported), ]))
+# Add + 1 because the initial match does not automatically count
+matchedorders$Freq <- matchedorders$Freq + 1
+
+# Within those well-supported orders, are there any matching/well-supported families?
+# Loop through each order that has matches from different genes
+for (order in matchedorders$TopOrder){
+# Total the number of sequences indicating this order
+  countmatchesorder <- matchedorders[matchedorders$TopOrder == order, "Freq"]
+  
+# Check for matching families within each matching order
+  familysupported <- sampledf[sampledf$TopOrder == order & sampledf$FamilyClassificationSupported == "Yes", c("FamilyClassificationSupported", "TopFamily")]
+matchedfamily <- data.frame(table(familysupported[duplicated(familysupported), ]))
+matchedfamily$Freq <- matchedfamily$Freq + 1
+
+# Count how many lines are duplicates (matches) for families
+counttotalmatchesfamily <- sum(matchedfamily$Freq)
+
+# If there are a different number of sequences with the same family than the number of sequences with the same order, add the order to the classification list. This means that there are potentially more matches in that order that we are not confident enough to give a lower/family designation too. (This works if there are multiple family matching within that order, as well as if there is not enough support at lower classifications.)
+if (counttotalmatchesfamily != countmatchesorder){
+  classificationrowtoadd <- c("Order", order)
+  classificationsummarytable <- rbind(classificationsummarytable, classificationrowtoadd)
+}
+
+# Within those well-supported families, are there any matching genera?
+for (family in matchedfamily$TopFamily){
+# Count the number of times the family is repeated in the sequence results
+countmatchesfamily <- matchedfamily[matchedfamily$TopFamily == family, "Freq"]
+
+# Count the number of matching genera
+genussupported <- sampledf[sampledf$TopOrder == order & sampledf$TopFamily == family & sampledf$GenusClassificationSupported == "Yes", c("GenusClassificationSupported", "TopGenus")]
+matchedgenus<- data.frame(table(genussupported[duplicated(genussupported), ]))
+matchedgenus$Freq <- matchedgenus$Freq + 1
+
+# Count how many lines are duplicates (matches) for families
+counttotalmatchesgenus <- sum(matchedgenus$Freq)
+
+# If there are less lines with matching genera than the total number of lines with the same family, then add the family order to the classification list. There are potentially other plants identified to this family, but they are not well-supported enough to be given a specific genus.
+if (counttotalmatchesgenus != countmatchesfamily){
+  classificationrowtoadd <- c("Family", family)
+  classificationsummarytable[nrow(classificationsummarytable) + 1,] <- classificationrowtoadd
+}
+
+# Add any matches at the genus level to the final classification
+for (genus in matchedgenus$TopGenus){
+  classificationrowtoadd <- c("Genus", genus)
+  classificationsummarytable[nrow(classificationsummarytable) + 1,] <- classificationrowtoadd } } }
+
+##############################
+# Add in classifications for complete and/or long sequences, even if they are not matched by other sequences. We are confident in those results as is.
+listofcompletegenes <- c(sampledf[sampledf$Complete == "Yes", "GeneName"], sampledf[sampledf$Length > 220, "GeneName"]) 
+if (length(listofcompletegenes) > 0){
+for (gene in listofcompletegenes){
+  classificationrowtoadd <- sampledf[sampledf$GeneName == gene, c("DesignationLevel", "Designation")]
+  classificationsummarytable[nrow(classificationsummarytable) + 1,] <- classificationrowtoadd } }
+# Take unique rows of the classification summary table for the sample, in case the taxa designations for these long sequences were already added by matching.
+colnames(classificationsummarytable) <- classificationsummarytablecolumns
+classificationsummarytable <- unique(classificationsummarytable) %>% filter(Classification != "NA")
+
+##############################
+# Add sample results to overall summary tables
+
+# Get unique orders, families, genera from original table and format them for this sample
+# Summary classification df is for the sample; will be added to larger df
+summaryclassification <- data.frame(matrix(nrow = 0, ncol = 3))
+colnames(summaryclassification) <- c("Order", "Family", "Genus")
+
+# Format each classification with genus, family, and order information
+for (classification in classificationsummarytable$Classification){
+  if (classificationsummarytable[classificationsummarytable$Classification == classification, "ClassificationLevel"] == "Species"){
+    summaryclassificationrowtoadd <- unique(sampledf[sampledf$SpeciesClassificationSupported == "Yes" & sampledf$TopSpecies == classification, c("TopOrder", "TopFamily", "TopGenus")])}
+    if (classificationsummarytable[classificationsummarytable$Classification == classification, "ClassificationLevel"] == "Genus"){
+    summaryclassificationrowtoadd <- unique(sampledf[sampledf$GenusClassificationSupported == "Yes" & sampledf$TopGenus == classification, c("TopOrder", "TopFamily", "TopGenus")])}
+ if (classificationsummarytable[classificationsummarytable$Classification == classification, "ClassificationLevel"] == "Family"){
+summaryclassificationrowtoadd <- c(unique(sampledf[sampledf$FamilyClassificationSupported == "Yes" & sampledf$TopFamily == classification, c("TopOrder", "TopFamily")]), "None")}
+  if(classificationsummarytable [classificationsummarytable$Classification == classification, "ClassificationLevel"] == "Order") {
+summaryclassificationrowtoadd <- list(unique(sampledf[sampledf$OrderClassificationSupported == "Yes" & sampledf$TopOrder == classification, "TopOrder"]), "None", "None")
+}
+summaryclassification[nrow(summaryclassification) + 1, ] <- na.omit(unique(as.data.frame(summaryclassificationrowtoadd)))
+}
+
+# Condense into one cell and add to overall summary condensed file that will include all samples
+condensed <- apply(unique(summaryclassification), 1, function(row) paste(row, collapse = ";"))
+condensedsinglecell <- paste(condensed, collapse = "\n")
+classification_samplesummaries[nrow(classification_samplesummaries) + 1,] <- c(samplename, condensedsinglecell)
+
+# Add sample summary data to a larger summary table that will include all sample information, formatted for visualization.
+if (nrow(summaryclassification >0)){
+summaryclassification$SampleName <- samplename}
+allsamples_summaryclassification <- rbind(allsamples_summaryclassification, unique(summaryclassification))
+}
+
+colnames(classification_samplesummaries) <- c("SampleName", "SummarizedBLASTResults")
+```
+
+```{r add in metadata and remove AHE duplicates}
+# Make a large summary table with sample information, such as species and country, in addition to the summarized BLAST results
+# Also remove duplicate results for samples that were submitted to AHE twice
+
+# IDs of the samples in BLAST results/AHE data are not the same as the metadata. Covert this ID to the personal ID which is used in the metadata, using the sampleidentifiers table which has corresponding GoLife_IDs (should match personal IDs) to be able to collect metadata.
+# Remove parenthesis in IDs (ex: 7-9.1(2); indicates redundant metadata entries) in both samplemetadata and sample identifier tables (their formatting does not always match)
+samplemetadata$personal.id_formatted <- sub("\\s*\\(.*", "", samplemetadata$personal.id)
+sampleidentifiers$GoLife_ID <- sub("\\s*\\(.*", "", sampleidentifiers$GoLife_ID)
+# Also remove any "+" or "-" after the rows (redundant entries with different name formatting). Remove only the second (last) "-" using a placeholder
+samplemetadata$personal.id_formatted <- gsub("\\+", "", samplemetadata$personal.id_formatted)
+samplemetadata$personal.id_formatted <- sub("(.*?)-(.*?)-", "\\1-\\2blank", samplemetadata$personal.id_formatted, perl = TRUE)
+  samplemetadata$personal.id_formatted <- gsub("blank", "", samplemetadata$personal.id_formatted)
+sampleidentifiers$GoLife_ID <- gsub("\\+", "", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- sub("(.*?)-(.*?)-", "\\1-\\2blank", sampleidentifiers$GoLife_ID, perl = TRUE)
+  sampleidentifiers$GoLife_ID <- gsub("blank", "", sampleidentifiers$GoLife_ID)
+
+# Manually change a few entries known to be formatted incongruently between the tables
+sampleidentifiers$GoLife_ID <- gsub("DEL ", "DEL-", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("LH 143.2", "LH 143-2", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("LH 143.4", "LH 143-2", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("LH 143.5", "LH 143-2", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("32.81.1", "32-81.1", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("7-9.1", "'7-9", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("JZ DEL-104", "DEL_104", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("De30", "De3O", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("JZ DEL-011", "DEL-011", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("Q\\*", "\\*-Q", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("CHI 005", "CHI_5", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("CHI 005", "CHI_5", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("CHI 005", "CHI_5", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("CHI 005", "CHI_5", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("CHI 005", "CHI_5", sampleidentifiers$GoLife_ID)
+sampleidentifiers$GoLife_ID <- gsub("59-29.2", "59-29.1", sampleidentifiers$GoLife_ID)
+
+# Select the first row in cases where there are rows with duplicate formatted personal IDs
+samplemetadata_unique <- samplemetadata[!duplicated(samplemetadata$personal.id_formatted),]
+
+# Add another column in the sample identifiers to be an abbreviated form of the ILL_137402_ID (without the "ILL_137402_ID_" start) to match the BLAST/AHE results IDs exactly
+sampleidentifiers <- sampleidentifiers %>% mutate(SampleName= sub(".*_(.*_.*)$", "\\1", ILL_137402_ID))
+
+# Join the tables
+# Join both the condensed and summary table for visualization. Since some AHE samples are actually duplicates, we need to check corresponding Personal IDs for matches and then combine results based on that in both tables.
+# First join BLAST/AHE keys to their GoLife_ID using sampleidentifiers table, then use the GoLife_ID to collect metadata by matching it with personal ID.
+#colnames(classification_samplesummaries)
+joinedsummarytable <- left_join(classification_samplesummaries, sampleidentifiers, by="SampleName")
+joinedsummarytable <- left_join(joinedsummarytable, samplemetadata_unique, by=c("GoLife_ID"="personal.id_formatted"))
+
+joinedvisualizationsummarytable <- left_join(allsamples_summaryclassification, sampleidentifiers, by="SampleName")
+joinedvisualizationsummarytable <- left_join(joinedvisualizationsummarytable, samplemetadata_unique, by=c("GoLife_ID"="personal.id_formatted"))
+
+###############################
+# Some samples were submitted for AHE twice. In the condensed summary table, combine their results into the same row, keeping the AHE names separated by a slash, BLAST results added as new lines, and just one copy of everything else (matches exactly).
+# First remove any samples that did not have any AHE BLAST results
+joinedsummarytable <- joinedsummarytable %>% filter(SummarizedBLASTResults != "")
+separateslash <- "SampleName"
+separatenewline <- "SummarizedBLASTResults"
+joinedsummmarytable_combineduplicates <- joinedsummarytable %>%
+  group_by(joinedsummarytable$GoLife_ID) %>%
+  summarise(
+    across(all_of(separateslash), ~ paste(., collapse = "/"), .names = "{col}"),
+    across(all_of(separatenewline), ~ paste(., collapse = "\n"), .names = "{col}"),
+    across(-c(GoLife_ID, all_of(separateslash), all_of(separatenewline)), ~ first(.), .names = "{col}"),
+    .groups = "drop"
+  )
+# This will (should) result in duplicate results in the BLAST summary, since they are the same sample. Remove redundant lines, while keeping the other results together.
+for (samplename in joinedsummmarytable_combineduplicates$SampleName){
+results <- as.character(joinedsummmarytable_combineduplicates[joinedsummmarytable_combineduplicates$SampleName == samplename, "SummarizedBLASTResults"])
+lines <- unlist(strsplit(results, "\n"))
+unique <- unique(lines)
+cleanedresults <- paste(unique, collapse = "\n")
+joinedsummmarytable_combineduplicates[joinedsummmarytable_combineduplicates$SampleName == samplename, "SummarizedBLASTResults"] <- cleanedresults }
+# Select columns of interest
+condensedsummarytable <- joinedsummmarytable_combineduplicates %>% select(SampleName, SummarizedBLASTResults, country, cooX, cooY, Subfamily, tribe, genus, species, sex, Date, qPCR.Cq, AHE.BLAST.hit, iPhycl)
+
+# In the visualization summary table, also remove duplicates. If a GoLifeID is associated with multiple AHE names, combine the names with a slash. Remove any redundant rows/BLAST results from combining. Also remove additional columns that were added in the join.
+joinedvisualizationsummarytable_combinedduplicates <- data.frame(matrix(nrow = 0, ncol = 4))
+for (ID in unique(joinedvisualizationsummarytable$GoLife_ID)){
+  # Make temporary df for that ID
+  IDdf <- joinedvisualizationsummarytable %>% filter(GoLife_ID == ID)
+  AHEnames <- unique(IDdf$SampleName)
+  # Change the SampleName to be combined for all if there are duplicates
+  combinedAHEname <- paste(AHEnames, collapse="/")
+  IDdf_unique <-  IDdf[, c("Order", "Family", "Genus", "SampleName")]
+  IDdf_unique$SampleName <- combinedAHEname
+  IDdf_unique <- unique(IDdf_unique)
+# Add to non-redundant summary table
+joinedvisualizationsummarytable_combinedduplicates <- rbind(joinedvisualizationsummarytable_combinedduplicates, IDdf_unique)
+}
+```
+
+```{r save summary tables for external viewing}
+write.csv(condensedsummarytable,"combinedBLASTsampledata-condensed.csv", row.names = FALSE, quote = TRUE)
+write.csv(joinedsummmarytable_combineduplicates,"combinedBLASTsampledata-allcolumns.csv", row.names = FALSE, quote = TRUE)
+write.csv(joinedvisualizationsummarytable_combinedduplicates, "tableforBLASTvisualization.csv", row.names = FALSE)
+```
+
+```{r save}
+save(
+  BLAST_filtered,genemetadata,samplemetadata,sequencesummarytable,sequencesummarytable_formatted,condensedsummarytable, joinedsummmarytable_combineduplicates, joinedsummarytable, joinedvisualizationsummarytable, joinedvisualizationsummarytable_combinedduplicates,
+  file="data/taxadesignationbysample.RData"
+)
+```

@@ -1,0 +1,56 @@
+---
+title: "02_workingdata"
+author: "Ava Gabrys"
+date: "2024-05-28"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyverse)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/rawdata.Rdata")
+```
+
+```{r preliminary filtering of all results}
+# Filter so all hits have ≥ 98% identity and qcovs ≥97
+BLAST_filtered <- BLAST_rawdata %>% filter(`pident` >= 98)
+BLAST_filtered <- BLAST_filtered %>% filter(qcovs >= 97)
+
+# If there are multiple taxids separated by a semi-colon just take the first (nearly consistenly have same genus)
+# Save in an object with unique single taxonID
+listoftaxids <- BLAST_filtered$staxids
+for (i in seq_along(listoftaxids)) {
+  taxid <- listoftaxids[[i]]
+  if (grepl(";", taxid)) {
+    listoftaxids[[i]] <- strsplit(taxid, ";")[[1]][1]
+  }
+}
+BLAST_filtered$formattedtaxids <- listoftaxids
+
+# Make species label from genus species given in sscinames
+# Other classifications will be obtained later using taxid
+listofgenusspecies <- BLAST_filtered$sscinames
+for (i in seq_along(listofgenusspecies)){
+  genusspecies <- listofgenusspecies[[i]]
+  newgenusspecies <- strsplit(genusspecies, " ")[[1]][2]
+  # Or take everything after genus (incl. var or subspecies for example to be more precise)
+  #newgenusspecies <- substring(genusspecies, regexpr(" ", genusspecies) + 1, nchar(genusspecies))
+  listofgenusspecies[[i]] <- newgenusspecies
+}
+BLAST_filtered$Species <- listofgenusspecies
+```
+
+
+```{r save}
+save(
+  BLAST_filtered,genemetadata,samplemetadata,sampleidentifiers,
+  file="data/workingdata.RData"
+)
+```

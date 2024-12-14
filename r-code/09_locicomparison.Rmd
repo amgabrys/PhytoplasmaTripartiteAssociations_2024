@@ -1,0 +1,75 @@
+---
+title: "09_LociComparison"
+author: "Ava Gabrys"
+date: "2024-09-13"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(tidyverse)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.RData")
+# Need: sequencesummarytable_formatted (BLAST results for each sequence with level of support)
+
+# Table below contains phytoplasma information/classification at different loci (as well as insect classifications, but we already have those). Samples have ILL_137402 IDs that can be used to bind to samples
+#phytoplasmaidentification <- read.csv("raw_data/OverviewSamplesPlate1.csv", header = TRUE)
+```
+
+```{r assess sequence lengths} 
+# Find total number of sequences for each gene
+totallocisequences <- sequencesummarytable_formatted %>% group_by(Locus) %>% summarise(TotalSequences = n())
+# Find the average sequence length for each gene
+averagesequencelength <- sequencesummarytable_formatted %>% group_by(Locus) %>% summarise(AverageLength = mean(Length))
+# Total number of recovered complete sequences
+completesequences <- sequencesummarytable_formatted %>% group_by(Locus) %>% summarize(CompleteSequences = sum(Complete == "Yes"))
+        
+# Average number of sequences per sample
+averegaenumberofsequencespersample <- sequencesummarytable_formatted %>% count(SampleName, Locus) %>% group_by(Locus) %>% summarise(AverageSequencesPerSample = mean(n))
+# Median number of sequences per sample
+mediannumbersequencespersample <- sequencesummarytable_formatted %>% count(SampleName, Locus) %>% group_by(Locus) %>% summarise(MedianSequencesPerSample = median(n))
+
+# Find total number of samples with sequences for that gene
+numberofsampleswithsequences <- sequencesummarytable_formatted %>% count(Locus, SampleName) %>% group_by(Locus) %>% summarize(SamplesWithSequences = sum(n > 0))
+
+# Find how many sequences were classified to genus, family, and order classifications for each gene
+classification <- sequencesummarytable_formatted %>% group_by(Locus) %>% summarize(GenusClassificationSupported = sum(GenusClassificationSupported == "Yes"), FamilyClassificationSupported = sum(FamilyClassificationSupported == "Yes"),
+OrderClassificationSupported = sum(OrderClassificationSupported == "Yes"))
+
+# How many different orders were represented at each locus
+# CHECK <NA> in rbcl !!!!!
+# Taxa need to be supported, but might also bias results....in that if were supported may have to do with not lots/lots of things in database. Would need to explain that this is getting at things were BLAST results were overwhelmingly consistent
+taxacount1 <- sequencesummarytable_formatted %>% filter(OrderClassificationSupported == "Yes") %>% drop_na() %>% count(Locus, TopOrder) %>% group_by(Locus) %>% summarize(UniqueSupportedOrders = sum(n > 0))
+taxacount2 <- sequencesummarytable_formatted %>% filter(FamilyClassificationSupported == "Yes") %>% count(Locus, TopFamily) %>% group_by(Locus) %>% summarize(UniqueSupportedFamilies = sum(n > 0))
+taxacount3 <- sequencesummarytable_formatted %>% filter(GenusClassificationSupported == "Yes") %>% count(Locus, TopGenus) %>% group_by(Locus) %>% summarize(UniqueSupportedGenera = sum(n > 0))
+
+overalluniquesupport <- sequencesummarytable_formatted %>% filter(Designation != "NA") %>% count(Locus, Designation) %>% group_by(Locus) %>% summarize(UniqueSupportedResults = sum(n > 0))
+
+# Join all tibbles into a data frame
+locicomparison <- as.data.frame(left_join(totallocisequences, averagesequencelength) %>% left_join(completesequences) %>% left_join(numberofsampleswithsequences) %>% left_join(averegaenumberofsequencespersample) %>% left_join(mediannumbersequencespersample) %>% left_join(classification) %>% left_join(taxacount1) %>% left_join(taxacount2) %>% left_join(taxacount3) %>% left_join(overalluniquesupport))
+
+# Get percents as appropriate
+locicomparison$CompleteSequences <- (locicomparison$CompleteSequences / locicomparison$TotalSequences) * 100
+
+totalnumbersamples <- as.numeric(length(unique(sequencesummarytable_formatted$SampleName)))
+totalnumbersequences <- nrow(sequencesummarytable_formatted)
+
+locicomparison$SamplesWithSequences <- (locicomparison$SamplesWithSequences / totalnumbersamples) * 100
+
+# Transpose
+laterrownames <- colnames(locicomparison)
+rownames(locicomparison) <- locicomparison$Locus
+locicomparison <- locicomparison[, -1]
+
+locicomparison <- as.data.frame(t(locicomparison))
+
+# Save for external viewing
+write_csv(locicomparison, "~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R/locicomparison.csv")
+
+```
+

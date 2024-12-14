@@ -1,0 +1,123 @@
+---
+title: "07_insectphylogeny"
+author: "Ava Gabrys"
+date: "2024-06-17"
+output: pdf_document
+editor_options:
+  chunk_output_type: console
+---
+
+```{r libraries}
+library(dplyr)
+library(tidyr)
+library(ggtree)
+library(castor)
+library(phytools)
+
+setwd("~/Desktop/Summer2024/plant_gene-identification/plant_gene_BLAST_R")
+```
+
+```{r upload data}
+load("data/taxadesignationbysample.Rdata")
+
+# Some samples have an ILL_137401_ID in addition to an ILL_137402_ID. The former is used in the published insect phylogeny, so we can use it to help subset the tree.
+# Table with corresponding personal and ILL codes
+samplecodes <- read.delim("raw_data/sampleidentifiers-bothILL_IDs.txt")
+
+# The data on samples included in the tree. With this can use sample codes to grab species names exactly as they are formatted in the tree. Table S1 from Cao et al., 2022 https://doi-org.proxy2.library.illinois.edu/10.1111/syen.12540
+insecttreecodes <- read.csv("raw_data/syen12540-sup-0008-table_s1.csv")
+colnames(insecttreecodes) <- insecttreecodes[2,]
+insecttreecodes <- insecttreecodes[-c(1,2), ]
+
+# Tree file of Fig S1 from Cao et al., 2022 https://doi-org.proxy2.library.illinois.edu/10.1111/syen.12540, provided by Yanghui Cao
+rawinsecttree <- read.tree("raw_data/delto3_nucl_rooted_seqID.nwk.tre.rename.tre")
+```
+
+```{r make insect tree}
+## Subset a phylogeny of insects tested positive for phytoplasma in this study. Some samples have their own molecular data included in the tree; others will be matched to the same species or genus.
+
+# Find corresponding ILL_137401_ID (insect molecular data) codes for each sample that has one
+joined <- right_join(samplecodes, joinedsummmarytable_combineduplicates, by = "ILL_137402_ID") %>% filter(ILL_137401_ID != "")
+
+# Take the Subfamily, Tribe, Genus, Species in the insecttreecodes table and combine to make the names for the rawinsect tree
+# Extract these for our samples
+namestosubset <- left_join(joined[,c("ILL_137401_ID", "ILL_137402_ID", "GoLife_ID", "SampleName", "SummarizedBLASTResults", "personal.id")], insecttreecodes, by = c("ILL_137401_ID" = "Sequencing_ID"))
+namestosubset <- unite(namestosubset, InsectTreeName, "Tribe","Genus", "Species", sep = "")
+
+# Filter those out that were not included in the tree and add a column about how they were identified
+treenamestosubset <- namestosubset[, c("SampleName", "InsectTreeName")] %>% filter(InsectTreeName != "NANANA")
+treenamestosubset$Type <- "FromILL_137401_ID"
+
+######################
+# For samples that do not have an ILL_137401_ID to find in the original raw tree tables, we need to figure out the tip label
+# List samples without given names, and extract their rows from the original summary table
+subsetsummarytable <- joinedsummmarytable_combineduplicates %>% filter(SampleName %in% joinedsummmarytable_combineduplicates$SampleName[!joinedsummmarytable_combineduplicates$SampleName %in% treenamestosubset$SampleName])
+# Before adding to the list to subset, check for matching labels in just the tip names. Most times there will not be an exact match for the genus and species combination, in which case we will work with another tip with the same tribe and genus information as an approximate placement (if that exists)
+for (i in seq_along(subsetsummarytable$SampleName)){
+  # Check for species name and genus name pairing (most specific)
+  genusspecies <- paste0(subsetsummarytable$genus[i], subsetsummarytable$species[i], sep="")
+  if (any(grepl(genusspecies, rawinsecttree$tip.label))){
+  matchedstring <- grep(genusspecies, rawinsecttree$tip.label, value = TRUE)
+  typeofmatch <- "MatchedInsectTreewGenusSpecies"
+    # Before adding the matched string, make sure it is unique. If a match was already added to the list to subset, add one of the other matches so there are not duplicates.
+    if (any(!matchedstring %in% treenamestosubset$InsectTreeName)){
+    matchedstring_unique <- matchedstring[!matchedstring %in% treenamestosubset$InsectTreeName]
+  # After removing any potential matches take the first remaining result if it exists
+    if (length(matchedstring_unique) > 0) {
+    matchedstring <- matchedstring_unique[1]
+    treenamestosubset <- rbind(treenamestosubset, c(subsetsummarytable$SampleName[i], matchedstring, typeofmatch)) }}}
+  else {
+  # Check for genus name and tribe name pairing
+  tribegenus <- paste0(subsetsummarytable$tribe[i], subsetsummarytable$genus[i], sep="")
+    if (any(grepl(tribegenus, rawinsecttree$tip.label))){
+    matchedstring <- grep(tribegenus, rawinsecttree$tip.label, value = TRUE)
+    typeofmatch <- "MatchedInsectTreewTribeGenus"}
+    # Before adding the matched string, make sure it is unique. If a match was already added to the list to subset, add one of the other matches so there are not duplicates.
+    if (any(!matchedstring %in% treenamestosubset$InsectTreeName)){
+    matchedstring_unique <- matchedstring[!matchedstring %in% treenamestosubset$InsectTreeName]
+  # After removing any potential matches take the first remaining result if it exists
+    if (length(matchedstring_unique) > 0) {
+    matchedstring <- matchedstring_unique[1]
+    treenamestosubset <- rbind(treenamestosubset, c(subsetsummarytable$SampleName[i], matchedstring, typeofmatch)) } }
+  }}
+
+######################
+# Subset the tree
+insecttree <- (get_subtree_with_tips(rawinsecttree, only_tips = treenamestosubset$InsectTreeName))$subtree
+
+######################
+# Add in sister taxa (samples with the same identification)
+
+duplicatestable <- joinedsummmarytable_combineduplicates %>% group_by(genus, species) %>% filter(n() > 1)  %>% ungroup() %>% drop_na(species)
+# At this point also begin a table that will include all samples (including duplicate classifications) and later metadata
+insecttipdata <- treenamestosubset
+for (speciesname in unique(duplicatestable$species)){
+   # Make a temporary dataframe of all those with the same insect classification
+  samespecies <- duplicatestable[duplicatestable$species == speciesname,]
+   # Find which of the duplicates (if any) are already in the tree. If in the tree, we will match this label exactly with the other samples
+  samplenamewspeciesalreadyintree <- samespecies$SampleName[samespecies$SampleName %in% treenamestosubset$SampleName]
+if (length(samplenamewspeciesalreadyintree) > 0 && length(samplenamewspeciesalreadyintree) < nrow(samespecies)){
+  existingtipname <- treenamestosubset[treenamestosubset$SampleName == samplenamewspeciesalreadyintree, "InsectTreeName"]
+  existingtype <- treenamestosubset[treenamestosubset$SampleName == samplenamewspeciesalreadyintree, "Type"]
+  othersamples <- samespecies[samespecies$SampleName != samplenamewspeciesalreadyintree,]
+ for (i in seq_along(othersamples$SampleName)){
+  # Add to the tree
+    othersamplename <- othersamples[i, "SampleName"]
+    newtiplabel <- paste0(existingtipname, i + 1, sep="")
+    insecttree <- bind.tip(insecttree, newtiplabel, where=which(insecttree$tip.label==existingtipname), edge.length= which(insecttree$edge[,2]==
+    which(insecttree$tip.label==existingtipname)))
+  # Add sample and tip label information to a copy of the table that was used to subset)
+  insecttipdata[nrow(insecttipdata) +1, ] <- c(othersamplename, newtiplabel, existingtype)
+ } } }
+
+
+# Make a list of unfound samples for later reference (no given name, no unique identified name, or duplicate insect classification). Also exclude those not in Deltocephalinae (which is what the tree only has)
+unfoundsamplenames <- subsetsummarytable$SampleName[!(subsetsummarytable$SampleName %in% insecttipdata$SampleName | subsetsummarytable$SampleName %in% subsetsummarytable$SampleName[subsetsummarytable$Subfamily != "Deltocephalinae"])]
+```
+
+```{r save}
+save(
+ BLAST_filtered,genemetadata,samplemetadata,sequencesummarytable,sequencesummarytable_formatted, samplecodes, insecttipdata, insecttree, joinedsummmarytable_combineduplicates, joinedvisualizationsummarytable_combinedduplicates, unfoundsamplenames,
+  file="data/insectphylogeny.RData"
+)
+```
