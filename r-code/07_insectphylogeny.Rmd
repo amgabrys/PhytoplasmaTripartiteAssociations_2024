@@ -52,6 +52,11 @@ treenamestosubset$Type <- "FromILL_137401_ID"
 # For samples that do not have an ILL_137401_ID to find in the original raw tree tables, we need to figure out the tip label
 # List samples without given names, and extract their rows from the original summary table
 subsetsummarytable <- joinedsummmarytable_combineduplicates %>% filter(SampleName %in% joinedsummmarytable_combineduplicates$SampleName[!joinedsummmarytable_combineduplicates$SampleName %in% treenamestosubset$SampleName])
+# NOTE: here I am manually changing the identification of sample P001_WB10 to extract the correct branch. This insect's name was identified later in the project. This change, and change to the collection location, will be reflected in the final tree and other final tables.
+subsetsummarytable$tribe[subsetsummarytable$SampleName == "P001_WB10"] <- "Bahitini"
+subsetsummarytable$genus[subsetsummarytable$SampleName == "P001_WB10"] <- "Taperinha"
+subsetsummarytable$species[subsetsummarytable$SampleName == "P001_WB10"] <- "adspera"
+
 # Before adding to the list to subset, check for matching labels in just the tip names. Most times there will not be an exact match for the genus and species combination, in which case we will work with another tip with the same tribe and genus information as an approximate placement (if that exists)
 for (i in seq_along(subsetsummarytable$SampleName)){
   # Check for species name and genus name pairing (most specific)
@@ -87,7 +92,6 @@ insecttree <- (get_subtree_with_tips(rawinsecttree, only_tips = treenamestosubse
 
 ######################
 # Add in sister taxa (samples with the same identification)
-
 duplicatestable <- joinedsummmarytable_combineduplicates %>% group_by(genus, species) %>% filter(n() > 1)  %>% ungroup() %>% drop_na(species)
 # At this point also begin a table that will include all samples (including duplicate classifications) and later metadata
 insecttipdata <- treenamestosubset
@@ -110,8 +114,15 @@ if (length(samplenamewspeciesalreadyintree) > 0 && length(samplenamewspeciesalre
   insecttipdata[nrow(insecttipdata) +1, ] <- c(othersamplename, newtiplabel, existingtype)
  } } }
 
+# Add in the original genus species names. So, if another species in the same genus was made to represent it in the tree as the best equivalent, it can easily be seen what the true species was
+subsetsummarytable$SpecimenIdentification <- paste0(subsetsummarytable$tribe, subsetsummarytable$genus, subsetsummarytable$species, sep="")
+insecttipdata <- insecttipdata %>%
+  left_join(subsetsummarytable %>% select(SpecimenIdentification, SampleName), by = "SampleName")
+ # For samples with ILL_137401_ID codes, the tree name will match exactly the table name. Right now they are left as NA.
+insecttipdata <- insecttipdata %>%
+  mutate(SpecimenIdentification = ifelse(is.na(SpecimenIdentification), InsectTreeName, SpecimenIdentification))
 
-# Make a list of unfound samples for later reference (no given name, no unique identified name, or duplicate insect classification). Also exclude those not in Deltocephalinae (which is what the tree only has)
+# Make a list of not found samples for later reference (no given name, no unique identified name, or duplicate insect classification). Also exclude those not in Deltocephalinae (which is what the tree only has)
 unfoundsamplenames <- subsetsummarytable$SampleName[!(subsetsummarytable$SampleName %in% insecttipdata$SampleName | subsetsummarytable$SampleName %in% subsetsummarytable$SampleName[subsetsummarytable$Subfamily != "Deltocephalinae"])]
 ```
 
