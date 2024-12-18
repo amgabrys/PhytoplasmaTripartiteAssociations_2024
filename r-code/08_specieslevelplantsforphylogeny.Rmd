@@ -78,7 +78,7 @@ speciestable[speciestable$SampleName == "P001_WG09" & speciestable$TopGenus == "
 
 # Subset the insect tree to only include samples with these genus/species level results
 insecttipdata_subset <- insecttipdata %>% filter(SampleName %in% speciestable$SampleName) # Need to first get associated tip names for these
-insecttree_subset <- (get_subtree_with_tips(insecttree, only_tips = insecttipdata_subset$InsectTreeName))$subtree
+insecttree_subset <- (get_subtree_with_tips(insecttree, only_tips = insecttipdata_subset$NameinOriginalSubsetTree))$subtree
 
 # Format table into three columns: Genus species, Genus, and Family, for PhyloMaker input
 speciestable_phyloinput <- speciestable
@@ -100,8 +100,16 @@ plantinsecttreetable <- left_join(plantinsecttreetable, tree$species.list[c("sta
 plantinsecttreetable$PlantTreeName <- gsub(" ", "_", plantinsecttreetable$PlantTreeName)
 ```
 
+```{r rename insect tree}
+# Right now insect tree labels do not all match the actual identification of the insect; they might not be the same in the tree when the sample is represented by a different species in the same genus.
+plantinsecttreetable$SpecimenIdentification[plantinsecttreetable$SampleName == "P001_WF11/P001_WG10"] <- "Stenometopiini_gen._sp."
+plantinsecttreetable$SpecimenIdentification[plantinsecttreetable$SampleName == "P001_WE12"] <- "Scaphoideini_Amimenus_mojiensis"
+
+insecttree_subset$tip.label <- plantinsecttreetable$SpecimenIdentification[match(insecttree_subset$tip.label, plantinsecttreetable$NameinOriginalSubsetTree)]
+```
+
 ```{r calculate total included of each type}
-types <- unique(plantinsecttreetable[c("SampleName", "InsectTreeName", "Type")])
+types <- unique(plantinsecttreetable[c("SampleName", "NameinOriginalSubsetTree", "Type")])
 types %>% group_by(Type) %>% count()
 ```
 

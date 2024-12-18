@@ -114,13 +114,14 @@ if (length(samplenamewspeciesalreadyintree) > 0 && length(samplenamewspeciesalre
   insecttipdata[nrow(insecttipdata) +1, ] <- c(othersamplename, newtiplabel, existingtype)
  } } }
 
-# Add in the original genus species names. So, if another species in the same genus was made to represent it in the tree as the best equivalent, it can easily be seen what the true species was
-subsetsummarytable$SpecimenIdentification <- paste0(subsetsummarytable$tribe, subsetsummarytable$genus, subsetsummarytable$species, sep="")
+# Add in the original genus species names. So, if another species in the same genus was made to represent it in the tree as the best equivalent, it can easily be seen what the true species was. These names can be used to rename the tip labels.
+joinedsummmarytable_combineduplicates$SpecimenIdentification <- paste0(joinedsummmarytable_combineduplicates$tribe, sep="_", joinedsummmarytable_combineduplicates$genus, sep="_", joinedsummmarytable_combineduplicates$species)
 insecttipdata <- insecttipdata %>%
-  left_join(subsetsummarytable %>% select(SpecimenIdentification, SampleName), by = "SampleName")
- # For samples with ILL_137401_ID codes, the tree name will match exactly the table name. Right now they are left as NA.
-insecttipdata <- insecttipdata %>%
-  mutate(SpecimenIdentification = ifelse(is.na(SpecimenIdentification), InsectTreeName, SpecimenIdentification))
+  left_join(joinedsummmarytable_combineduplicates %>% select(SpecimenIdentification, SampleName), by = "SampleName")
+# Manually adjust name of P001_WE12, which has updated identification data and will be included in the final tree
+insecttipdata$SpecimenIdentification[insecttipdata$SampleName == "P001_WE12"] <- "Scaphoideini: Amimenus mojiensis"
+
+names(insecttipdata)[names(insecttipdata) == "InsectTreeName"] <- "NameinOriginalSubsetTree"
 
 # Make a list of not found samples for later reference (no given name, no unique identified name, or duplicate insect classification). Also exclude those not in Deltocephalinae (which is what the tree only has)
 unfoundsamplenames <- subsetsummarytable$SampleName[!(subsetsummarytable$SampleName %in% insecttipdata$SampleName | subsetsummarytable$SampleName %in% subsetsummarytable$SampleName[subsetsummarytable$Subfamily != "Deltocephalinae"])]
