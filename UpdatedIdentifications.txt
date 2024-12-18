@@ -1,0 +1,6 @@
+Some leafhopper specimens had identifications and other metadata that were updated while processing the data. These updates are thus reflected in the final tables and figures but not necessarily the working tables. Changes include:
+
+Sample P001_WB10 updated to Taperinha adspera, collected in Peru
+Sample P001_WE12 updated to Amimenus mojiensis, collected in China
+Sample P001_WG08 updated to Diemoides n.sp.1, collected in Australia
+Samples P001_WF11 and P001_WG10 were originally combined as if they were from the same insect; updated to n.gen. sp. (Stenometopiini) and Alishania formosana, respectively.
